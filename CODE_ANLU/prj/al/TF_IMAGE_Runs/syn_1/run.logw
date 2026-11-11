@@ -1,0 +1,157 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/bin/run.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     kkran
+   Run Date =   Wed Oct 21 15:00:47 2026
+
+   Run on =     LAPTOP-81FRNUTD
+============================================================
+HDL-5370 WARNING: parameter 'S_IDLE' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(27)
+HDL-5370 WARNING: parameter 'S_WAIT' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(28)
+HDL-5370 WARNING: parameter 'S_INIT' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(29)
+HDL-5370 WARNING: parameter 'S_CMD_PRE' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(30)
+HDL-5370 WARNING: parameter 'S_CMD' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(31)
+HDL-5370 WARNING: parameter 'S_CMD_DATA' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(32)
+HDL-5370 WARNING: parameter 'S_READ_WAIT' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(33)
+HDL-5370 WARNING: parameter 'S_READ' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(34)
+HDL-5370 WARNING: parameter 'S_READ_ACK' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(35)
+HDL-5370 WARNING: parameter 'S_WRITE_TOKEN' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(36)
+HDL-5370 WARNING: parameter 'S_WRITE_DATA_0' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(37)
+HDL-5370 WARNING: parameter 'S_WRITE_DATA_1' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(38)
+HDL-5370 WARNING: parameter 'S_WRITE_CRC' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(39)
+HDL-5370 WARNING: parameter 'S_WRITE_SUC' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(40)
+HDL-5370 WARNING: parameter 'S_WRITE_BUSY' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(41)
+HDL-5370 WARNING: parameter 'S_WRITE_ACK' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(42)
+HDL-5370 WARNING: parameter 'S_ERR' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(43)
+HDL-5370 WARNING: parameter 'S_END' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(44)
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v(47)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(283)
+HDL-5007 WARNING: column 1026 exceeds maximum value 1023 in ../../../../rtl/osd_font16.v(9)
+HDL-5317 WARNING: input port 'dib[31]' is not connected on this instance in ../../../../rtl/vendor/tf_reference/IP/afifo_16_32_256.v(231)
+HDL-5317 WARNING: input port 'dib[31]' is not connected on this instance in ../../../../rtl/vendor/tf_reference/IP/afifo_32_16_256.v(231)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v(47)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(283)
+HDL-5317 WARNING: input port '**' is not connected on this instance in ../../../../rtl/vendor/tf_reference/include/sdr_as_ram.enc.v(17)
+HDL-5314 WARNING: net 'font_rom' does not have a driver in ../../../../rtl/osd_font16.v(17)
+HDL-5314 WARNING: net 'glyph_low' does not have a driver in ../../../../rtl/theme_osd.v(11)
+HDL-5314 WARNING: net 'glyph_high' does not have a driver in ../../../../rtl/theme_osd.v(12)
+HDL-5314 WARNING: net 'text_rom' does not have a driver in ../../../../rtl/theme_osd.v(13)
+HDL-5314 WARNING: net 'ui_rom' does not have a driver in ../../../../rtl/theme_osd.v(14)
+HDL-5314 WARNING: net 'covers' does not have a driver in ../../../../rtl/theme_osd.v(15)
+HDL-5314 WARNING: net 'palette' does not have a driver in ../../../../rtl/theme_osd.v(16)
+HDL-5314 WARNING: net 'cues' does not have a driver in ../../../../rtl/theme_osd.v(16)
+HDL-5314 WARNING: net 'font' does not have a driver in ../../../../rtl/osd_priority_layer.v(13)
+HDL-5105 CRITICAL-WARNING: "theme_rom/console_lines.hex" used in readmemh/b statement is not found in ../../../../rtl/eval/p_rover_scan.v(2). This file is expected to be used like this:
+    1. Use absolute path. For example, /work/src/<file name>
+    2. Use relative path. For example, ../<file name>. When using relative path, the tool defines the current directory in the following order:
+    i. The directory of the source file which is calling the readmemh/b statement.
+    ii. The directory of the .al file (project mode run)
+    iii. If it is a non-project mode run, which means there is no .al file, the current directory is the one where you launch TD. Below are some examples.
+    Windows:
+    C:\work\testcase\al_run> <TD installation directory>\bin\td_command_prompt.exe run.tcl
+    In this example, the current directory is "C:\work\testcase\al_run".
+    Linux:
+    /work/testcase/al_run > <TD installation directory>/bin/td.sh run.tcl
+    In this example, the current directory is "/work/testcase/al_run".
+HDL-5105 CRITICAL-WARNING: "theme_rom/console_ascii.hex" used in readmemh/b statement is not found in ../../../../rtl/eval/p_rover_scan.v(2). This file is expected to be used like this:
+    1. Use absolute path. For example, /work/src/<file name>
+    2. Use relative path. For example, ../<file name>. When using relative path, the tool defines the current directory in the following order:
+    i. The directory of the source file which is calling the readmemh/b statement.
+    ii. The directory of the .al file (project mode run)
+    iii. If it is a non-project mode run, which means there is no .al file, the current directory is the one where you launch TD. Below are some examples.
+    Windows:
+    C:\work\testcase\al_run> <TD installation directory>\bin\td_command_prompt.exe run.tcl
+    In this example, the current directory is "C:\work\testcase\al_run".
+    Linux:
+    /work/testcase/al_run > <TD installation directory>/bin/td.sh run.tcl
+    In this example, the current directory is "/work/testcase/al_run".
+HDL-5105 CRITICAL-WARNING: "theme_rom/console_titles.hex" used in readmemh/b statement is not found in ../../../../rtl/eval/p_rover_scan.v(2). This file is expected to be used like this:
+    1. Use absolute path. For example, /work/src/<file name>
+    2. Use relative path. For example, ../<file name>. When using relative path, the tool defines the current directory in the following order:
+    i. The directory of the source file which is calling the readmemh/b statement.
+    ii. The directory of the .al file (project mode run)
+    iii. If it is a non-project mode run, which means there is no .al file, the current directory is the one where you launch TD. Below are some examples.
+    Windows:
+    C:\work\testcase\al_run> <TD installation directory>\bin\td_command_prompt.exe run.tcl
+    In this example, the current directory is "C:\work\testcase\al_run".
+    Linux:
+    /work/testcase/al_run > <TD installation directory>/bin/td.sh run.tcl
+    In this example, the current directory is "/work/testcase/al_run".
+HDL-5314 WARNING: net 'line_rom' does not have a driver in ../../../../rtl/eval/p_rover_scan.v(299)
+HDL-5314 WARNING: net 'ascii_rom' does not have a driver in ../../../../rtl/eval/p_rover_scan.v(300)
+HDL-5314 WARNING: net 'title_font' does not have a driver in ../../../../rtl/eval/p_rover_scan.v(319)
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+HDL-5001 WARNING: Contains anonymous inst(s) and/or net(s) that have not been renamed
+SYN-5013 WARNING: Undriven net: model "tf_image_top" / net "u_sdram/u2_ram/u2_wrrd/Sdr_init_ref_ba[1]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0)
+		the net's pin: pin "i1[1]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0)
+SYN-5013 WARNING: Undriven net: model "tf_image_top" / net "u_sdram/u2_ram/u2_wrrd/Sdr_init_ref_ba[0]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0)
+		the net's pin: pin "i1[0]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0)
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_frame/read_fifo/ram_inst/ramread0_syn_4" in ../../../../rtl/vendor/tf_reference/IP/afifo_32_16_256.v(822) / pin "bea[0]"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_frame/read_fifo/ram_inst/ramread0_syn_4" in ../../../../rtl/vendor/tf_reference/IP/afifo_32_16_256.v(822) / pin "beb[0]"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_loader/u_catalog/ramread0_syn_4" in ../../../../rtl/fat32_directory_catalog.v(37) / pin "bea[0]"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_loader/u_catalog/ramread0_syn_4" in ../../../../rtl/fat32_directory_catalog.v(37) / pin "beb[0]"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_theme_osd/ramread2_syn_4" in ../../../../rtl/theme_osd.v(130) / pin "bea[0]"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_theme_osd/ramread2_syn_4" in ../../../../rtl/theme_osd.v(130) / pin "beb[0]"
+SYN-5025 WARNING: Using 0 for all undriven pins and nets
+SYN-6577 WARNING: The clock signal "u_sdram/u2_ram/SDRAM_CLK" is added with the synthetic instruction (keep/mark_debug/dont_touch/max_fanout), which may create additional logic on this net
+SYN-6562 WARNING: The init value of "u_bgm/file_stream/ramread0_syn_4(../../../../rtl/fat32_bgm_stream.v(43))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_bgm/pcm/fifo/ramread0_syn_4(../../../../rtl/audio/pcm_async_fifo.v(36))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_frame/read_fifo/ram_inst/ramread0_syn_4(../../../../rtl/vendor/tf_reference/IP/afifo_32_16_256.v(822))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_frame/write_fifo/ram_inst/ramread0_syn_4(../../../../rtl/vendor/tf_reference/IP/afifo_16_32_256.v(822))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_loader/ramread0_syn_4(../../../../rtl/fat32_bmp_loader.v(68))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_loader/u_bmp/ramread0_syn_4(../../../../rtl/bmp24_decoder.v(60))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_loader/u_catalog/ramread0_syn_4(../../../../rtl/fat32_directory_catalog.v(37))" will be ignored since gate eram_init is set to off
+SYN-6562 WARNING: The init value of "u_thumbnails/u_builder/ramread0_syn_76(../../../../rtl/thumbnail_page_builder.v(54))" will be ignored since gate eram_init is set to off
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sw2_direction/meta_reg" in ../../../../rtl/sw2_direction_filter.v(10) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_key1/key_sync_reg[0]" in ../../../../rtl/key1_mode_control.v(19) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_rover_control/meta_reg[0]" in ../../../../rtl/eval/p_rover_control.v(59) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_rover_control/meta_reg[1]" in ../../../../rtl/eval/p_rover_control.v(59) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_rover_control/meta_reg[2]" in ../../../../rtl/eval/p_rover_control.v(59) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_rover_control/meta_reg[3]" in ../../../../rtl/eval/p_rover_control.v(59) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_rover_control/meta_reg[4]" in ../../../../rtl/eval/p_rover_control.v(59) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[0]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[1]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[2]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[3]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[4]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[5]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[6]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[7]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[8]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[9]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[10]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[11]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[12]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[13]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[14]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[15]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[16]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[17]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[18]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[19]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[20]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[21]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[22]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[23]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[24]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[25]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[26]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[27]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[28]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[29]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[30]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_sdram/u2_ram/u2_wrrd/Sdr_rd_dout_reg[31]" in ../../../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(0) / pin "clk"
+SYN-5011 WARNING: Undriven pin: model "tf_image_top" / inst "u_theme/meta_reg[3]" in ../../../../rtl/theme_control.v(40) / pin "clk"
+SYN-5025 WARNING: Using 0 for all undriven pins and nets

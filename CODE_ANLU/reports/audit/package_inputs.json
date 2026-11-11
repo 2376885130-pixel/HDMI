@@ -1,0 +1,896 @@
+{
+  "source": "D:\\FPGA_DUAL_HDMI_UART_20261019",
+  "destination": "D:\\CODE_ANLU",
+  "project_references": [
+    {
+      "project_path": "../../rtl/uart_system_events.v",
+      "package_path": "rtl/uart_system_events.v",
+      "sha256": "f088eae023e2f7e20ce42319339224b0b9558032fe7f9d722535b3e18a2612b9"
+    },
+    {
+      "project_path": "../../rtl/sw2_direction_filter.v",
+      "package_path": "rtl/sw2_direction_filter.v",
+      "sha256": "44570ca39eaf7d6e6eb41f8f219f00adeaf1ef305059c49582a0609b69f958b7"
+    },
+    {
+      "project_path": "../../rtl/osd_mode_policy.v",
+      "package_path": "rtl/osd_mode_policy.v",
+      "sha256": "fe67d36b50e3f40cb7d7ea1e00f62fcc741ef54b0080dc6b26707023464a1a14"
+    },
+    {
+      "project_path": "../../rtl/osd_priority_layer.v",
+      "package_path": "rtl/osd_priority_layer.v",
+      "sha256": "dd622f335282aa134abc4f35c4dbc2729106b48b687da937e072aa9c411f3c1e"
+    },
+    {
+      "project_path": "../../rtl/theme_control.v",
+      "package_path": "rtl/theme_control.v",
+      "sha256": "21f1b301a09d112a1bce978c6deeec03218374351f512900a714da53ed6dd671"
+    },
+    {
+      "project_path": "../../rtl/theme_audio_player.v",
+      "package_path": "rtl/theme_audio_player.v",
+      "sha256": "16a79785fd2fb25bd9a42e4d528495cdaa910d2c068e7a34ca6fc02783f2e14b"
+    },
+    {
+      "project_path": "../../rtl/theme_osd.v",
+      "package_path": "rtl/theme_osd.v",
+      "sha256": "5aa5979cf4d294b435de9b519fb62533b584c59ba7a358465799056881574729"
+    },
+    {
+      "project_path": "../../rtl/display/promax_audio_waveform.v",
+      "package_path": "rtl/display/promax_audio_waveform.v",
+      "sha256": "a7936fd062d32aaccd55da9bea81d8fcf738a929e08bc52f4c2450820ecdf565"
+    },
+    {
+      "project_path": "../../rtl/tf_image_top.v",
+      "package_path": "rtl/tf_image_top.v",
+      "sha256": "0b61fe4b7248b09d749718fb098eccd85588162ae83c547ae41f21bde6aca812"
+    },
+    {
+      "project_path": "../../rtl/fat32_bmp_loader.v",
+      "package_path": "rtl/fat32_bmp_loader.v",
+      "sha256": "b7dc2b94acd8e40f60a53808b463fb56bf83118614cf876b87a92ac54776f555"
+    },
+    {
+      "project_path": "../../rtl/video_timing_registered.v",
+      "package_path": "rtl/video_timing_registered.v",
+      "sha256": "3edd8f47f15bbc69570bab293de3b4b5f17c245bf6357ede33b6ff0781a1b93f"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/SD/sd_card_top.v",
+      "package_path": "rtl/vendor/tf_reference/SD/sd_card_top.v",
+      "sha256": "d05a58ea71845698e1c079364bd0c1dcdbe0e2d5d68c04f60e43b6ada67b4410"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/SD/sd_card_cmd.v",
+      "package_path": "rtl/vendor/tf_reference/SD/sd_card_cmd.v",
+      "sha256": "c24fb044aaf56042decc608efab3781c8c21e1bd58073d8e67986c21a7f97b51"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/SD/sd_card_sec_read_write.v",
+      "package_path": "rtl/vendor/tf_reference/SD/sd_card_sec_read_write.v",
+      "sha256": "9ed51aa85d9cfb52adec40ffe4a7eb5ecbd240630586335702ae461dcb1de3a2"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/SD/spi_master.v",
+      "package_path": "rtl/vendor/tf_reference/SD/spi_master.v",
+      "sha256": "9086a97b9ccd9032f7e9dbbccb19f5d157691468660112287c487b9b1b566eed"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/SD/frame_read_write.v",
+      "package_path": "rtl/vendor/tf_reference/SD/frame_read_write.v",
+      "sha256": "3fd6f4ba9f0eb563654aaa8abc4e3a748706f885a6126be62b52dede8caa68b3"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/SD/frame_fifo_write.v",
+      "package_path": "rtl/vendor/tf_reference/SD/frame_fifo_write.v",
+      "sha256": "468e01b272b5d4a2e0c00dbfd27cce04a47d373a6711e1fc811d540444af325c"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/SD/frame_fifo_read.v",
+      "package_path": "rtl/vendor/tf_reference/SD/frame_fifo_read.v",
+      "sha256": "57cb4b69a2ad28e80e7f7344de1669d3fa186a8edff23165bea7ea3ac0f92553"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/SD/video_delay.v",
+      "package_path": "rtl/vendor/tf_reference/SD/video_delay.v",
+      "sha256": "711554c6615cdec86e105fb78f6d4b0a4ee0987420bb5d7e6fe45f9027ed3d8f"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/SD/sdram.v",
+      "package_path": "rtl/vendor/tf_reference/SD/sdram.v",
+      "sha256": "508be2c1efd107d2a296da1511c2ce19acf305cac0fea3c65ac72bcf9a9f97d8"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/IP/sys_pll.v",
+      "package_path": "rtl/vendor/tf_reference/IP/sys_pll.v",
+      "sha256": "07fab2f4df9f13babac74bb1c667a0550175f181a02e45575fab2f4ecc8d4439"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/IP/afifo_16_32_256.v",
+      "package_path": "rtl/vendor/tf_reference/IP/afifo_16_32_256.v",
+      "sha256": "5384b6ae7df9c6f7b5ff254f225cdb4f10ab3d6356251b505ed33d7c426d90a3"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/IP/afifo_32_16_256.v",
+      "package_path": "rtl/vendor/tf_reference/IP/afifo_32_16_256.v",
+      "sha256": "bd889ced60f9071eae4b9e352228a207c8bf70c815e2d3dc7950bbc00dcf5c1d"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/include/sdr_as_ram.enc.v",
+      "package_path": "rtl/vendor/tf_reference/include/sdr_as_ram.enc.v",
+      "sha256": "ebecfaf30303a1353ac3bd48d5785836b9622e480ebd6a95bc4a663e43688936"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v",
+      "package_path": "rtl/vendor/tf_reference/include/sdr_init_ref.enc.v",
+      "sha256": "ef970092349cb101ecb03d98ef4d7cdacaeeaefd9748ecf1299720584e0a3eb2"
+    },
+    {
+      "project_path": "../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v",
+      "package_path": "rtl/vendor/tf_reference/include/sdr_wrrd.enc.v",
+      "sha256": "8ad6e44a16e5c1ad895a9461ed2a20b0449920f5139e3a0d091a2dcae400c1aa"
+    },
+    {
+      "project_path": "../../rtl/tf_startup_control.v",
+      "package_path": "rtl/tf_startup_control.v",
+      "sha256": "1a707f1d793ffce5cfb21047bfa248052b3904850eef90d13c9744cb73de7986"
+    },
+    {
+      "project_path": "../../rtl/key_debounce.v",
+      "package_path": "rtl/key_debounce.v",
+      "sha256": "d646d37f3c1494ea9dfe9d83c3082713079f49b8641207161422377ad43afb0a"
+    },
+    {
+      "project_path": "../../rtl/image_key_control.v",
+      "package_path": "rtl/image_key_control.v",
+      "sha256": "a430407ae3d12fba545e81e571b8fd8049581829bde1f3e651bf17fffd82fea8"
+    },
+    {
+      "project_path": "../../rtl/loading_spinner_rgb.v",
+      "package_path": "rtl/loading_spinner_rgb.v",
+      "sha256": "8905df19fd1c381e605f640db3890d3252a1d12c1d395c348de4394f1a5b661f"
+    },
+    {
+      "project_path": "../../rtl/image_number_display.v",
+      "package_path": "rtl/image_number_display.v",
+      "sha256": "5c23ea25fc0f276be0bc5edc3410b84099c32eb5a2f5199357e96ef264374d30"
+    },
+    {
+      "project_path": "../../rtl/key_beeper.v",
+      "package_path": "rtl/key_beeper.v",
+      "sha256": "f4fcb92259fe0782cde7b5606787958a95f6be9eda32f9e52d2b6f74482032eb"
+    },
+    {
+      "project_path": "../../rtl/image_status_osd.v",
+      "package_path": "rtl/image_status_osd.v",
+      "sha256": "f3f9d4238d6ee28d4cdd4df3dd4a928278514e46d7088ba93f6d9ef0cd54f0df"
+    },
+    {
+      "project_path": "../../rtl/osd_font16.v",
+      "package_path": "rtl/osd_font16.v",
+      "sha256": "ccb72d82895545c79af0a1e1425579b9e3043e1352645324aa1a82c079712022"
+    },
+    {
+      "project_path": "../../rtl/audio/m06_pcm_contract_adapter.v",
+      "package_path": "rtl/audio/m06_pcm_contract_adapter.v",
+      "sha256": "0f43f6af1b53be8efb95da64e773529469cb00261e49b0378922b3730f2f47be"
+    },
+    {
+      "project_path": "../../rtl/audio/pcm_test_tone.v",
+      "package_path": "rtl/audio/pcm_test_tone.v",
+      "sha256": "6615491b4d4ea4b9bbd472ff96a33a15fb3cb3e152017674f6b21c856d3b7026"
+    },
+    {
+      "project_path": "../../rtl/board/hdmi_phy_warpper.v",
+      "package_path": "rtl/board/hdmi_phy_warpper.v",
+      "sha256": "96d335ece417ff376f616e24885b69ade187d844818ce2cc8876bfdae867b274"
+    },
+    {
+      "project_path": "../../rtl/board/lane_lvds_10_1.v",
+      "package_path": "rtl/board/lane_lvds_10_1.v",
+      "sha256": "fa360b2496a9bca69c8e198f486639bd4baf68985357b71a71fea746ef3ab943"
+    },
+    {
+      "project_path": "../../rtl/hdmi_audio/hdmi_audio_acr_packetizer.v",
+      "package_path": "rtl/hdmi_audio/hdmi_audio_acr_packetizer.v",
+      "sha256": "b8a3d3c574b738adbe114a37be83d30e3337db834e95e618bd0d6c491805a9b9"
+    },
+    {
+      "project_path": "../../rtl/hdmi_audio/hdmi_audio_infoframe_packetizer.v",
+      "package_path": "rtl/hdmi_audio/hdmi_audio_infoframe_packetizer.v",
+      "sha256": "e56076fa1dc7046676e6cee2fff596484dd3789d717c91b661376f8b308d90cc"
+    },
+    {
+      "project_path": "../../rtl/hdmi_audio/hdmi_audio_packet_scheduler.v",
+      "package_path": "rtl/hdmi_audio/hdmi_audio_packet_scheduler.v",
+      "sha256": "216d8ee51aac51c1eb2ac071c36ed153beea928cc0273d38ef59f19bf822de8f"
+    },
+    {
+      "project_path": "../../rtl/hdmi_audio/hdmi_audio_sample_packetizer.v",
+      "package_path": "rtl/hdmi_audio/hdmi_audio_sample_packetizer.v",
+      "sha256": "85177298bb0463d2ecfbae2ea5a36792d0538a6a8720d890f78ba5b6597238fe"
+    },
+    {
+      "project_path": "../../rtl/hdmi_audio/hdmi_audio_symbol_core.v",
+      "package_path": "rtl/hdmi_audio/hdmi_audio_symbol_core.v",
+      "sha256": "a3d0702440e46f214ed091ef8876c4592ec382501a9577e90e34d738fa6a5d02"
+    },
+    {
+      "project_path": "../../rtl/hdmi_audio/hdmi_bch8.v",
+      "package_path": "rtl/hdmi_audio/hdmi_bch8.v",
+      "sha256": "de08acd813070d51af0be8e8f358715475665b23631fe98453652e3e2e95ca08"
+    },
+    {
+      "project_path": "../../rtl/hdmi_audio/hdmi_data_island_mapper.v",
+      "package_path": "rtl/hdmi_audio/hdmi_data_island_mapper.v",
+      "sha256": "711eca917fbcb9aa69153b0678411a155b70d05ecffb353f9a2eefa4e93ea542"
+    },
+    {
+      "project_path": "../../rtl/hdmi_audio/hdmi_data_island_scheduler.v",
+      "package_path": "rtl/hdmi_audio/hdmi_data_island_scheduler.v",
+      "sha256": "3cbc82d784ee52c9a1ddf7420a7a1403429f47d99b8b4f11fe28a06911e9d1ef"
+    },
+    {
+      "project_path": "../../rtl/hdmi_audio/hdmi_terc4_encoder.v",
+      "package_path": "rtl/hdmi_audio/hdmi_terc4_encoder.v",
+      "sha256": "03879709456f4857d861833fd2290b4469a03e0fecb2d3f830ff939912ee8daa"
+    },
+    {
+      "project_path": "../../rtl/hdmi_audio/hdmi_tmds_channel_encoder.v",
+      "package_path": "rtl/hdmi_audio/hdmi_tmds_channel_encoder.v",
+      "sha256": "a2a8d1422f82f3cf826dcdfc6ed824745617ea358e220021ea48f9cda5d7ac3d"
+    },
+    {
+      "project_path": "../../rtl/integration/media_hdmi_audio_bridge.v",
+      "package_path": "rtl/integration/media_hdmi_audio_bridge.v",
+      "sha256": "d332f95601f9075ea83ff2741dbca5cc673db55fe612d62216e648cd2df04939"
+    },
+    {
+      "project_path": "../../rtl/integration/video_audio_coordinates.v",
+      "package_path": "rtl/integration/video_audio_coordinates.v",
+      "sha256": "16af2ad7b629f62ff5d812ae110ffb34699a6b51464197e40a60e11c506e48a6"
+    },
+    {
+      "project_path": "../../rtl/player_front_panel.v",
+      "package_path": "rtl/player_front_panel.v",
+      "sha256": "39587350a3e616578c979d48182c84dd62a6be3470bf7f7956066ff97ef844b8"
+    },
+    {
+      "project_path": "../../rtl/frame_cache_manager.v",
+      "package_path": "rtl/frame_cache_manager.v",
+      "sha256": "90fac557e732bd2ba6c7ef8a5eb64a911a98bb7eba8f4d07ad34abe2b7c9e005"
+    },
+    {
+      "project_path": "../../rtl/frame_present_control.v",
+      "package_path": "rtl/frame_present_control.v",
+      "sha256": "a251908e37b1f58a696dc6e8f93148c009156b3011fa62721b6a6970979db599"
+    },
+    {
+      "project_path": "../../rtl/fat32_volume_geometry.v",
+      "package_path": "rtl/fat32_volume_geometry.v",
+      "sha256": "4e948c68b65f9967e75eaac3c13b1974778893e71e58cdb660224580ff75617e"
+    },
+    {
+      "project_path": "../../rtl/quad_slot_allocator.v",
+      "package_path": "rtl/quad_slot_allocator.v",
+      "sha256": "442237e4e1a19ab214e2ad22d9fa3b0e2f6ed60bdf656b12f0861f9525dfcaed"
+    },
+    {
+      "project_path": "../../rtl/frame_buffer_pair.v",
+      "package_path": "rtl/frame_buffer_pair.v",
+      "sha256": "e1212f8627988766ae8139adb9212e90029934da19ca05a62a331988d2241553"
+    },
+    {
+      "project_path": "../../rtl/memory_load_reset.v",
+      "package_path": "rtl/memory_load_reset.v",
+      "sha256": "77adad204e2f974ec3ef5414c44558fd2d106d1b130c64b2bf4fca7ca68a2c7c"
+    },
+    {
+      "project_path": "../../rtl/media_recovery_policy.v",
+      "package_path": "rtl/media_recovery_policy.v",
+      "sha256": "4646136ca2a1c83619ff1c5b26db3de5e836182d05e6d3a1f722fe5ec454964a"
+    },
+    {
+      "project_path": "../../rtl/frame_commit_guard.v",
+      "package_path": "rtl/frame_commit_guard.v",
+      "sha256": "b4a532ca594e694436bbaf414f288775205463bf9443d7c740b24efa4fc0e2c9"
+    },
+    {
+      "project_path": "../../rtl/frame_write_reset_guard.v",
+      "package_path": "rtl/frame_write_reset_guard.v",
+      "sha256": "e2b3a881f4c46f1cd66556c6cd743204fcbd1f2e71cb7754174a2fd2a3c1e2ef"
+    },
+    {
+      "project_path": "../../rtl/sd_sector_adapter.v",
+      "package_path": "rtl/sd_sector_adapter.v",
+      "sha256": "143ddec2eb75dad7f230af88db24e4d83e9845f8477ec27acf026badcc7d2cc4"
+    },
+    {
+      "project_path": "../../rtl/quad_frame_present.v",
+      "package_path": "rtl/quad_frame_present.v",
+      "sha256": "fee76fade3294e052938e6d01cc9d7afef8c39d32c30dfcc1398d9010ba799b6"
+    },
+    {
+      "project_path": "../../rtl/media_fault_monitor.v",
+      "package_path": "rtl/media_fault_monitor.v",
+      "sha256": "ca31fb9bd35ed56f42f87689a8e5c43824f05e250a29fd02e985d76bcc597491"
+    },
+    {
+      "project_path": "../../rtl/quad_frame_store.v",
+      "package_path": "rtl/quad_frame_store.v",
+      "sha256": "34695a3eeeff5a4517b81970feb9ea39361af697a0620ccee0712a1a1a0552d8"
+    },
+    {
+      "project_path": "../../rtl/bmp24_decoder.v",
+      "package_path": "rtl/bmp24_decoder.v",
+      "sha256": "e659f18ad94379ae01eadb1e85fd053b9d4f74e8ed6849c8295023844167a8f0"
+    },
+    {
+      "project_path": "../../rtl/catalog_snapshot_bridge.v",
+      "package_path": "rtl/catalog_snapshot_bridge.v",
+      "sha256": "2c8f5f4042e584bfc065cb761473f31b4fa2bec69a76f97cea17c1414f79f4c2"
+    },
+    {
+      "project_path": "../../rtl/fat32_stream_cursor.v",
+      "package_path": "rtl/fat32_stream_cursor.v",
+      "sha256": "7142302a7228020c1ec63205d6fbc0a07527d4ff61efee108f32dae03e352f4a"
+    },
+    {
+      "project_path": "../../rtl/audio/pcm_media_tone.v",
+      "package_path": "rtl/audio/pcm_media_tone.v",
+      "sha256": "a48382ee3df2cc78b874e6faeab990df4fc4aace4be8445b7e482226c68da747"
+    },
+    {
+      "project_path": "../../rtl/fat32_directory_catalog.v",
+      "package_path": "rtl/fat32_directory_catalog.v",
+      "sha256": "945c1eed60420d16718c5908c36b29a0acd7ebaf9aa659d6d7461024d10e7685"
+    },
+    {
+      "project_path": "../../rtl/sd_transport_cdc.v",
+      "package_path": "rtl/sd_transport_cdc.v",
+      "sha256": "a300466ddf52b5121a6f58c59cb91692e165c36c44b8ce0e91955c87e3f2f4b2"
+    },
+    {
+      "project_path": "../../rtl/osd_state_snapshot.v",
+      "package_path": "rtl/osd_state_snapshot.v",
+      "sha256": "3620af1c8fc63d2945f3aac56e62e09d3af4a8eaa9075b5168b94fa68dbb1b5e"
+    },
+    {
+      "project_path": "../../rtl/osd_timebase.v",
+      "package_path": "rtl/osd_timebase.v",
+      "sha256": "7357c1044f0ce061ae2bc077aaedc4299ecbcefda0cd20302b14e3f3beee0449"
+    },
+    {
+      "project_path": "../../rtl/osd_compositor.v",
+      "package_path": "rtl/osd_compositor.v",
+      "sha256": "e0bf8fb320e5212e949f505e797cfac83e987a3f489102983fa1bc77d80e5cbc"
+    },
+    {
+      "project_path": "../../rtl/uart_rx_byte.v",
+      "package_path": "rtl/uart_rx_byte.v",
+      "sha256": "0877aee69cdbc15b8cf68e0ad002af517a9c5bd5f9b07bd98f1b6eb270ac7a6c"
+    },
+    {
+      "project_path": "../../rtl/uart_tx_byte.v",
+      "package_path": "rtl/uart_tx_byte.v",
+      "sha256": "723fd07ed40a71692d3db6953c7c3d95162af11d769d51f1ec44c13d09ab83f6"
+    },
+    {
+      "project_path": "../../rtl/subtitle_uart_controller.v",
+      "package_path": "rtl/subtitle_uart_controller.v",
+      "sha256": "4a009e78fc9fc818067ed5631c53a00e075a0a7b8d5281d70b7b068a84631bd7"
+    },
+    {
+      "project_path": "../../rtl/subtitle_uart_service.v",
+      "package_path": "rtl/subtitle_uart_service.v",
+      "sha256": "2847c90b1a5e7c152f3e8f949c832e503e5a395365f9d95438b1618dd51aac38"
+    },
+    {
+      "project_path": "../../rtl/subtitle_frame_commit.v",
+      "package_path": "rtl/subtitle_frame_commit.v",
+      "sha256": "e8030ceba42f374d8d309c6754ca3039822a77640e43a883b5cf8f52530f6a5c"
+    },
+    {
+      "project_path": "../../rtl/subtitle_scroll.v",
+      "package_path": "rtl/subtitle_scroll.v",
+      "sha256": "7875b36765409e79e16ea9dc10ff9fddff639541a1286b2f0bad8d3b384cae77"
+    },
+    {
+      "project_path": "../../rtl/video_fade_transition.v",
+      "package_path": "rtl/video_fade_transition.v",
+      "sha256": "71081f5a5c5dada1a43535882c64c8746733a9bd082e36e802ce79ae6e201b8d"
+    },
+    {
+      "project_path": "../../rtl/video_transition_rgb.v",
+      "package_path": "rtl/video_transition_rgb.v",
+      "sha256": "35cae1cd43557d92f56dafabb1205c4887319f93dacea2403f18169a52fa2617"
+    },
+    {
+      "project_path": "../../rtl/video_transition_coordinates.v",
+      "package_path": "rtl/video_transition_coordinates.v",
+      "sha256": "bcfa2ac26428bdd87e5e55b548c810035e2c871efd210fb3d86fd67d7b55ac5f"
+    },
+    {
+      "project_path": "../../rtl/audio/wav_riff_parser.v",
+      "package_path": "rtl/audio/wav_riff_parser.v",
+      "sha256": "d2d3b328fc935530f86a3818b8520c80bd473f6b2402b196176d0fa9096793c6"
+    },
+    {
+      "project_path": "../../rtl/audio/pcm_async_fifo.v",
+      "package_path": "rtl/audio/pcm_async_fifo.v",
+      "sha256": "3d680d77b9250a5baadc58680d655b2bdb634d62bb62946cc809445b3c5c0bce"
+    },
+    {
+      "project_path": "../../rtl/audio/wav_pcm_stream.v",
+      "package_path": "rtl/audio/wav_pcm_stream.v",
+      "sha256": "f544ab2f24ca538e30af800b5bbefdd5d065800309f7997d1d5407ef73b7bd5d"
+    },
+    {
+      "project_path": "../../rtl/audio/pcm_tick_48k.v",
+      "package_path": "rtl/audio/pcm_tick_48k.v",
+      "sha256": "ef5453d7f42693bfd23958bad7a03ecc5de89e140319b3a0731925ddf9b929dc"
+    },
+    {
+      "project_path": "../../rtl/audio/pcm_continuous_output.v",
+      "package_path": "rtl/audio/pcm_continuous_output.v",
+      "sha256": "5fd43cb7e9d7fb5c59f0be097f8fa8be3be3d478ca18106ed880230f52480a30"
+    },
+    {
+      "project_path": "../../rtl/audio/pcm_source_select.v",
+      "package_path": "rtl/audio/pcm_source_select.v",
+      "sha256": "09adb84f260ce81c55646d53e73c5992a13fc7d712948691f7bc17cb1632ce75"
+    },
+    {
+      "project_path": "../../rtl/sd_sector_arbiter.v",
+      "package_path": "rtl/sd_sector_arbiter.v",
+      "sha256": "9a044a253d82f34b1437e8ebf0a9000755d986c561b048037641cb27944940c2"
+    },
+    {
+      "project_path": "../../rtl/fat32_bgm_stream.v",
+      "package_path": "rtl/fat32_bgm_stream.v",
+      "sha256": "21ba77c0e4a2a12e0ff86a75ebf9ad1b4d315e022450b2fc5206be877a5e6541"
+    },
+    {
+      "project_path": "../../rtl/bgm_audio_player.v",
+      "package_path": "rtl/bgm_audio_player.v",
+      "sha256": "a4eff76cea21ffd387424a3ac170fe155a6e3aeb3ea9d9836a1bd38ff54ff11f"
+    },
+    {
+      "project_path": "../../rtl/audio_diagnostic_snapshot.v",
+      "package_path": "rtl/audio_diagnostic_snapshot.v",
+      "sha256": "766aab0b5b2066485387fcd7bfea2d3ab3437b531f01895a7b9ae414f446b330"
+    },
+    {
+      "project_path": "../../rtl/thumbnail_controller.v",
+      "package_path": "rtl/thumbnail_controller.v",
+      "sha256": "b0bb06710df931ef9c3247c83ef283e10e11b74a51da5670059a4ee19683d2b4"
+    },
+    {
+      "project_path": "../../rtl/thumbnail_inputs.v",
+      "package_path": "rtl/thumbnail_inputs.v",
+      "sha256": "a09248af703fc74bba947edc1b25468d41e566a406fc414b19603c6f7497e736"
+    },
+    {
+      "project_path": "../../rtl/thumbnail_page_builder.v",
+      "package_path": "rtl/thumbnail_page_builder.v",
+      "sha256": "c3ab6b2f088f74fabadb773648f395c186b3d968cb9742abdaa2200d4b4ad146"
+    },
+    {
+      "project_path": "../../rtl/thumbnail_subsystem.v",
+      "package_path": "rtl/thumbnail_subsystem.v",
+      "sha256": "67372b7dd613401b426c6fdeeeae407e849dcd32ad69678944769c4a555b9a98"
+    },
+    {
+      "project_path": "../../rtl/bmp24_header.v",
+      "package_path": "rtl/bmp24_header.v",
+      "sha256": "4b17a7229498d8b3e7c680a499f388c2fa363984a799ea0af131322227e67e97"
+    },
+    {
+      "project_path": "../../rtl/scale_divider.v",
+      "package_path": "rtl/scale_divider.v",
+      "sha256": "4129681b27c36e8e78e0bae7f68491ff70b83f427a5bdadf41c7a9535786c028"
+    },
+    {
+      "project_path": "../../rtl/bilinear_rgb_serial.v",
+      "package_path": "rtl/bilinear_rgb_serial.v",
+      "sha256": "e3118ff5a5190d2ed412d0eff40fe867ad430669ee1ed577605d153b70cb5388"
+    },
+    {
+      "project_path": "../../rtl/adaptive_progress.v",
+      "package_path": "rtl/adaptive_progress.v",
+      "sha256": "56ebca770bab5069ad361c0eb2498c175f20323ffe94da43f7882573118b1039"
+    },
+    {
+      "project_path": "../../rtl/picture_param_control.v",
+      "package_path": "rtl/picture_param_control.v",
+      "sha256": "4a9d26f9dc90674dff3e5f00d33a598ea2f1408171bac7ff3c7a5ca171c8f79e"
+    },
+    {
+      "project_path": "../../rtl/picture_adjust_rgb.v",
+      "package_path": "rtl/picture_adjust_rgb.v",
+      "sha256": "3535b266e4714b7b73d5b869a33f07563b815e5a92eb3f55fe72922d21321400"
+    },
+    {
+      "project_path": "../../rtl/picture_param_commit.v",
+      "package_path": "rtl/picture_param_commit.v",
+      "sha256": "36ac2ff9adaf19c492d68fc7f9f27c3e4f6c37432303515d1fd2faec6c7d81f4"
+    },
+    {
+      "project_path": "../../rtl/picture_param_osd.v",
+      "package_path": "rtl/picture_param_osd.v",
+      "sha256": "b87a5dec0135cf2f5394619b241c6a0aca6cfa45a777d0429a77f07a0d24fbdc"
+    },
+    {
+      "project_path": "../../rtl/eval/p_rover_control.v",
+      "package_path": "rtl/eval/p_rover_control.v",
+      "sha256": "cdcc79d5bc52757da46fb0a0d818fa849c9141875d037b93a9898a255d896987"
+    },
+    {
+      "project_path": "../../rtl/eval/p_rover_overlay.v",
+      "package_path": "rtl/eval/p_rover_overlay.v",
+      "sha256": "dcae88e05531e6b4605a49357648390479afc3f81bafd0d2b67b555ada80976a"
+    },
+    {
+      "project_path": "../../rtl/eval/p_rover_video.v",
+      "package_path": "rtl/eval/p_rover_video.v",
+      "sha256": "c689959f1a0cef88e87c1fe7a1d4749559a55b161e83e249f85513a4e142dfc6"
+    },
+    {
+      "project_path": "../../rtl/eval/p_rover_scan.v",
+      "package_path": "rtl/eval/p_rover_scan.v",
+      "sha256": "6b4049797cbdfccae7b4cb64fa80c4b9ffea62f3aa14fcfe743e05fa437a9edf"
+    },
+    {
+      "project_path": "../../rtl/eval/p_panel_span.v",
+      "package_path": "rtl/eval/p_panel_span.v",
+      "sha256": "0be42002aaf55b0d361b815b9da871ced306db870971556e4c5afe7cc7bd05a7"
+    },
+    {
+      "project_path": "../../rtl/key1_mode_control.v",
+      "package_path": "rtl/key1_mode_control.v",
+      "sha256": "7a4572a303871e5b82b7bc6c745bb6e20b2971bfbe5ec1d1aeed4e122d25efe1"
+    },
+    {
+      "project_path": "../../rtl/vendor/hdmi_tx.vhd",
+      "package_path": "rtl/vendor/hdmi_tx.vhd",
+      "sha256": "dc91fe383c0001b1ce71b91bbd8deee2ff3c6fc14e5b973cb33e168653264aa5"
+    },
+    {
+      "project_path": "../../rtl/vendor/enc_file/SerializerN_1_lvds.enc.vhd",
+      "package_path": "rtl/vendor/enc_file/SerializerN_1_lvds.enc.vhd",
+      "sha256": "d5fb9b03e33a0e43398e1e963036bbd87fd386c23af1b79f23e3d32e87b1dd63"
+    },
+    {
+      "project_path": "../../rtl/vendor/enc_file/SerializerN_1_lvds_dat.enc.vhd",
+      "package_path": "rtl/vendor/enc_file/SerializerN_1_lvds_dat.enc.vhd",
+      "sha256": "2215e28372d39d6cb155f5b87feb39fa578cca39223cedb9e712ca7413d7783e"
+    },
+    {
+      "project_path": "../../rtl/vendor/enc_file/TMDSEncoder.enc.vhd",
+      "package_path": "rtl/vendor/enc_file/TMDSEncoder.enc.vhd",
+      "sha256": "f87572d7ce8539276e280c411fe46f42f3282210d7c53601cfd6c8ecb8c71beb"
+    },
+    {
+      "project_path": "../../rtl/vendor/enc_file/DVITransmitter.enc.vhd",
+      "package_path": "rtl/vendor/enc_file/DVITransmitter.enc.vhd",
+      "sha256": "fa009e816fc717374679dba8096c518dc6f3ffbc2389d440a1724d9487ec1674"
+    },
+    {
+      "project_path": "../../constraints/tf_image.adc",
+      "package_path": "constraints/tf_image.adc",
+      "sha256": "98360de05c7289cce426d099bdd2934f68997b6ba99419ee5218f99cdb802cc6"
+    },
+    {
+      "project_path": "../../constraints/tf_image.sdc",
+      "package_path": "constraints/tf_image.sdc",
+      "sha256": "8f09300f65bc0deb2f205d247d6a08a4688c8a41af16dbb8f7eebfd19d9270d8"
+    },
+    {
+      "project_path": "../al_ip/video_pll/video_pll.ipc",
+      "package_path": "prj/al_ip/video_pll/video_pll.ipc",
+      "sha256": "2a61988920f48a66240a21f94468bb77ce79641469221f04ce38a85205439a03"
+    }
+  ],
+  "rom_references": [
+    {
+      "rtl": "rtl/osd_priority_layer.v",
+      "file": "theme_rom/ascii.hex"
+    },
+    {
+      "rtl": "rtl/theme_osd.v",
+      "file": "theme_rom/glyph_low.hex"
+    },
+    {
+      "rtl": "rtl/theme_osd.v",
+      "file": "theme_rom/glyph_high.hex"
+    },
+    {
+      "rtl": "rtl/theme_osd.v",
+      "file": "theme_rom/text.hex"
+    },
+    {
+      "rtl": "rtl/theme_osd.v",
+      "file": "theme_rom/ui.hex"
+    },
+    {
+      "rtl": "rtl/theme_osd.v",
+      "file": "theme_rom/cover.hex"
+    },
+    {
+      "rtl": "rtl/theme_osd.v",
+      "file": "theme_rom/palette.hex"
+    },
+    {
+      "rtl": "rtl/theme_osd.v",
+      "file": "theme_rom/cue.hex"
+    },
+    {
+      "rtl": "rtl/eval/p_rover_scan.v",
+      "file": "theme_rom/console_lines.hex"
+    },
+    {
+      "rtl": "rtl/eval/p_rover_scan.v",
+      "file": "theme_rom/console_ascii.hex"
+    },
+    {
+      "rtl": "rtl/eval/p_rover_scan.v",
+      "file": "theme_rom/console_titles.hex"
+    }
+  ],
+  "byte_identical_files": [
+    "rtl/adaptive_progress.v",
+    "rtl/audio_diagnostic_snapshot.v",
+    "rtl/bgm_audio_player.v",
+    "rtl/bilinear_rgb_serial.v",
+    "rtl/bmp24_decoder.v",
+    "rtl/bmp24_header.v",
+    "rtl/catalog_snapshot_bridge.v",
+    "rtl/fat32_bgm_stream.v",
+    "rtl/fat32_bmp_loader.v",
+    "rtl/fat32_directory_catalog.v",
+    "rtl/fat32_stream_cursor.v",
+    "rtl/fat32_volume_geometry.v",
+    "rtl/frame_buffer_pair.v",
+    "rtl/frame_cache_manager.v",
+    "rtl/frame_commit_guard.v",
+    "rtl/frame_present_control.v",
+    "rtl/frame_write_reset_guard.v",
+    "rtl/image_key_control.v",
+    "rtl/image_number_display.v",
+    "rtl/image_status_osd.v",
+    "rtl/key1_mode_control.v",
+    "rtl/key_beeper.v",
+    "rtl/key_debounce.v",
+    "rtl/loading_spinner_rgb.v",
+    "rtl/media_fault_monitor.v",
+    "rtl/media_recovery_policy.v",
+    "rtl/memory_load_reset.v",
+    "rtl/osd_compositor.v",
+    "rtl/osd_font16.v",
+    "rtl/osd_mode_policy.v",
+    "rtl/osd_priority_layer.v",
+    "rtl/osd_state_snapshot.v",
+    "rtl/osd_timebase.v",
+    "rtl/picture_adjust_rgb.v",
+    "rtl/picture_param_commit.v",
+    "rtl/picture_param_control.v",
+    "rtl/picture_param_osd.v",
+    "rtl/player_front_panel.v",
+    "rtl/quad_frame_present.v",
+    "rtl/quad_frame_store.v",
+    "rtl/quad_slot_allocator.v",
+    "rtl/scale_divider.v",
+    "rtl/sd_sector_adapter.v",
+    "rtl/sd_sector_arbiter.v",
+    "rtl/sd_transport_cdc.v",
+    "rtl/subtitle_frame_commit.v",
+    "rtl/subtitle_scroll.v",
+    "rtl/subtitle_uart_controller.v",
+    "rtl/subtitle_uart_service.v",
+    "rtl/sw2_direction_filter.v",
+    "rtl/tf_image_top.v",
+    "rtl/tf_startup_control.v",
+    "rtl/theme_audio_player.v",
+    "rtl/theme_control.v",
+    "rtl/theme_osd.v",
+    "rtl/thumbnail_controller.v",
+    "rtl/thumbnail_inputs.v",
+    "rtl/thumbnail_page_builder.v",
+    "rtl/thumbnail_subsystem.v",
+    "rtl/uart_rx_byte.v",
+    "rtl/uart_system_events.v",
+    "rtl/uart_tx_byte.v",
+    "rtl/video_fade_transition.v",
+    "rtl/video_timing_registered.v",
+    "rtl/video_transition_coordinates.v",
+    "rtl/video_transition_rgb.v",
+    "rtl/audio/m06_pcm_contract_adapter.v",
+    "rtl/audio/pcm_async_fifo.v",
+    "rtl/audio/pcm_continuous_output.v",
+    "rtl/audio/pcm_media_tone.v",
+    "rtl/audio/pcm_source_select.v",
+    "rtl/audio/pcm_test_tone.v",
+    "rtl/audio/pcm_tick_48k.v",
+    "rtl/audio/wav_pcm_stream.v",
+    "rtl/audio/wav_riff_parser.v",
+    "rtl/board/hdmi_phy_warpper.v",
+    "rtl/board/lane_lvds_10_1.v",
+    "rtl/display/promax_audio_waveform.v",
+    "rtl/eval/p_panel_span.v",
+    "rtl/eval/p_rover_control.v",
+    "rtl/eval/p_rover_overlay.v",
+    "rtl/eval/p_rover_scan.v",
+    "rtl/eval/p_rover_video.v",
+    "rtl/hdmi_audio/hdmi_audio_acr_packetizer.v",
+    "rtl/hdmi_audio/hdmi_audio_infoframe_packetizer.v",
+    "rtl/hdmi_audio/hdmi_audio_packet_scheduler.v",
+    "rtl/hdmi_audio/hdmi_audio_sample_packetizer.v",
+    "rtl/hdmi_audio/hdmi_audio_symbol_core.v",
+    "rtl/hdmi_audio/hdmi_bch8.v",
+    "rtl/hdmi_audio/hdmi_data_island_mapper.v",
+    "rtl/hdmi_audio/hdmi_data_island_scheduler.v",
+    "rtl/hdmi_audio/hdmi_terc4_encoder.v",
+    "rtl/hdmi_audio/hdmi_tmds_channel_encoder.v",
+    "rtl/integration/media_hdmi_audio_bridge.v",
+    "rtl/integration/video_audio_coordinates.v",
+    "rtl/theme_rom/ascii.hex",
+    "rtl/theme_rom/console_ascii.hex",
+    "rtl/theme_rom/console_lines.hex",
+    "rtl/theme_rom/console_titles.hex",
+    "rtl/theme_rom/cover.hex",
+    "rtl/theme_rom/cue.hex",
+    "rtl/theme_rom/glyph.hex",
+    "rtl/theme_rom/glyph_high.hex",
+    "rtl/theme_rom/glyph_low.hex",
+    "rtl/theme_rom/palette.hex",
+    "rtl/theme_rom/text.hex",
+    "rtl/theme_rom/ui.hex",
+    "rtl/vendor/hdmi_tx.vhd",
+    "rtl/vendor/enc_file/DVITransmitter.enc.vhd",
+    "rtl/vendor/enc_file/SerializerN_1_lvds.enc.vhd",
+    "rtl/vendor/enc_file/SerializerN_1_lvds_dat.enc.vhd",
+    "rtl/vendor/enc_file/TMDSEncoder.enc.vhd",
+    "rtl/vendor/tf_reference/include/global_def.v",
+    "rtl/vendor/tf_reference/include/sdr_as_ram.enc.v",
+    "rtl/vendor/tf_reference/include/sdr_init_ref.enc.v",
+    "rtl/vendor/tf_reference/include/sdr_wrrd.enc.v",
+    "rtl/vendor/tf_reference/IP/afifo_16_32_256.v",
+    "rtl/vendor/tf_reference/IP/afifo_32_16_256.v",
+    "rtl/vendor/tf_reference/IP/sys_pll.v",
+    "rtl/vendor/tf_reference/SD/frame_fifo_read.v",
+    "rtl/vendor/tf_reference/SD/frame_fifo_write.v",
+    "rtl/vendor/tf_reference/SD/frame_read_write.v",
+    "rtl/vendor/tf_reference/SD/sdram.v",
+    "rtl/vendor/tf_reference/SD/sd_card_cmd.v",
+    "rtl/vendor/tf_reference/SD/sd_card_sec_read_write.v",
+    "rtl/vendor/tf_reference/SD/sd_card_top.v",
+    "rtl/vendor/tf_reference/SD/spi_master.v",
+    "rtl/vendor/tf_reference/SD/video_delay.v",
+    "constraints/tf_image.adc",
+    "constraints/tf_image.sdc",
+    "prj/al_ip/video_pll/video_pll.ipc",
+    "prj/al_ip/video_pll/video_pll.v",
+    "prj/al_ip/video_pll/video_pll.vhd",
+    "prj/al/theme_rom/ascii.hex",
+    "prj/al/theme_rom/console_ascii.hex",
+    "prj/al/theme_rom/console_lines.hex",
+    "prj/al/theme_rom/console_titles.hex",
+    "prj/al/theme_rom/cover.hex",
+    "prj/al/theme_rom/cue.hex",
+    "prj/al/theme_rom/glyph.hex",
+    "prj/al/theme_rom/glyph_high.hex",
+    "prj/al/theme_rom/glyph_low.hex",
+    "prj/al/theme_rom/palette.hex",
+    "prj/al/theme_rom/text.hex",
+    "prj/al/theme_rom/ui.hex",
+    "media/assets.json",
+    "media/BASIC48.WAV",
+    "media/display_assets.json",
+    "media/T1P01.BMP",
+    "media/T1P01.WAV",
+    "media/T1P02.BMP",
+    "media/T1P02.WAV",
+    "media/T1P03.BMP",
+    "media/T1P03.WAV",
+    "media/T1P04.BMP",
+    "media/T1P04.WAV",
+    "media/T1P05.BMP",
+    "media/T1P05.WAV",
+    "media/T1P06.BMP",
+    "media/T1P06.WAV",
+    "media/T1P07.BMP",
+    "media/T1P07.WAV",
+    "media/T1P08.BMP",
+    "media/T1P08.WAV",
+    "media/T2P01.BMP",
+    "media/T2P01.WAV",
+    "media/T2P02.BMP",
+    "media/T2P02.WAV",
+    "media/T2P03.BMP",
+    "media/T2P03.WAV",
+    "media/T2P04.BMP",
+    "media/T2P04.WAV",
+    "media/T2P05.BMP",
+    "media/T2P05.WAV",
+    "media/T2P06.BMP",
+    "media/T2P06.WAV",
+    "media/T2P07.BMP",
+    "media/T2P07.WAV",
+    "media/T2P08.BMP",
+    "media/T2P08.WAV",
+    "media/T3P01.BMP",
+    "media/T3P01.WAV",
+    "media/T3P02.BMP",
+    "media/T3P02.WAV",
+    "media/T3P03.BMP",
+    "media/T3P03.WAV",
+    "media/T3P04.BMP",
+    "media/T3P04.WAV",
+    "media/T3P05.BMP",
+    "media/T3P05.WAV",
+    "media/T3P06.BMP",
+    "media/T3P06.WAV",
+    "media/T3P07.BMP",
+    "media/T3P07.WAV",
+    "media/T3P08.BMP",
+    "media/T3P08.WAV",
+    "media/T4P01.BMP",
+    "media/T4P01.WAV",
+    "media/T4P02.BMP",
+    "media/T4P02.WAV",
+    "media/T4P03.BMP",
+    "media/T4P03.WAV",
+    "media/T4P04.BMP",
+    "media/T4P04.WAV",
+    "media/T4P05.BMP",
+    "media/T4P05.WAV",
+    "media/T4P06.BMP",
+    "media/T4P06.WAV",
+    "media/T4P07.BMP",
+    "media/T4P07.WAV",
+    "media/T4P08.BMP",
+    "media/T4P08.WAV",
+    "media/SUBTITLE/narration_manifest.json",
+    "media/SUBTITLE/T1P01.srt",
+    "media/SUBTITLE/T1P02.srt",
+    "media/SUBTITLE/T1P03.srt",
+    "media/SUBTITLE/T1P04.srt",
+    "media/SUBTITLE/T1P05.srt",
+    "media/SUBTITLE/T1P06.srt",
+    "media/SUBTITLE/T1P07.srt",
+    "media/SUBTITLE/T1P08.srt",
+    "media/SUBTITLE/T2P01.srt",
+    "media/SUBTITLE/T2P02.srt",
+    "media/SUBTITLE/T2P03.srt",
+    "media/SUBTITLE/T2P04.srt",
+    "media/SUBTITLE/T2P05.srt",
+    "media/SUBTITLE/T2P06.srt",
+    "media/SUBTITLE/T2P07.srt",
+    "media/SUBTITLE/T2P08.srt",
+    "media/SUBTITLE/T3P01.srt",
+    "media/SUBTITLE/T3P02.srt",
+    "media/SUBTITLE/T3P03.srt",
+    "media/SUBTITLE/T3P04.srt",
+    "media/SUBTITLE/T3P05.srt",
+    "media/SUBTITLE/T3P06.srt",
+    "media/SUBTITLE/T3P07.srt",
+    "media/SUBTITLE/T3P08.srt",
+    "media/SUBTITLE/T4P01.srt",
+    "media/SUBTITLE/T4P02.srt",
+    "media/SUBTITLE/T4P03.srt",
+    "media/SUBTITLE/T4P04.srt",
+    "media/SUBTITLE/T4P05.srt",
+    "media/SUBTITLE/T4P06.srt",
+    "media/SUBTITLE/T4P07.srt",
+    "media/SUBTITLE/T4P08.srt",
+    "media/SUBTITLE/\u8bb2\u89e3\u6587\u7a3f.md"
+  ],
+  "project_only_changes": [
+    "Project Path absolute to .",
+    "stale UserParams seed5 to effective release seed12"
+  ],
+  "rtl_changes": [],
+  "hardware_acceptance": "User confirmed all UART candidate functions passed before packaging (conversation 2026-10-21). Original release.json predates acceptance."
+}

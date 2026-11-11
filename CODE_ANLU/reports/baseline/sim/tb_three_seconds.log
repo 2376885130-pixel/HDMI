@@ -1,0 +1,2 @@
+PASS 3 seconds from ready, 4 themes x 8 image wrap, no home/loading/demo/menu/preview/error advance, manual restart, EOF exclusion/restoration
+D:\FPGA_DUAL_HDMI_UART_20261019\sim\compat_uart_tb_three_seconds.v:28: $finish called at 560600000 (1ps)

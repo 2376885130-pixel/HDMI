@@ -1,0 +1,2 @@
+PASS bounded event queue: stable stalled byte, multi-source burst, explicit overflow, drain/recovery/reset
+D:\FPGA_DUAL_HDMI_UART_20261019\sim\compat_tb_uart_events.v:22: $finish called at 21560000 (1ps)

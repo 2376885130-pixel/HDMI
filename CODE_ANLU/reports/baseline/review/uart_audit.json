@@ -1,0 +1,17 @@
+{
+  "protected_files": 385,
+  "protected_unchanged": true,
+  "rtl_changed": [
+    "rtl/eval/p_rover_control.v",
+    "rtl/subtitle_uart_controller.v",
+    "rtl/subtitle_uart_service.v",
+    "rtl/tf_image_top.v",
+    "rtl/theme_control.v",
+    "rtl/uart_system_events.v"
+  ],
+  "constraints_ip_media_unchanged": true,
+  "sd_sdram_bmp_wav_clocks_unchanged": true,
+  "project_source_addition": "uart_system_events.v",
+  "baseline_hardware_validated_by_user": true,
+  "tf_card_written": false
+}

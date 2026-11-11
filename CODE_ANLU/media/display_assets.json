@@ -1,0 +1,322 @@
+[
+  {
+    "name": "T1P01.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "0cd9590036de8abeb6adc5041298152b3bc57306738d4b1aa845d0135edbaf65",
+    "source": "D:\\figurefpga\\主题1\\01｜月面探索的先锋.png",
+    "source_sha256": "981c7f58d1803f96a39f56e9ad8d99a1af944d1452e91502efb855e382d92c64",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "37c1f94f357f6b0658c331d936f2ec9598825997b849ca6f2da61c454df4c425"
+  },
+  {
+    "name": "T1P02.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "402a59e65b06319db432f1520b5234323dc97542388e761ffd2a39a5cd3f8e01",
+    "source": "D:\\figurefpga\\主题1\\02｜月球探测器的核心结构.png",
+    "source_sha256": "77ce3944d8ad6977035f9085b51a2ed836cc6205f84e2eae15838b1ff0e4c749",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "766503f254c6a4320d10da848838b0bdd027e0931c2e0cb185ce2bf3be481390"
+  },
+  {
+    "name": "T1P03.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "22c84769870e097e0b6e981cc892a2c7fbf1fd6a18131117a951690485136e3a",
+    "source": "D:\\figurefpga\\主题1\\03｜太阳能板如何提供能源.png",
+    "source_sha256": "9ed4fecbece7700ff6067fb114f5e45fa77ee8e819e5cf92b1780c17f6831038",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "5446d546d35e64a9b0062465823b5438dba19180c56bd00f50b150b37abe748b"
+  },
+  {
+    "name": "T1P04.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "fa81e7cf1c3cf74e3936db18f1fc5918356c514d214ec6adcf702daa5272e5be",
+    "source": "D:\\figurefpga\\主题1\\04｜月地通信与天线指向.png",
+    "source_sha256": "03ea20f26e6c1adf91646255139a16614714e415db3ed452aab60cc8c0941458",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "9c78be077ed896b9e3fd157847ab7171f6c34d963576a422c45f9e34f537f7a7"
+  },
+  {
+    "name": "T1P05.BMP",
+    "width": 800,
+    "height": 600,
+    "sha256": "e25ac39d01a70d34752ba130ec0915284e569529c782b07dcf15093122aaebcc",
+    "source": "D:\\figurefpga\\主题1\\05｜月面行驶与科学探测.png",
+    "source_sha256": "aa51fe6d76a828e0df0548905762d2bfce162fd3cd48f2ea624cad3b01b95b05",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "154d869a55f19e7c507d94a0a7f03ab5b5a918a2e0793fd7fe3748cb76899b0f"
+  },
+  {
+    "name": "T1P06.BMP",
+    "width": 1024,
+    "height": 768,
+    "sha256": "dbc7fba0d08a9392b0c4ae8daf461343bcfde9c7adcfaf14a2c514b06381bea7",
+    "source": "D:\\figurefpga\\主题1\\06｜中国玉兔二号探月任务.png",
+    "source_sha256": "51941974ed5f4f5e6853ee0cff6aec57b3c938ada43615a3a00b27d9871d7837",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "2fd1837ef2d9b09ebe7d7ceb345f9cd48688d9d93da9ffba571eca41378a0b3a"
+  },
+  {
+    "name": "T1P07.BMP",
+    "width": 800,
+    "height": 480,
+    "sha256": "a42466a19d2c8d340970d8b2dee9fa8f97cacce182ba705543965f212c610a5d",
+    "source": "D:\\figurefpga\\主题1\\07｜互动实验：姿态与能源.png",
+    "source_sha256": "9133cd9e5b8c9de40bc3ef9179067d396e02667973579ac7088c0c286c9ee643",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "89d463572cb2630d7a5f8483bc118e3c91773c2f3baf813c9dadf378ad26270b"
+  },
+  {
+    "name": "T1P08.BMP",
+    "width": 480,
+    "height": 640,
+    "sha256": "48d45322676f63d18916d942c52c4a85e01af973ae1d5b06cb199899f65e9b80",
+    "source": "D:\\figurefpga\\主题1\\08｜月球探测器——完整设备全景.png",
+    "source_sha256": "ca6002fe0a5122e5ff352af7f88768d3fbcc4181a82149076e4584ec56c07409",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "1de5e082591b0be530feb8c4499f6d7fbb6b3c6a78edec8b8ca2ec957f120529"
+  },
+  {
+    "name": "T2P01.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "5f8659103c4a0ad1d32a200dbb57074fa6d796525992838d8ba3cdc4d56cd5b2",
+    "source": "D:\\figurefpga\\主题2\\01｜从太空观察地球.png",
+    "source_sha256": "2d19d91366b9f748a05eff91433c9317f21e1815c67feac24e9931f365ad27d1",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "b751a8c665399e9b8d6fd3a13e28ea0b71cae4fb72d362bee6ea82c0d49265b4"
+  },
+  {
+    "name": "T2P02.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "d2c7cb502f32a326379afc79304a1fc2f322109c87a54e456d7df61502850717",
+    "source": "D:\\figurefpga\\主题2\\02｜卫星的结构组成.png",
+    "source_sha256": "a760867f2a3b282d5ba255db8250098594437036410574b04badb91941e9036a",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "c6864775510ed28b12944e79271b52caad4f2141170191ac1045f832b989b204"
+  },
+  {
+    "name": "T2P03.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "dbf01e14fc103a70cdda23519d21247c8a2eb2a4244adcd63fb5e1e1fcd2e6c6",
+    "source": "D:\\figurefpga\\主题2\\03｜太阳翼的展开与转动.png",
+    "source_sha256": "1e94a85f3f5239ab26e51d09c48ec63941dce0815057ad2c4b1b690f44d8cc94",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "8e13fe295116a2b9a6e33c65f760e6b66ae706f62b866e9f4f8a86b77b4b73fd"
+  },
+  {
+    "name": "T2P04.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "3f45f029f3d268dabafbd0f49f72fa8c890fee9d72a7d5be758de44c86ef7022",
+    "source": "D:\\figurefpga\\主题2\\04｜对地相机的指向控制.png",
+    "source_sha256": "aa32fcb987d06dfb0c827b4ac1c7e1f3221f41862fef026fc8c11f8ba1c8e3c2",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "54d50e0a49ce68984dbda01d2bc07c1ddeca12a0f0ec8aba9a222854944e2d37"
+  },
+  {
+    "name": "T2P05.BMP",
+    "width": 800,
+    "height": 600,
+    "sha256": "6e7887650a5dcb0a93aa0882bff1346b6a3b76d2de6f68d6d6ea89334b282df7",
+    "source": "D:\\figurefpga\\主题2\\05｜地面扫描范围与覆盖.png",
+    "source_sha256": "07f0c859f967cc885386314c96bf6b5d3c44bae7653c74fc401db9b44dc6b0a2",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "d457584a31696d5b67d8289bd2f10a3910a1b4629584a80c72299f83be1a968b"
+  },
+  {
+    "name": "T2P06.BMP",
+    "width": 1024,
+    "height": 768,
+    "sha256": "8b94bfca5e55d96d2c347c1943034672b3b9def857c36e5ec0d02c1d6e482353",
+    "source": "D:\\figurefpga\\主题2\\06｜遥感卫星的实际应用.png",
+    "source_sha256": "2240a33ce3d6cca6ab5c02435c93a21e0400f520d8e88296abb472d2ff3df825",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "097c3b15baf9766a3f441d7abcd11868e881331bcee8b9509bc9eec8b131c204"
+  },
+  {
+    "name": "T2P07.BMP",
+    "width": 800,
+    "height": 480,
+    "sha256": "544ad637105ec469f3622366d96e779a3df1922f7c31032518992c47e61a245d",
+    "source": "D:\\figurefpga\\主题2\\07｜互动实验：相机指向与扫描.png",
+    "source_sha256": "feab8e4cf9a0d70dc7403bad94a62b70168453f8ba1152ab949e0471ec80763d",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "b9117697f8ca66892d9a0be917e7e820976790c1dfed38b07c914cc2651af1d9"
+  },
+  {
+    "name": "T2P08.BMP",
+    "width": 480,
+    "height": 640,
+    "sha256": "b32b54d0e60a896f9c475b6e28f35892bc8e658ffa2aba54be36b6b70178b020",
+    "source": "D:\\figurefpga\\主题2\\Snipaste_2026-10-16_10-27-34.png",
+    "source_sha256": "771eedc2ffb958d910c17180702fa5cea1f9dd7eeb12551a6dddd831f49d3968",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "286ec286dde9a308d36248feb450d01e38c28c7f149e8ba625fbed295d9388a0"
+  },
+  {
+    "name": "T3P01.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "65b987e214de9fba484c30e4c0a460f54be9dd59409238c881162e668db829e4",
+    "source": "D:\\figurefpga\\主题3\\01｜从月球轨道降落月面.png",
+    "source_sha256": "a93b4696f567914fd85dbaf1c6eb97e28c6ae9fca83a782b9eb016f057002b89",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "4e68fe69b76b57d7bb8fc8cd376b2041596d54773f5659dc497c1ec543900b71"
+  },
+  {
+    "name": "T3P02.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "d5d9a3ebfbdc0ccf2d55bd9fb42bd4e0d7bdda2ea4dad8c56f1c3d0d62029107",
+    "source": "D:\\figurefpga\\主题3\\02｜着陆器的主要结构.png",
+    "source_sha256": "b059b121fc41c6198bb95be9ae290e45a76f3f94b5968fdacdfda862c191c11e",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "13200d3cce3deee2a3ae368610aa240e9930d789e0b2fbf7815d1b324ab9c211"
+  },
+  {
+    "name": "T3P03.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "301593d0343c680bcc57654c99a8060d9abd69488f0286939d0918eda13a40da",
+    "source": "D:\\figurefpga\\主题3\\03｜着陆支腿与缓冲结构.png",
+    "source_sha256": "e213ab8ad6c1acf23703d3a92f64d0c2df94cbd8de262f44cdf3cce3569be238",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "85a4db386d5393b79ece1a63bc787c891277879d03ed34844fbc2c10c95f6eb5"
+  },
+  {
+    "name": "T3P04.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "da921779aa14565a4bc5202c30ee1debc588708ccfb27e7ccc998fc4533ac37e",
+    "source": "D:\\figurefpga\\主题3\\04｜反推发动机与下降控制.png",
+    "source_sha256": "2c038d049ec061cff2844f8a4187bb60c6320b1ab55ce68b31681c365fc5d979",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "8f650e53f65deb46b45779181ad1f80951557a77c7b4345d5f2beb869adc4508"
+  },
+  {
+    "name": "T3P05.BMP",
+    "width": 800,
+    "height": 600,
+    "sha256": "92b5eb2e682bdf3d7de2b1ce9d44ed2f00d330f7ed005c6262279d4018bb808f",
+    "source": "D:\\figurefpga\\主题3\\05｜月球软着陆的关键阶段.png",
+    "source_sha256": "572df399dc053ea2bcbda379dce557fcb4b4ae918eb3a504cd88c2444b77ed93",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "de2cd00cad2948e1b514777711554627a1196737a7557910a3b7ef29ffe44d5b"
+  },
+  {
+    "name": "T3P06.BMP",
+    "width": 1024,
+    "height": 768,
+    "sha256": "d043713ceec79c643d57564575abfb812da11f9d99959098207e47d7de2155e9",
+    "source": "D:\\figurefpga\\主题3\\06｜中国嫦娥探月着陆任务.png",
+    "source_sha256": "1b8c6feafbdb6c05964700911facf27f2e03af72b1c7ab68c0176e29316638c6",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "89a20a6a20cebf722c0b4c89397a11ecffb7d1009e8030beb7206ef82e4825ee"
+  },
+  {
+    "name": "T3P07.BMP",
+    "width": 800,
+    "height": 480,
+    "sha256": "8db51bd8ba568dcda4736b49ab6164a276488e30af8e370400c7fd0914531f8a",
+    "source": "D:\\figurefpga\\主题3\\07｜互动实验：支腿与推力.png",
+    "source_sha256": "02ad0c5c1e60f9a4b3f03b12f820657a6957a558ca06b9cd258b099a9e4bdd6b",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "4f44f9290e7b95e6b12f148ebc8acea734771a53225ec8abfa78bbd56c3bc024"
+  },
+  {
+    "name": "T3P08.BMP",
+    "width": 480,
+    "height": 640,
+    "sha256": "17ec0f10bfd1ae3f9c089912b85fef93ba50743ce0839f29ea570373ed417cb2",
+    "source": "D:\\figurefpga\\主题3\\Snipaste_2026-10-16_10-28-27.png",
+    "source_sha256": "7e81194374c0147c3c3fb3282bddac95cdfeb84589b78f4a8f92aba97f2472cf",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "e8883fa92027c6449fb9f6ecb24e271c6bec2bcbc371dcc6189fa8a590842140"
+  },
+  {
+    "name": "T4P01.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "7b664e1b1f6f92d66dad24517426f7b47390da30418dd7dc9c1abd02c106f0a2",
+    "source": "D:\\figurefpga\\主题4\\01｜把望远镜送入太空.png",
+    "source_sha256": "3dc34f2c3ea459c73ac22674a8f9ca23ea6d7aae23509bd3842f2ae444f51f6c",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "602ef85029dfc20eb9636ee9496446dc6cfc1465f181aaad09bde32ef9f57de3"
+  },
+  {
+    "name": "T4P02.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "aad9dd68507a07e672f5357946d346d92be2936411900ba049d20048dea35d32",
+    "source": "D:\\figurefpga\\主题4\\02｜空间望远镜的光学结构.png",
+    "source_sha256": "4d18e0e0a28750ceecb2ecf545e41e1b70b203f357d322ab2619fecdfc2c8e1d",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "3bf95a4c5b82799cbd010cb1a835771e742bb0fea71d104bdd337023ab58ea2a"
+  },
+  {
+    "name": "T4P03.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "de70b3a4e2a5e41854a171404fcaa3f574f5d005591becb4ab78acf71313f2a9",
+    "source": "D:\\figurefpga\\主题4\\03｜镜筒指向与目标跟踪.png",
+    "source_sha256": "4dde1001722e5826afae805b140716401924529311f767065abdef1fde5bca85",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "e24427ef2b8ede31040443e2074dd56c9f8c32d3887fa3b86f6a6add0b6f9ff7"
+  },
+  {
+    "name": "T4P04.BMP",
+    "width": 640,
+    "height": 480,
+    "sha256": "2f0f13ab554c15e44a213a1ced74e9c71eff7c4077a19e60c8ec8c08a83621e7",
+    "source": "D:\\figurefpga\\主题4\\04｜光学保护盖与开口机构.png",
+    "source_sha256": "074b9fe3784949e08535d269a60a254dd46cce498409ebdf19aef11dd989b72e",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "d9d29b8b20511232f78dba3386bdd053cf92308adc44c8eca05af3bf3ee1d3a7"
+  },
+  {
+    "name": "T4P05.BMP",
+    "width": 800,
+    "height": 600,
+    "sha256": "f21c1e5f4fab76098de7fc721295cb7ad3d5d7ff812332ea5e29c31f3d8d9cee",
+    "source": "D:\\figurefpga\\主题4\\05｜精密反射镜与空间观测.png",
+    "source_sha256": "2cfd59dc54c8d75d835c1848a67c3c2f665fa3eeda9b1f238d1b440e685f09c8",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "e646fc7df7dd1abd8c86e1c00f877d2e28808d87b35897b12c6ec6b616d86416"
+  },
+  {
+    "name": "T4P06.BMP",
+    "width": 1024,
+    "height": 768,
+    "sha256": "e97ae633e4158b471e4ec8f95cd60029af1023ceada0ebf3b433b3ab1d3f901e",
+    "source": "D:\\figurefpga\\主题4\\06｜空间望远镜看见的宇宙.png",
+    "source_sha256": "830d5f201daca55b4e480f49e78133a25b7e61904a7642ec7ec63df35c58cbf3",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "3997025db329c225754ca703d4d05ad1009a6a4bedbe690496c2e6f459b13150"
+  },
+  {
+    "name": "T4P07.BMP",
+    "width": 800,
+    "height": 480,
+    "sha256": "f572bb4d53db823416af3ad705309c46f84d5b8a9bf90a2c0c5cfcc461d75ad3",
+    "source": "D:\\figurefpga\\主题4\\07｜互动实验：观测方向与开口.png",
+    "source_sha256": "2487386d61e1a5f15e5763a01f3264b2ade10daaf95214eca004e535818f8bf3",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "7c5c013f2146cf0d12322030bf3772d217f0cbbd2b9dd1e239644509dbc194d2"
+  },
+  {
+    "name": "T4P08.BMP",
+    "width": 480,
+    "height": 640,
+    "sha256": "dfb47f820ceffff1a088c115a2b2f0e308c1e1bf213d728aee7a057d17403e2c",
+    "source": "D:\\figurefpga\\主题4\\Snipaste_2026-10-16_10-29-42.png",
+    "source_sha256": "fe1ec466a84f520fcf9af9db7ce344a821b3bfcfb278be791576aae87b2b939d",
+    "processing": "center crop to fill; no burned-in text",
+    "wav_sha256": "c91deb58db16913414755a9c0d408a8af09faa9c683f53fdc16e539853efcb32"
+  }
+]

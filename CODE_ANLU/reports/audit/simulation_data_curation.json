@@ -1,0 +1,10 @@
+{
+  "removed_new_copy_only": [],
+  "retained": [
+    "actual_lbas.hex",
+    "actual_sectors.bin",
+    "av_reference.hex",
+    "basic_pcm.hex",
+    "guide_pcm.hex"
+  ]
+}

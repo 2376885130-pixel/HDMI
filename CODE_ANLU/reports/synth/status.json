@@ -1,0 +1,14 @@
+{
+  "root": "D:\\CODE_ANLU",
+  "stage": "synth",
+  "completed": true,
+  "seconds": 234.3025984764099,
+  "resources": {
+    "lut": 17513,
+    "reg": 11453,
+    "bram9k": 64,
+    "bram32k": 0,
+    "dsp": 27
+  },
+  "returncode": 0
+}

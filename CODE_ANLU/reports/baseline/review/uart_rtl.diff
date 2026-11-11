@@ -1,0 +1,307 @@
+--- baseline/rtl/subtitle_uart_controller.v
++++ candidate/rtl/subtitle_uart_controller.v
+@@ -5,12 +5,15 @@
+  input wire clk,rst_n,input wire [7:0] rx_data,input wire rx_valid,rx_framing_error,
+  output reg [95:0] text,output reg [3:0] length,output reg enable,
+  output wire reply_valid,output wire [7:0] reply_data,input wire reply_ready,
+- input wire[127:0]audio_diag
++ input wire[127:0]audio_diag,
++ input wire system_home,
++ output reg theme_command,output reg [1:0] command_theme,
++ output reg demo_command,output reg command_demo
+ );
+  localparam integer CW=(LINE_TIMEOUT<2)?1:$clog2(LINE_TIMEOUT);
+  reg [159:0] line;reg [4:0] count;reg invalid,overflow,skip_lf;
+  reg [CW-1:0] idle_count;
+- reg [255:0] response;reg [5:0] reply_count,reply_index;
++ reg [255:0] response;reg [4:0] reply_count,reply_index;
+  reg busy_line,busy_pending;
+  integer i;reg [95:0] parsed;
+  wire active=reply_count!=0;
+@@ -21,7 +24,7 @@
+  assign reply_valid=active;
+  assign reply_data=response[reply_index*8 +:8];
+  task answer;
+- input [255:0] value;input [5:0] size;
++ input [255:0] value;input [4:0] size;
+  begin response<=value;reply_count<=size;reply_index<=0;end
+  endtask
+  // Reply constants are byte zero at the low end, including CR LF.
+@@ -33,12 +36,15 @@
+  localparam [255:0] FRAME=88'h0a0d454d41524620525245;
+  localparam [255:0] TIMEOUT=104'h0a0d54554f454d495420525245;
+  localparam [255:0] UNSUPPORTED=136'h0a0d444554524f505055534e5520525245;
++ localparam [255:0] CONTEXT=104'h0a0d545845544e4f4320525245;
+  always @(posedge clk or negedge rst_n)begin
+   if(!rst_n)begin
+    text<=96'h00524559414c502041475046;length<=11;enable<=1;
+    line<=0;count<=0;invalid<=0;overflow<=0;skip_lf<=0;idle_count<=0;
+    response<=0;reply_count<=0;reply_index<=0;busy_line<=0;busy_pending<=0;
++   theme_command<=0;command_theme<=0;demo_command<=0;command_demo<=0;
+   end else begin
++   theme_command<=0;demo_command<=0;
+    if(active && reply_ready)begin
+     if(reply_index+1==reply_count)begin reply_count<=0;reply_index<=0;end
+     else reply_index<=reply_index+1'b1;
+@@ -63,7 +69,14 @@
+       if(count!=0)begin
+        if(overflow)answer(LONG,10);
+        else if(invalid)answer(CHAR,10);
+-       else if(count==6 && line[47:0]==48'h3f4f49445541)begin // AUDIO?
++       else if(count==2 && line[7:0]=="T" && line[15:8]>="1" && line[15:8]<="4")begin
++        if(system_home)begin
++         theme_command<=1;command_theme<=line[15:8]-8'd49;answer(OK,4);
++        end else answer(CONTEXT,13);
++       end else if(count==2 && line[7:0]=="M" && (line[15:8]=="0" || line[15:8]=="1"))begin
++        if(system_home && line[15:8]=="1")answer(CONTEXT,13);
++        else begin demo_command<=1;command_demo<=line[15:8]=="1";answer(OK,4);end
++       end else if(count==6 && line[47:0]==48'h3f4f49445541)begin // AUDIO?
+         response<=0;response[31:0]<=32'h3d445541; // AUD=
+         response[39:32]<=hexchar(audio_diag[7:4]);response[47:40]<=hexchar(audio_diag[3:0]);response[55:48]<=32;
+         response[63:56]<=hexchar(audio_diag[15:12]);response[71:64]<=hexchar(audio_diag[11:8]);response[79:72]<=32;
+--- baseline/rtl/subtitle_uart_service.v
++++ candidate/rtl/subtitle_uart_service.v
+@@ -1,12 +1,37 @@
+ module subtitle_uart_service #(parameter integer CLKS_PER_BIT=434,LINE_TIMEOUT=50000000)(
+  input wire clk,rst_n,rx,output wire tx,
+  output wire [95:0] text,output wire [3:0] length,output wire enable,
+- input wire[127:0]audio_diag
++ input wire[127:0]audio_diag,
++ input wire system_ready,system_home,input wire [1:0] system_theme,
++ input wire image_presented,input wire [4:0] presented_index,input wire demo_active,
++ output wire theme_command,output wire [1:0] command_theme,
++ output wire demo_command,output wire command_demo
+ );
+  wire [7:0] rx_data,reply_data;wire rx_valid,framing_error,reply_valid,tx_busy;
+  uart_rx_byte #(.CLKS_PER_BIT(CLKS_PER_BIT)) receiver(clk,rst_n,rx,rx_data,rx_valid,framing_error);
++ wire event_valid,event_ready;wire [7:0] event_data;
++ reg [1:0] owner;
++ wire choose_reply=owner==1 || (owner==0&&reply_valid);
++ wire choose_event=owner==2 || (owner==0&&!reply_valid&&event_valid);
++ wire send_reply=choose_reply&&reply_valid&&!tx_busy;
++ wire send_event=choose_event&&event_valid&&!tx_busy;
++ wire [7:0] tx_data=choose_reply?reply_data:event_data;
++ // Lock one source through its LF, never interleave event and response bytes.
++ always @(posedge clk or negedge rst_n)
++  if(!rst_n)owner<=0;
++  else if(send_reply||send_event)begin
++   if(tx_data==10)owner<=0;
++   else owner<=send_reply?1:2;
++  end
++ assign event_ready=send_event;
+  subtitle_uart_controller #(.LINE_TIMEOUT(LINE_TIMEOUT)) control(
+-  clk,rst_n,rx_data,rx_valid,framing_error,text,length,enable,reply_valid,reply_data,!tx_busy,audio_diag);
++  .clk(clk),.rst_n(rst_n),.rx_data(rx_data),.rx_valid(rx_valid),.rx_framing_error(framing_error),
++  .text(text),.length(length),.enable(enable),.reply_valid(reply_valid),.reply_data(reply_data),.reply_ready(send_reply),
++  .audio_diag(audio_diag),.system_home(system_home),.theme_command(theme_command),.command_theme(command_theme),
++  .demo_command(demo_command),.command_demo(command_demo));
++ uart_system_events events(.clk(clk),.rst_n(rst_n),.system_ready(system_ready),.home(system_home),.theme(system_theme),
++  .image_presented(image_presented),.presented_index(presented_index),.demo_active(demo_active),
++  .valid(event_valid),.data(event_data),.ready(event_ready));
+  uart_tx_byte #(.CLKS_PER_BIT(CLKS_PER_BIT)) transmitter(
+-  .clk(clk),.rst_n(rst_n),.start(reply_valid && !tx_busy),.data(reply_data),.tx(tx),.busy(tx_busy),.done());
++  .clk(clk),.rst_n(rst_n),.start(send_reply||send_event),.data(tx_data),.tx(tx),.busy(tx_busy),.done());
+ endmodule
+--- baseline/rtl/tf_image_top.v
++++ candidate/rtl/tf_image_top.v
+@@ -148,10 +148,12 @@
+     wire demo_active,demo_blocked,demo_key2,demo_key3,demo_key4,demo_sw3,demo_sw4;
+     wire [63:0] demo_state_sys,demo_mailbox;
+     reg [63:0] demo_state_video;
++    wire uart_theme_valid,uart_demo_valid,uart_demo_enable;wire [1:0] uart_theme;
+     p_rover_control u_rover_control(.clk(sys_clk),.rst_n(control_reset_n),.home(theme_home),.model_id(theme_id),
+         .sw3_up(direction_switch),.sw4_up(parameter_switch),.key2_n(key_next_n),.key3_n(key_prev_n),.key4_n(key_auto_n),
+         .active(demo_active),.blocked(demo_blocked),.main_key2_n(demo_key2),.main_key3_n(demo_key3),.main_key4_n(demo_key4),
+-        .main_sw3_up(demo_sw3),.main_sw4_up(demo_sw4),.state(demo_state_sys));
++        .main_sw3_up(demo_sw3),.main_sw4_up(demo_sw4),.state(demo_state_sys),
++        .uart_demo_valid(uart_demo_valid),.uart_demo_enable(uart_demo_enable));
+     osd_state_snapshot #(.WIDTH(64)) u_rover_snapshot(sys_clk,control_reset_n,demo_state_sys,pixel_clk,~video_rst,demo_mailbox);
+     always @(posedge pixel_clk or posedge video_rst)
+         if(video_rst)demo_state_video<=0;
+@@ -165,7 +167,8 @@
+         .audio_done(theme_audio_done),.audio_id(theme_audio_id),.home(theme_home),.theme(theme_id),.index(image_index),
+         .routed_key2_n(theme_key2_n),.routed_key3_n(theme_key3_n),.routed_key4_n(theme_key4_n),
+         .preview_up(theme_preview_up),.menu_up(theme_menu_up),.autoplay(theme_autoplay),.play_enable(theme_play_enable),
+-        .hold_progress(theme_hold_progress),.restart_event(manual_restart),.manual_effect(theme_manual_effect));
++        .hold_progress(theme_hold_progress),.restart_event(manual_restart),.manual_effect(theme_manual_effect),
++        .uart_theme_valid(uart_theme_valid),.uart_theme(uart_theme));
+     assign run_reset_n=control_reset_n;
+     assign stable_interval=2'd1;assign stable_direction=1'b0;assign auto_mode=theme_autoplay;
+     key_debounce theme_next(sys_clk,control_reset_n,key2_pass,next_event);
+@@ -463,6 +466,9 @@
+     wire subtitle_enable_sys,subtitle_enable_video,subtitle_changed;
+     wire [9:0] subtitle_offset;
+     subtitle_uart_service u_subtitle_uart(.clk(sys_clk),.rst_n(control_reset_n),.rx(uart_rx),.tx(uart_tx),.audio_diag(audio_diag_sys),
++        .system_ready(image_total!=0 && show_image_sync[1] && !load_error_sync[1]),.system_home(theme_home),.system_theme(theme_id),
++        .image_presented(transaction_presented),.presented_index(displayed_index_sys),.demo_active(demo_active),
++        .theme_command(uart_theme_valid),.command_theme(uart_theme),.demo_command(uart_demo_valid),.command_demo(uart_demo_enable),
+         .text(subtitle_text_sys),.length(subtitle_length_sys),.enable(subtitle_enable_sys));
+     subtitle_frame_commit u_subtitle_commit(.src_clk(sys_clk),.src_rst_n(control_reset_n),
+         .src_text(subtitle_text_sys),.src_length(subtitle_length_sys),.src_enable(subtitle_enable_sys),
+--- baseline/rtl/theme_control.v
++++ candidate/rtl/theme_control.v
+@@ -10,7 +10,8 @@
+  output wire routed_key2_n,routed_key3_n,routed_key4_n,preview_up,menu_up,
+  output wire autoplay,play_enable,output wire [7:0] hold_progress,
+  output reg restart_event,output reg manual_effect,
+- input wire timed_mode
++ input wire timed_mode,
++ input wire uart_theme_valid,input wire [1:0] uart_theme
+ );
+  localparam DB=DEBOUNCE<2?1:$clog2(DEBOUNCE);
+  localparam CB=$clog2(CLOCK_HZ*3+1);
+@@ -57,7 +58,8 @@
+    if(short_count!=0)short_count<=short_count-1'b1;
+    if(stable[1])begin key3_count<=0;key3_fired<=0;if(!home)key3_armed<=1;end
+    else if(home&&!key3_fired)begin
+-    if(key3_count==CLOCK_HZ*2-1)begin
++    if(uart_theme_valid==1'b1)key3_count<=0;
++    else if(key3_count==CLOCK_HZ*2-1)begin
+      key3_fired<=1;home<=0;index<={theme,3'd0};key3_armed<=0;
+      sw3_armed<=stable[4];sw4_armed<=stable[5];restart_event<=1;done_armed<=0;manual_effect<=0;
+     end else key3_count<=key3_count+1'b1;
+@@ -87,6 +89,11 @@
+      index<={theme,reverse_mode ? index[2:0]-3'd1 : index[2:0]+3'd1};done_armed<=0;restart_event<=1;manual_effect<=0;
+     end
+    end
++   // UART selects only on the home page. Same owner and priority over KEY2.
++   // Cancel a concurrent KEY3 hold so it cannot enter the previous theme.
++   if(home && uart_theme_valid==1'b1)begin
++    theme<=uart_theme;home<=1;key3_count<=0;key3_fired<=0;
++   end
+   end
+  end
+ endmodule
+--- baseline/rtl/uart_system_events.v
++++ candidate/rtl/uart_system_events.v
+@@ -0,0 +1,79 @@
++// One immutable transmitting packet plus per-kind pending snapshots.
++// Pending replacements are coalesced with an explicit OVERFLOW indication.
++// No backpressure is ever applied to the multimedia system.
++module uart_system_events(
++ input wire clk,rst_n,system_ready,home,input wire [1:0] theme,
++ input wire image_presented,input wire [4:0] presented_index,input wire demo_active,
++ output wire valid,output reg [7:0] data,input wire ready
++);
++ reg boot_sent,old_home,old_demo,old_present;reg [1:0] old_theme;reg [4:0] old_index;
++ reg [3:0] pending;reg [4:0] theme_payload,image_payload;reg demo_payload;
++ reg overflow;
++ reg [7:0] head;reg transmitting;reg [3:0] byte_index;
++ wire [2:0] kind=head[7:5];
++ wire [5:0] number={1'b0,head[4:0]}+6'd1;
++ wire [7:0] tens=number>=30?"3":number>=20?"2":number>=10?"1":"0";
++ wire [5:0] ones=number>=30?number-30:number>=20?number-20:number>=10?number-10:number;
++ wire [3:0] last=kind==0?8:kind==1?13:kind==2?12:kind==3?10:12;
++ assign valid=transmitting;
++ wire pop=valid&&ready&&byte_index==last;
++ wire space=!transmitting||pop;
++ reg [2:0] choice;reg [7:0] incoming;
++ always @* begin
++  choice=4;incoming={3'd4,5'd0};
++  if(pending[0])begin choice=0;incoming=0;end
++  else if(pending[1])begin choice=1;incoming={3'd1,theme_payload};end
++  else if(pending[2])begin choice=2;incoming={3'd2,image_payload};end
++  else if(pending[3])begin choice=3;incoming={3'd3,4'd0,demo_payload};end
++ end
++ wire push=space&&((|pending)||overflow);
++ // EV BOOT / EV THEME <1..4> <H|T> / EV IMAGE <01..32> / EV DEMO <0|1>.
++ // Packet fields are captured before queueing, not read live while transmitting.
++ always @* begin
++  data=32;
++  if(byte_index==0)data="E";
++  else if(byte_index==1)data="V";
++  else if(byte_index==last-1)data=13;
++  else if(byte_index==last)data=10;
++  else case(kind)
++   0:case(byte_index)3:data="B";4:data="O";5:data="O";6:data="T";endcase
++   1:case(byte_index)3:data="T";4:data="H";5:data="E";6:data="M";7:data="E";
++     9:data=8'd49+{6'd0,head[1:0]};11:data=head[2]?"H":"T";endcase
++   2:case(byte_index)3:data="I";4:data="M";5:data="A";6:data="G";7:data="E";
++     9:data=tens;10:data=8'd48+ones;endcase
++   3:case(byte_index)3:data="D";4:data="E";5:data="M";6:data="O";8:data=head[0]?"1":"0";endcase
++   4:case(byte_index)3:data="O";4:data="V";5:data="E";6:data="R";7:data="F";8:data="L";9:data="O";10:data="W";endcase
++  endcase
++ end
++ always @(posedge clk or negedge rst_n)begin
++  if(!rst_n)begin
++   boot_sent<=0;old_home<=1;old_demo<=0;old_present<=0;old_theme<=0;old_index<=0;
++   pending<=0;theme_payload<=0;image_payload<=0;demo_payload<=0;overflow<=0;
++   head<=0;transmitting<=0;byte_index<=0;
++  end else begin
++   old_home<=home;old_theme<=theme;old_demo<=demo_active;
++   old_present<=image_presented;old_index<=presented_index;
++   if(push)begin
++    head<=incoming;transmitting<=1;
++    if(choice<4)pending[choice]<=0;else overflow<=0;
++   end
++   if(pop&&!push)transmitting<=0;
++   if(valid&&ready)begin if(pop)byte_index<=0;else byte_index<=byte_index+1'b1;end
++   if(!boot_sent&&system_ready)begin
++    boot_sent<=1;pending[0]<=1;pending[1]<=1;theme_payload<={2'b0,home,theme};
++   end
++   if(home!=old_home||theme!=old_theme)begin
++    if(pending[1]&&!(push&&choice==1))overflow<=1;
++    pending[1]<=1;theme_payload<={2'b0,home,theme};
++   end
++   if(image_presented&&(!old_present||presented_index!=old_index))begin
++    if(pending[2]&&!(push&&choice==2))overflow<=1;
++    pending[2]<=1;image_payload<=presented_index;
++   end
++   if(demo_active!=old_demo)begin
++    if(pending[3]&&!(push&&choice==3))overflow<=1;
++    pending[3]<=1;demo_payload<=demo_active;
++   end
++  end
++ end
++endmodule
+--- baseline/rtl/eval/p_rover_control.v
++++ candidate/rtl/eval/p_rover_control.v
+@@ -4,7 +4,8 @@
+  input wire clk,rst_n,home,sw3_up,sw4_up,key2_n,key3_n,key4_n,
+  output wire active,blocked,output wire main_key2_n,main_key3_n,main_key4_n,
+  output wire main_sw3_up,main_sw4_up,output wire [63:0] state,
+- input wire [1:0] model_id);
++ input wire [1:0] model_id,
++ input wire uart_demo_valid,uart_demo_enable);
+  localparam DB=FILTER<2?1:$clog2(FILTER),SB=SETTLE<2?1:$clog2(SETTLE),TB=SECOND<2?1:$clog2(SECOND);
+  (* async_reg="true",preserve=1,keep=1 *) reg [4:0] meta,sync;
+  reg [4:0] stable,old;reg [DB-1:0] db[0:4];
+@@ -13,10 +14,11 @@
+  reg [4:0] angle_index;reg [6:0] battery;reg [TB-1:0] seconds;
+  reg [1:0] previous_model;reg [4:0] secondary;
+  wire combo=!stable[4]&&!stable[3];
+- assign active=!home&&combo;
++ reg remote_demo,combo_inhibit;
++ assign active=!home&&(remote_demo||(combo&&!combo_inhibit));
+  // Capture the combination before the existing, slower menu debouncers.
+  // After leaving, all three keys must be released before main actions resume.
+- assign blocked=!home&&(active||guard||(!sync[4]&&!sync[3]));
++ assign blocked=!home&&(active||guard||(!combo_inhibit&&!sync[4]&&!sync[3]));
+  assign main_key2_n=blocked?1'b1:key2_n;
+  assign main_key3_n=blocked?1'b1:key3_n;
+  assign main_key4_n=blocked?1'b1:key4_n;
+@@ -59,7 +61,16 @@
+    switches<=3;settle_count<=0;active_q<=0;guard<=0;switch_guard<=0;
+    selected<=0;angle_index<=6;load_setting<=1;battery<=50;mission<=0;seconds<=0;
+    previous_model<=0;secondary<=0;
++   remote_demo<=0;combo_inhibit<=0;
+   end else begin
++   if(home)begin remote_demo<=0;combo_inhibit<=0;end
++   else begin
++    if(!combo && (sync[4]||sync[3]))combo_inhibit<=0;
++    if(uart_demo_valid==1'b1)begin
++     remote_demo<=uart_demo_enable;
++     if(!uart_demo_enable)combo_inhibit<=1;
++    end
++   end
+    meta<={sw4_up,sw3_up,key4_n,key3_n,key2_n};sync<=meta;old<=stable;active_q<=active;
+    for(i=0;i<5;i=i+1)begin
+     if(sync[i]==stable[i])db[i]<=0;
+@@ -71,6 +82,7 @@
+    else settle_count<=settle_count+1'b1;
+    if(active!=active_q)guard<=1;
+    else if(stable[2:0]==7&&sync[2:0]==7)guard<=0;
++   if(!home && uart_demo_valid==1'b1 && active!=uart_demo_enable)guard<=1;
+    if(active)switch_guard<=1;
+    else if(stable[4:3]==3)switch_guard<=0;
+    previous_model<=model_id;

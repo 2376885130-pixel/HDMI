@@ -1,0 +1,41 @@
+PROGRESS frames=6 image= 3 fs=00 taps=       4799
+PROGRESS frames=12 image= 3 fs=00 taps=       9599
+PROGRESS frames=18 image= 3 fs=00 taps=      14399
+PROGRESS frames=24 image= 3 fs=00 taps=      19199
+PROGRESS frames=30 image= 3 fs=00 taps=      23999
+PROGRESS frames=36 image= 3 fs=00 taps=      28799
+PROGRESS frames=42 image= 3 fs=00 taps=      33599
+PASS actual-volume BMP 307200 pixel identity image=0
+PROGRESS frames=48 image= 5 fs=03 taps=      38399
+PASS mode 0 filename=T1P01   WAV decoded=       2049
+PASS actual-volume BMP 307200 pixel identity image=0
+PASS mode 1 filename=BASIC48 WAV decoded=       2049
+PROGRESS frames=54 image= 5 fs=03 taps=      43199
+PASS mode 0 filename=T1P01   WAV decoded=       2049
+PROGRESS frames=60 image= 3 fs=00 taps=      47999
+PROGRESS frames=66 image= 3 fs=00 taps=      52799
+PROGRESS frames=72 image= 3 fs=00 taps=      57599
+PROGRESS frames=78 image= 3 fs=00 taps=      62399
+PROGRESS frames=84 image= 3 fs=00 taps=      67199
+PROGRESS frames=90 image= 3 fs=00 taps=      71999
+PROGRESS frames=96 image= 3 fs=00 taps=      76799
+PROGRESS frames=102 image= 3 fs=00 taps=      81599
+PROGRESS frames=108 image= 5 fs=00 taps=      86399
+PROGRESS frames=114 image= 5 fs=00 taps=      91199
+PROGRESS frames=119 image= 5 fs=00 taps=      95999
+PROGRESS frames=125 image= 5 fs=00 taps=     100799
+PASS actual-volume BMP 307200 pixel identity image=1
+PROGRESS frames=131 image= 5 fs=03 taps=     105599
+PASS mode 1 filename=BASIC48 WAV decoded=       2049
+PASS actual-volume BMP 307200 pixel identity image=1
+PROGRESS frames=137 image= 3 fs=00 taps=     110399
+PROGRESS frames=143 image= 3 fs=00 taps=     115199
+PROGRESS frames=149 image= 3 fs=00 taps=     119999
+PROGRESS frames=155 image= 3 fs=00 taps=     124799
+PROGRESS frames=161 image= 3 fs=00 taps=     129599
+PROGRESS frames=167 image= 3 fs=00 taps=     134399
+PROGRESS frames=173 image= 3 fs=00 taps=     139199
+PASS mode/SW1/demo/manual/reset: modes=4 pixels=1228800 exact_PCM=22060 waveform=4487
+PASS UART/AV concurrent events and controls lines=16
+PASS actual-volume WAV lookup and nonzero HDMI PCM: taps=143578 nonzero=6013
+- /mnt/d/FPGA_DUAL_HDMI_UART_20261019/sim/tb_av_content.v:104: Verilog $finish

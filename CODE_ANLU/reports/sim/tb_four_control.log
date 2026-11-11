@@ -1,0 +1,2 @@
+PASS four devices: theme mapping, home guard, parameters, clamp, key isolation, held exit, reset
+D:\CODE_ANLU\sim\uart_tb_four_control.v:45: $finish called at 153360000 (1ps)

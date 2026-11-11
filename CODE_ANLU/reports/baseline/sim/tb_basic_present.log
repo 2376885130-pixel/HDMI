@@ -1,0 +1,2 @@
+PASS asynchronous mode mailboxes, blanking mode commit, 12-frame advanced effect, no manual/automatic basic effects, primed/ack protection, pending/effect mode deferral, reset
+D:\FPGA_DUAL_HDMI_UART_20261019\sim\compat_tb_basic_present.v:62: $finish called at 63067000 (1ps)

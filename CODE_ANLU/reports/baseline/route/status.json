@@ -1,0 +1,22 @@
+{
+  "root": "D:\\FPGA_DUAL_HDMI_UART_20261019",
+  "stage": "route",
+  "completed": true,
+  "seconds": 369.8973879814148,
+  "resources": {
+    "lut": 18077,
+    "reg": 11368,
+    "bram9k": 64,
+    "bram32k": 0,
+    "dsp": 27
+  },
+  "returncode": 0,
+  "placement_seed_override": 12,
+  "timing": {
+    "SWNS": 0.22,
+    "STNS": 0.0,
+    "HWNS": 0.03,
+    "HTNS": 0.0
+  },
+  "timing_pass": true
+}

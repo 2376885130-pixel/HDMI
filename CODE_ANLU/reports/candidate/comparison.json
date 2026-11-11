@@ -1,0 +1,22 @@
+{
+  "resources": {
+    "lut": 18077,
+    "reg": 11368,
+    "bram9k": 64,
+    "bram32k": 0,
+    "dsp": 27
+  },
+  "timing": {
+    "SWNS": 0.22,
+    "STNS": 0.0,
+    "HWNS": 0.03,
+    "HTNS": 0.0
+  },
+  "resources_identical": true,
+  "timing_identical": true,
+  "original_sha256": "0818607a20d3de254e7f41acf4725d02ed0ca90bc2f91e2e6b0e858022107a23",
+  "rebuilt_sha256": "d91693280068690da675d9bf521af67d97188ce63dfe3425bace10b90c295b4e",
+  "bit_identical": false,
+  "original_hardware_validated": true,
+  "rebuilt_hardware_validated": false
+}

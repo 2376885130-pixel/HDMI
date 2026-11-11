@@ -1,0 +1,31 @@
+{
+  "bit": "D:\\FPGA_DUAL_HDMI_UART_20261019\\prj\\bitstream\\TF_IMAGE_DUAL_HDMI_UART_20261019.bit",
+  "sha256": "0818607a20d3de254e7f41acf4725d02ed0ca90bc2f91e2e6b0e858022107a23",
+  "bytes": 704129,
+  "resources": {
+    "lut": 18077,
+    "reg": 11368,
+    "bram9k": 64,
+    "bram32k": 0,
+    "dsp": 27
+  },
+  "timing": {
+    "SWNS": 0.22,
+    "STNS": 0.0,
+    "HWNS": 0.03,
+    "HTNS": 0.0
+  },
+  "physical_seed": 12,
+  "hardware_validated": false,
+  "baseline": "AUDIO_SECTOR_FIX_20261019 (user hardware accepted)",
+  "commands": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "M1",
+    "M0"
+  ],
+  "uart": "115200 8N1, CRLF, stop-and-wait replies; USB-UART F12 RX/D12 TX",
+  "limits": "Actual-volume AV behavioral simulation does not replace hardware test. Existing PLL/external IO delay coverage warnings retained. No TF writes."
+}

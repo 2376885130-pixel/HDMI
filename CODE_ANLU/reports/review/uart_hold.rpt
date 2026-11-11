@@ -1,0 +1,987 @@
+Created by          : Tang Dynasty v6.2.168116
+                    : Copyright (c) 2012-2025 Anlogic Inc.
+Generated           : Wed Oct 21 14:55:31 2026
+
+Top Model           : tf_image_top
+Device              : EG4S20BG256
+Speed               : NA
+STA coverage        : 99.98%
+
+----------------------------------------------------------------------------------------------------
+Path Group     :     sys_clk -> sys_clk
+Type           :     Self
+From Clock     :     sys_clk
+To Clock       :     sys_clk
+Min Period     :     10.968ns
+Fmax           :     91.174MHz
+
+Statistics:
+Min            : HWNS      0.559ns, HTNS      0.000ns,         0 Viol Endpoints,        16 Total Endpoints,        16 Paths Analyzed
+----------------------------------------------------------------------------------------------------
+
+
+Min Paths
+----------------------------------------------------------------------------------------------------
+Slack               : 1.667ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_picture_control/meta_reg[2]_syn_4.b[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 1.873ns (cell 0.749ns (39%), net 1.124ns (61%))
+Clock Skew          : 0.045ns
+Logic Level         : 2 ( LUT5=1  LUT3=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[0]
+net (fo=3)                              0.232          3.281          net: u_rover_control/combo_inhibit,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_157.b[0]
+LUT5                x011y043z3          0.321    r     3.602       1  pin: u_thumbnails/u_builder/ramread0_syn_157.f[0]
+net (fo=7)                              0.892          4.494          net: u_theme/index_reg[2]_syn_18,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_picture_control/meta_reg[2]_syn_4.b[0]
+LUT3 (reg)          x014y050z0          0.319    r     4.813       2  net: u_picture_control/meta[2],  ../../../../rtl/picture_param_control.v(9)
+--------------------------------------------------------------------  ---------------
+Arrival                                                4.813               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_picture_control/meta_reg[2]_syn_4.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.100          3.393               
+clock pessimism                        -0.247          3.146               
+--------------------------------------------------------------------  ---------------
+Required                                               3.146               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.667               
+
+Slack               : 5.020ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_rover_control/load_setting_reg[0]_syn_7.a[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 5.126ns (cell 1.848ns (36%), net 3.278ns (64%))
+Clock Skew          : 0.045ns
+Logic Level         : 6 ( LUT2=4  LUT5=1  LUT4=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[1]
+net (fo=2)                              0.322          3.371          net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_theme/index_reg[2]_syn_136.b[1]
+LUT2                x011y042z0          0.235    r     3.606       1  pin: u_theme/index_reg[2]_syn_136.f[1]
+net (fo=3)                              0.536          4.142          net: u_theme/index_reg[2]_syn_6,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_167.d[0]
+LUT2                x013y045z3          0.179    f     4.321       2  pin: u_thumbnails/u_builder/ramread0_syn_167.f[0]
+net (fo=7)                              0.602          4.923          net: u_rover_control/active,  ../../../../rtl/eval/p_rover_control.v(5)
+                                                                      pin: u_thumbnails/u_visible/ack_sync_reg[1]_syn_4.d[1]
+LUT2                x017y045z3          0.179    f     5.102       3  pin: u_thumbnails/u_visible/ack_sync_reg[1]_syn_4.f[1]
+net (fo=2)                              0.788          5.890          net: u_rover_control/angle_index_b3_n,  NOFILE(0)
+                                                                      pin: u_rover_control/secondary_reg[4]_syn_17.a[1]
+LUT2                x021y049z3          0.316    r     6.206       4  pin: u_rover_control/secondary_reg[4]_syn_17.f[1]
+net (fo=4)                              0.620          6.826          net: u_rover_control/secondary_reg[4]_syn_6,  ../../../../rtl/eval/p_rover_control.v(59)
+                                                                      pin: u_transition_coordinates/yp_reg[176]_syn_4.a[1]
+LUT4                x025y054z3          0.316    r     7.142       5  pin: u_transition_coordinates/yp_reg[176]_syn_4.f[1]
+net (fo=4)                              0.410          7.552          net: u_rover_control/load_setting_reg[1]_syn_6,  ../../../../rtl/eval/p_rover_control.v(59)
+                                                                      pin: u_rover_control/load_setting_reg[0]_syn_7.a[0]
+LUT5 (reg)          x025y054z1          0.514    r     8.066       6  net: u_rover_control/load_setting[0],  ../../../../rtl/eval/p_rover_control.v(13)
+--------------------------------------------------------------------  ---------------
+Arrival                                                8.066               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/load_setting_reg[0]_syn_7.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.000          3.293               
+clock pessimism                        -0.247          3.046               
+--------------------------------------------------------------------  ---------------
+Required                                               3.046               
+--------------------------------------------------------------------  ---------------
+Slack                                                  5.020               
+
+Slack               : 6.321ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_rover_control/mission_reg[0]_syn_7.a[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 6.427ns (cell 1.848ns (28%), net 4.579ns (72%))
+Clock Skew          : 0.045ns
+Logic Level         : 6 ( LUT2=4  LUT5=2 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[1]
+net (fo=2)                              0.322          3.371          net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_theme/index_reg[2]_syn_136.b[1]
+LUT2                x011y042z0          0.235    r     3.606       1  pin: u_theme/index_reg[2]_syn_136.f[1]
+net (fo=3)                              0.536          4.142          net: u_theme/index_reg[2]_syn_6,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_167.d[0]
+LUT2                x013y045z3          0.179    f     4.321       2  pin: u_thumbnails/u_builder/ramread0_syn_167.f[0]
+net (fo=7)                              0.602          4.923          net: u_rover_control/active,  ../../../../rtl/eval/p_rover_control.v(5)
+                                                                      pin: u_thumbnails/u_visible/ack_sync_reg[1]_syn_4.d[1]
+LUT2                x017y045z3          0.179    f     5.102       3  pin: u_thumbnails/u_visible/ack_sync_reg[1]_syn_4.f[1]
+net (fo=2)                              0.788          5.890          net: u_rover_control/angle_index_b3_n,  NOFILE(0)
+                                                                      pin: u_rover_control/secondary_reg[4]_syn_17.a[1]
+LUT2                x021y049z3          0.316    r     6.206       4  pin: u_rover_control/secondary_reg[4]_syn_17.f[1]
+net (fo=4)                              0.728          6.934          net: u_rover_control/secondary_reg[4]_syn_6,  ../../../../rtl/eval/p_rover_control.v(59)
+                                                                      pin: u_priority_osd/pixels_b2[4]_syn_449.a[0]
+LUT5                x027y053z3          0.316    r     7.250       5  pin: u_priority_osd/pixels_b2[4]_syn_449.f[0]
+net (fo=4)                              1.603          8.853          net: u_rover_control/mux47_syn_8,  ../../../../rtl/eval/p_rover_control.v(93)
+                                                                      pin: u_rover_control/mission_reg[0]_syn_7.a[0]
+LUT5 (reg)          x025y050z1          0.514    r     9.367       6  net: u_rover_control/state[26],  ../../../../rtl/eval/p_rover_control.v(6)
+--------------------------------------------------------------------  ---------------
+Arrival                                                9.367               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/mission_reg[0]_syn_7.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.000          3.293               
+clock pessimism                        -0.247          3.046               
+--------------------------------------------------------------------  ---------------
+Required                                               3.046               
+--------------------------------------------------------------------  ---------------
+Slack                                                  6.321               
+
+Slack               : 0.559ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_rover_control/remote_demo_reg_syn_8.a[1] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 0.620ns (cell 0.509ns (82%), net 0.111ns (18%))
+Clock Skew          : 0.000ns
+Logic Level         : 1 ( LUT4=1 )
+Max Fanout          : 2
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[1]
+net (fo=2)                              0.111          3.160          net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.a[1]
+LUT4 (reg)          x010y043z3          0.400    r     3.560       1  net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+--------------------------------------------------------------------  ---------------
+Arrival                                                3.560               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.000          3.293               
+clock pessimism                        -0.292          3.001               
+--------------------------------------------------------------------  ---------------
+Required                                               3.001               
+--------------------------------------------------------------------  ---------------
+Slack                                                  0.559               
+
+Slack               : 2.317ns
+Begin Point         : u_subtitle_uart/events/transmitting_reg_syn_10.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_subtitle_uart/events/pending_reg[3]_syn_4.b[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 2.523ns (cell 0.751ns (29%), net 1.772ns (71%))
+Clock Skew          : 0.045ns
+Logic Level         : 2 ( LUT5=1  LUT4=1 )
+Max Fanout          : 6
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_subtitle_uart/events/transmitting_reg_syn_10.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x009y042z2          0.109    f     3.049          pin: u_subtitle_uart/events/transmitting_reg_syn_10.q[0]
+net (fo=2)                              0.540          3.589          net: u_subtitle_uart/events/valid,  ../../../../rtl/uart_system_events.v(7)
+                                                                      pin: u_bgm/pcm/underflows_reg[13]_syn_4.c[1]
+LUT5                x005y045z3          0.237    r     3.826       1  pin: u_bgm/pcm/underflows_reg[13]_syn_4.f[1]
+net (fo=6)                              1.232          5.058          net: u_subtitle_uart/events/overflow_reg_syn_17,  ../../../../rtl/uart_system_events.v(49)
+                                                                      pin: u_subtitle_uart/events/pending_reg[3]_syn_4.b[0]
+LUT4 (reg)          x012y046z2          0.405    r     5.463       2  net: u_subtitle_uart/events/pending[1],  ../../../../rtl/uart_system_events.v(10)
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.463               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_subtitle_uart/events/pending_reg[3]_syn_4.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.100          3.393               
+clock pessimism                        -0.247          3.146               
+--------------------------------------------------------------------  ---------------
+Required                                               3.146               
+--------------------------------------------------------------------  ---------------
+Slack                                                  2.317               
+
+Slack               : 4.785ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_theme/index_reg[0]_syn_9.b[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 4.991ns (cell 1.514ns (30%), net 3.477ns (70%))
+Clock Skew          : 0.045ns
+Logic Level         : 5 ( LUT5=2  LUT2=2  LUT4=1 )
+Max Fanout          : 8
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[0]
+net (fo=3)                              0.232          3.281          net: u_rover_control/combo_inhibit,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_157.b[0]
+LUT5                x011y043z3          0.321    r     3.602       1  pin: u_thumbnails/u_builder/ramread0_syn_157.f[0]
+net (fo=7)                              1.748          5.350          net: u_theme/index_reg[2]_syn_18,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_subtitle_uart/control/response_b[8]_syn_191.d[0]
+LUT2                x011y054z2          0.179    f     5.529       2  pin: u_subtitle_uart/control/response_b[8]_syn_191.f[0]
+net (fo=8)                              0.834          6.363          net: u_theme/index_reg[2]_syn_20,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_bgm/pcm/fifo/ws1_reg[0]_syn_4.d[0]
+LUT2                x015y049z2          0.179    f     6.542       3  pin: u_bgm/pcm/fifo/ws1_reg[0]_syn_4.f[0]
+net (fo=7)                              0.335          6.877          net: u_theme/index_reg[2]_syn_98,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_theme/timer_index_reg[1]_syn_4.b[0]
+LUT5                x014y047z2          0.321    r     7.198       4  pin: u_theme/timer_index_reg[1]_syn_4.f[0]
+net (fo=1)                              0.328          7.526          net: u_theme/index_reg[1]_syn_4,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_theme/index_reg[0]_syn_9.b[0]
+LUT4 (reg)          x012y049z2          0.405    r     7.931       5  net: u_theme/index[1],  ../../../../rtl/theme_control.v(9)
+--------------------------------------------------------------------  ---------------
+Arrival                                                7.931               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_theme/index_reg[0]_syn_9.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.100          3.393               
+clock pessimism                        -0.247          3.146               
+--------------------------------------------------------------------  ---------------
+Required                                               3.146               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.785               
+
+Slack               : 4.601ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_rover_control/secondary_reg[1]_syn_7.a[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 4.707ns (cell 1.700ns (36%), net 3.007ns (64%))
+Clock Skew          : 0.045ns
+Logic Level         : 6 ( LUT2=4  LUT5=1  LUT4=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[1]
+net (fo=2)                              0.322          3.371          net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_theme/index_reg[2]_syn_136.b[1]
+LUT2                x011y042z0          0.235    r     3.606       1  pin: u_theme/index_reg[2]_syn_136.f[1]
+net (fo=3)                              0.536          4.142          net: u_theme/index_reg[2]_syn_6,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_167.d[0]
+LUT2                x013y045z3          0.179    f     4.321       2  pin: u_thumbnails/u_builder/ramread0_syn_167.f[0]
+net (fo=7)                              0.602          4.923          net: u_rover_control/active,  ../../../../rtl/eval/p_rover_control.v(5)
+                                                                      pin: u_thumbnails/u_visible/ack_sync_reg[1]_syn_4.d[1]
+LUT2                x017y045z3          0.179    f     5.102       3  pin: u_thumbnails/u_visible/ack_sync_reg[1]_syn_4.f[1]
+net (fo=2)                              0.788          5.890          net: u_rover_control/angle_index_b3_n,  NOFILE(0)
+                                                                      pin: u_rover_control/secondary_reg[4]_syn_17.a[1]
+LUT2                x021y049z3          0.316    r     6.206       4  pin: u_rover_control/secondary_reg[4]_syn_17.f[1]
+net (fo=4)                              0.360          6.566          net: u_rover_control/secondary_reg[4]_syn_6,  ../../../../rtl/eval/p_rover_control.v(59)
+                                                                      pin: u_transition_coordinates/yp_reg[146]_syn_4.a[0]
+LUT5                x023y055z2          0.316    r     6.882       5  pin: u_transition_coordinates/yp_reg[146]_syn_4.f[0]
+net (fo=5)                              0.399          7.281          net: u_rover_control/mux49_syn_2[0],  ../../../../rtl/eval/p_rover_control.v(93)
+                                                                      pin: u_rover_control/secondary_reg[1]_syn_7.a[0]
+LUT4 (reg)          x023y054z1          0.366    r     7.647       6  net: u_rover_control/state[8],  ../../../../rtl/eval/p_rover_control.v(6)
+--------------------------------------------------------------------  ---------------
+Arrival                                                7.647               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/secondary_reg[1]_syn_7.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.000          3.293               
+clock pessimism                        -0.247          3.046               
+--------------------------------------------------------------------  ---------------
+Required                                               3.046               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.601               
+
+Slack               : 4.688ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_rover_control/battery_reg[0]_syn_49.a[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 4.794ns (cell 1.447ns (30%), net 3.347ns (70%))
+Clock Skew          : 0.045ns
+Logic Level         : 5 ( LUT2=3  LUT4=2 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[1]
+net (fo=2)                              0.322          3.371          net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_theme/index_reg[2]_syn_136.b[1]
+LUT2                x011y042z0          0.235    r     3.606       1  pin: u_theme/index_reg[2]_syn_136.f[1]
+net (fo=3)                              0.536          4.142          net: u_theme/index_reg[2]_syn_6,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_167.d[0]
+LUT2                x013y045z3          0.179    f     4.321       2  pin: u_thumbnails/u_builder/ramread0_syn_167.f[0]
+net (fo=7)                              0.224          4.545          net: u_rover_control/active,  ../../../../rtl/eval/p_rover_control.v(5)
+                                                                      pin: u_thumbnails/u_control/focus_reg[0]_syn_18.c[0]
+LUT2                x013y044z2          0.237    r     4.782       3  pin: u_thumbnails/u_control/focus_reg[0]_syn_18.f[0]
+net (fo=2)                              1.932          6.714          net: u_rover_control/mux69_syn_27,  ../../../../rtl/eval/p_rover_control.v(113)
+                                                                      pin: u_transition_coordinates/yp_reg[12]_syn_4.b[1]
+LUT4                x020y052z3          0.321    r     7.035       4  pin: u_transition_coordinates/yp_reg[12]_syn_4.f[1]
+net (fo=5)                              0.333          7.368          net: u_rover_control/battery_reg[0]_syn_43,  ../../../../rtl/eval/p_rover_control.v(59)
+                                                                      pin: u_rover_control/battery_reg[0]_syn_49.a[0]
+LUT4 (reg)          x023y052z0          0.366    r     7.734       5  net: u_rover_control/state[33],  ../../../../rtl/eval/p_rover_control.v(6)
+--------------------------------------------------------------------  ---------------
+Arrival                                                7.734               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/battery_reg[0]_syn_49.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.000          3.293               
+clock pessimism                        -0.247          3.046               
+--------------------------------------------------------------------  ---------------
+Required                                               3.046               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.688               
+
+Slack               : 4.709ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_priority_osd/pixels_b2[4]_syn_485.a[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 4.815ns (cell 1.700ns (35%), net 3.115ns (65%))
+Clock Skew          : 0.045ns
+Logic Level         : 6 ( LUT2=4  LUT5=1  LUT4=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[1]
+net (fo=2)                              0.322          3.371          net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_theme/index_reg[2]_syn_136.b[1]
+LUT2                x011y042z0          0.235    r     3.606       1  pin: u_theme/index_reg[2]_syn_136.f[1]
+net (fo=3)                              0.536          4.142          net: u_theme/index_reg[2]_syn_6,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_167.d[0]
+LUT2                x013y045z3          0.179    f     4.321       2  pin: u_thumbnails/u_builder/ramread0_syn_167.f[0]
+net (fo=7)                              0.602          4.923          net: u_rover_control/active,  ../../../../rtl/eval/p_rover_control.v(5)
+                                                                      pin: u_thumbnails/u_visible/ack_sync_reg[1]_syn_4.d[1]
+LUT2                x017y045z3          0.179    f     5.102       3  pin: u_thumbnails/u_visible/ack_sync_reg[1]_syn_4.f[1]
+net (fo=2)                              0.788          5.890          net: u_rover_control/angle_index_b3_n,  NOFILE(0)
+                                                                      pin: u_rover_control/secondary_reg[4]_syn_17.a[1]
+LUT2                x021y049z3          0.316    r     6.206       4  pin: u_rover_control/secondary_reg[4]_syn_17.f[1]
+net (fo=4)                              0.360          6.566          net: u_rover_control/secondary_reg[4]_syn_6,  ../../../../rtl/eval/p_rover_control.v(59)
+                                                                      pin: u_transition_coordinates/yp_reg[146]_syn_4.a[0]
+LUT5                x023y055z2          0.316    r     6.882       5  pin: u_transition_coordinates/yp_reg[146]_syn_4.f[0]
+net (fo=5)                              0.507          7.389          net: u_rover_control/mux49_syn_2[0],  ../../../../rtl/eval/p_rover_control.v(93)
+                                                                      pin: u_priority_osd/pixels_b2[4]_syn_485.a[0]
+LUT4 (reg)          x022y054z1          0.366    r     7.755       6  net: u_rover_control/state[7],  ../../../../rtl/eval/p_rover_control.v(6)
+--------------------------------------------------------------------  ---------------
+Arrival                                                7.755               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_priority_osd/pixels_b2[4]_syn_485.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.000          3.293               
+clock pessimism                        -0.247          3.046               
+--------------------------------------------------------------------  ---------------
+Required                                               3.046               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.709               
+
+Slack               : 2.136ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_theme/meta_reg[4]_syn_4.a[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 2.342ns (cell 0.830ns (35%), net 1.512ns (65%))
+Clock Skew          : 0.045ns
+Logic Level         : 2 ( LUT5=1  LUT4=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[0]
+net (fo=3)                              0.232          3.281          net: u_rover_control/combo_inhibit,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_157.b[0]
+LUT5                x011y043z3          0.321    r     3.602       1  pin: u_thumbnails/u_builder/ramread0_syn_157.f[0]
+net (fo=7)                              1.280          4.882          net: u_theme/index_reg[2]_syn_18,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_theme/meta_reg[4]_syn_4.a[0]
+LUT4 (reg)          x012y052z2          0.400    r     5.282       2  net: u_theme/meta[5],  ../../../../rtl/theme_control.v(18)
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.282               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_theme/meta_reg[4]_syn_4.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.100          3.393               
+clock pessimism                        -0.247          3.146               
+--------------------------------------------------------------------  ---------------
+Required                                               3.146               
+--------------------------------------------------------------------  ---------------
+Slack                                                  2.136               
+
+Slack               : 2.136ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_theme/meta_reg[4]_syn_4.a[1] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 2.342ns (cell 0.830ns (35%), net 1.512ns (65%))
+Clock Skew          : 0.045ns
+Logic Level         : 2 ( LUT5=1  LUT4=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[0]
+net (fo=3)                              0.232          3.281          net: u_rover_control/combo_inhibit,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_157.b[0]
+LUT5                x011y043z3          0.321    r     3.602       1  pin: u_thumbnails/u_builder/ramread0_syn_157.f[0]
+net (fo=7)                              1.280          4.882          net: u_theme/index_reg[2]_syn_18,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_theme/meta_reg[4]_syn_4.a[1]
+LUT4 (reg)          x012y052z2          0.400    r     5.282       2  net: u_theme/meta[4],  ../../../../rtl/theme_control.v(18)
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.282               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_theme/meta_reg[4]_syn_4.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.100          3.393               
+clock pessimism                        -0.247          3.146               
+--------------------------------------------------------------------  ---------------
+Required                                               3.146               
+--------------------------------------------------------------------  ---------------
+Slack                                                  2.136               
+
+Slack               : 3.298ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_rover_control/battery_reg[3]_syn_9.c[1] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 3.404ns (cell 1.180ns (34%), net 2.224ns (66%))
+Clock Skew          : 0.045ns
+Logic Level         : 5 ( LUT2=4  LUT4=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[1]
+net (fo=2)                              0.322          3.371          net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_theme/index_reg[2]_syn_136.b[1]
+LUT2                x011y042z0          0.235    r     3.606       1  pin: u_theme/index_reg[2]_syn_136.f[1]
+net (fo=3)                              0.536          4.142          net: u_theme/index_reg[2]_syn_6,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_167.d[0]
+LUT2                x013y045z3          0.179    f     4.321       2  pin: u_thumbnails/u_builder/ramread0_syn_167.f[0]
+net (fo=7)                              0.224          4.545          net: u_rover_control/active,  ../../../../rtl/eval/p_rover_control.v(5)
+                                                                      pin: u_thumbnails/u_control/focus_reg[0]_syn_18.c[0]
+LUT2                x013y044z2          0.237    r     4.782       3  pin: u_thumbnails/u_control/focus_reg[0]_syn_18.f[0]
+net (fo=2)                              0.713          5.495          net: u_rover_control/mux69_syn_27,  ../../../../rtl/eval/p_rover_control.v(113)
+                                                                      pin: u_transition_coordinates/yp_reg[10]_syn_4.d[0]
+LUT2                x019y051z3          0.179    f     5.674       4  pin: u_transition_coordinates/yp_reg[10]_syn_4.f[0]
+net (fo=4)                              0.429          6.103          net: u_rover_control/battery_reg[2]_syn_6,  ../../../../rtl/eval/p_rover_control.v(59)
+                                                                      pin: u_rover_control/battery_reg[3]_syn_9.c[1]
+LUT4 (reg)          x021y052z1          0.241    f     6.344       5  net: u_rover_control/state[31],  ../../../../rtl/eval/p_rover_control.v(6)
+--------------------------------------------------------------------  ---------------
+Arrival                                                6.344               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/battery_reg[3]_syn_9.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.000          3.293               
+clock pessimism                        -0.247          3.046               
+--------------------------------------------------------------------  ---------------
+Required                                               3.046               
+--------------------------------------------------------------------  ---------------
+Slack                                                  3.298               
+
+Slack               : 4.659ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_rover_control/angle_index_reg[0]_syn_7.d[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 4.765ns (cell 1.413ns (29%), net 3.352ns (71%))
+Clock Skew          : 0.045ns
+Logic Level         : 6 ( LUT2=4  LUT5=1  LUT3=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[1]
+net (fo=2)                              0.322          3.371          net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_theme/index_reg[2]_syn_136.b[1]
+LUT2                x011y042z0          0.235    r     3.606       1  pin: u_theme/index_reg[2]_syn_136.f[1]
+net (fo=3)                              0.536          4.142          net: u_theme/index_reg[2]_syn_6,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_167.d[0]
+LUT2                x013y045z3          0.179    f     4.321       2  pin: u_thumbnails/u_builder/ramread0_syn_167.f[0]
+net (fo=7)                              0.602          4.923          net: u_rover_control/active,  ../../../../rtl/eval/p_rover_control.v(5)
+                                                                      pin: u_thumbnails/u_visible/ack_sync_reg[1]_syn_4.d[1]
+LUT2                x017y045z3          0.179    f     5.102       3  pin: u_thumbnails/u_visible/ack_sync_reg[1]_syn_4.f[1]
+net (fo=2)                              0.788          5.890          net: u_rover_control/angle_index_b3_n,  NOFILE(0)
+                                                                      pin: u_rover_control/secondary_reg[4]_syn_17.a[1]
+LUT2                x021y049z3          0.316    r     6.206       4  pin: u_rover_control/secondary_reg[4]_syn_17.f[1]
+net (fo=4)                              0.790          6.996          net: u_rover_control/secondary_reg[4]_syn_6,  ../../../../rtl/eval/p_rover_control.v(59)
+                                                                      pin: u_rover_control/angle_index_reg[4]_syn_15.d[1]
+LUT5                x026y055z3          0.179    f     7.175       5  pin: u_rover_control/angle_index_reg[4]_syn_15.f[1]
+net (fo=5)                              0.314          7.489          net: u_rover_control/mux51_syn_2[0],  ../../../../rtl/eval/p_rover_control.v(93)
+                                                                      pin: u_rover_control/angle_index_reg[0]_syn_7.d[0]
+LUT3 (reg)          x026y055z1          0.216    f     7.705       6  net: u_rover_control/angle_index[0],  ../../../../rtl/eval/p_rover_control.v(14)
+--------------------------------------------------------------------  ---------------
+Arrival                                                7.705               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/angle_index_reg[0]_syn_7.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.000          3.293               
+clock pessimism                        -0.247          3.046               
+--------------------------------------------------------------------  ---------------
+Required                                               3.046               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.659               
+
+Slack               : 4.760ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_rover_control/battery_reg[0]_syn_49.d[1] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 4.866ns (cell 1.297ns (26%), net 3.569ns (74%))
+Clock Skew          : 0.045ns
+Logic Level         : 5 ( LUT2=3  LUT4=1  LUT3=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[1]
+net (fo=2)                              0.322          3.371          net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_theme/index_reg[2]_syn_136.b[1]
+LUT2                x011y042z0          0.235    r     3.606       1  pin: u_theme/index_reg[2]_syn_136.f[1]
+net (fo=3)                              0.536          4.142          net: u_theme/index_reg[2]_syn_6,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_167.d[0]
+LUT2                x013y045z3          0.179    f     4.321       2  pin: u_thumbnails/u_builder/ramread0_syn_167.f[0]
+net (fo=7)                              0.224          4.545          net: u_rover_control/active,  ../../../../rtl/eval/p_rover_control.v(5)
+                                                                      pin: u_thumbnails/u_control/focus_reg[0]_syn_18.c[0]
+LUT2                x013y044z2          0.237    r     4.782       3  pin: u_thumbnails/u_control/focus_reg[0]_syn_18.f[0]
+net (fo=2)                              1.932          6.714          net: u_rover_control/mux69_syn_27,  ../../../../rtl/eval/p_rover_control.v(113)
+                                                                      pin: u_transition_coordinates/yp_reg[12]_syn_4.b[1]
+LUT4                x020y052z3          0.321    r     7.035       4  pin: u_transition_coordinates/yp_reg[12]_syn_4.f[1]
+net (fo=5)                              0.555          7.590          net: u_rover_control/battery_reg[0]_syn_43,  ../../../../rtl/eval/p_rover_control.v(59)
+                                                                      pin: u_rover_control/battery_reg[0]_syn_49.d[1]
+LUT3 (reg)          x023y052z0          0.216    f     7.806       5  net: u_rover_control/state[28],  ../../../../rtl/eval/p_rover_control.v(6)
+--------------------------------------------------------------------  ---------------
+Arrival                                                7.806               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/battery_reg[0]_syn_49.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.000          3.293               
+clock pessimism                        -0.247          3.046               
+--------------------------------------------------------------------  ---------------
+Required                                               3.046               
+--------------------------------------------------------------------  ---------------
+Slack                                                  4.760               
+
+Slack               : 1.671ns
+Begin Point         : u_subtitle_commit/changed_n_syn_159.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_priority_osd/pixels_b2[4]_syn_481.a[0] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 1.777ns (cell 0.710ns (39%), net 1.067ns (61%))
+Clock Skew          : 0.045ns
+Logic Level         : 2 ( LUT4=2 )
+Max Fanout          : 32
+Clock Uncertainty   : 0.000ns (sdc uncertainty: 0.000ns, default uncertainty: 0.000ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_subtitle_commit/changed_n_syn_159.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x006y055z0          0.109    f     3.049          pin: u_subtitle_commit/changed_n_syn_159.q[0]
+net (fo=32)                             0.739          3.788          net: u_theme/uart_theme_valid,  ../../../../rtl/theme_control.v(14)
+                                                                      pin: u_subtitle_commit/dst_text_reg[84]_syn_4.b[0]
+LUT4                x004y059z1          0.235    r     4.023       1  pin: u_subtitle_commit/dst_text_reg[84]_syn_4.f[0]
+net (fo=3)                              0.328          4.351          net: u_theme/key3_fired_i2_syn_2,  ../../../../rtl/theme_control.v(60)
+                                                                      pin: u_priority_osd/pixels_b2[4]_syn_481.a[0]
+LUT4 (reg)          x005y058z0          0.366    r     4.717       2  net: u_theme/key3_fired,  ../../../../rtl/theme_control.v(21)
+--------------------------------------------------------------------  ---------------
+Arrival                                                4.717               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_priority_osd/pixels_b2[4]_syn_481.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.000          3.293               
+clock pessimism                        -0.247          3.046               
+--------------------------------------------------------------------  ---------------
+Required                                               3.046               
+--------------------------------------------------------------------  ---------------
+Slack                                                  1.671               
+
+Slack               : 2.087ns
+Begin Point         : u_rover_control/remote_demo_reg_syn_8.clk (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+End Point           : u_subtitle_uart/events/pending_reg[3]_syn_4.b[1] (rising edge triggered by clock sys_clk  { rise@0.000000ns  fall@10.000000ns  period=20.000000 })
+Check Type          : hold
+Process             : fast
+Budget              : 0.000ns { sys_clk rising@0.000ns - sys_clk rising@0.000ns }
+Data Path Delay     : 2.293ns (cell 0.928ns (40%), net 1.365ns (60%))
+Clock Skew          : 0.045ns
+Logic Level         : 3 ( LUT2=2  LUT4=1 )
+Max Fanout          : 7
+Clock Uncertainty   : 0.100ns (sdc uncertainty: 0.000ns, default uncertainty: 0.100ns)
+
+Delay Type          Location             Incr           Path   Level  Netlist Info
+--------------------------------------------------------------------  ---------------
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.184          1.184          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.756          2.940          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_rover_control/remote_demo_reg_syn_8.clk
+launch edge                             0.000    r     2.940               
+--------------------------------------------------------------------  ---------------
+clk2q               x010y043z3          0.109    f     3.049          pin: u_rover_control/remote_demo_reg_syn_8.q[1]
+net (fo=2)                              0.322          3.371          net: u_rover_control/remote_demo,  ../../../../rtl/eval/p_rover_control.v(17)
+                                                                      pin: u_theme/index_reg[2]_syn_136.b[1]
+LUT2                x011y042z0          0.235    r     3.606       1  pin: u_theme/index_reg[2]_syn_136.f[1]
+net (fo=3)                              0.536          4.142          net: u_theme/index_reg[2]_syn_6,  ../../../../rtl/theme_control.v(40)
+                                                                      pin: u_thumbnails/u_builder/ramread0_syn_167.d[0]
+LUT2                x013y045z3          0.179    f     4.321       2  pin: u_thumbnails/u_builder/ramread0_syn_167.f[0]
+net (fo=7)                              0.507          4.828          net: u_rover_control/active,  ../../../../rtl/eval/p_rover_control.v(5)
+                                                                      pin: u_subtitle_uart/events/pending_reg[3]_syn_4.b[1]
+LUT4 (reg)          x012y046z2          0.405    r     5.233       3  net: u_subtitle_uart/events/pending[3],  ../../../../rtl/uart_system_events.v(10)
+--------------------------------------------------------------------  ---------------
+Arrival                                                5.233               
+
+source latency                          0.000          0.000               
+port                R7                  0.000          0.000          pin: sys_clk
+hierarchy                               0.000          0.000          pin: sys_clk_syn_2.ipad
+PAD                 x020y071            1.302          1.302          pin: sys_clk_syn_2.di
+net (fo=1397)                           1.930          3.232          net: sys_clk_dup_1,  ../../../../rtl/tf_image_top.v(4)
+                                                                      pin: u_subtitle_uart/events/pending_reg[3]_syn_4.clk
+capture edge                            0.000    r     3.232               
+--------------------------------------------------------------------  ---------------
+hold                                    0.061          3.293               
+clock uncertainty                       0.100          3.393               
+clock pessimism                        -0.247          3.146               
+--------------------------------------------------------------------  ---------------
+Required                                               3.146               
+--------------------------------------------------------------------  ---------------
+Slack                                                  2.087               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

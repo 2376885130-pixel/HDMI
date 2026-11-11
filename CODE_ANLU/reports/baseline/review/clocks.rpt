@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<clock_summary>
+		<groups size="1">
+				<clock_group name="sys_clk" size="7" endpoints="7251" clocks="7251" nonclocks="0"/>
+		</groups>
+</clock_summary>

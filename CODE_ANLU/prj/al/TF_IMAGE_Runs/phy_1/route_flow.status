@@ -1,0 +1,22 @@
+Location         : D:\CODE_ANLU\prj\al\TF_IMAGE_Runs\phy_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : tf_image_top
+Device           : EG4S20BG256
+Speed            : NA
+
+Timing Mode      : final
+Setup            : WNS   220ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS    30ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+---------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time   |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+---------------------------------------------------------------------------------------------------
+      route      |    1     |  3m40s(65%)  |   313(66%)    |       1520        |       1520        
+      place      |    1     |  1m55s(34%)  |   155(33%)    |       1000        |       1000        
+    import_db    |    1     |    1s(0%)    |     0(0%)     |        505        |        505        
+  import_device  |    1     |    0s(0%)    |     0(0%)     |        83         |        83         
+---------------------------------------------------------------------------------------------------
+      total      |    4     |    5m36s     |      468      |       1520        |       1520        
+---------------------------------------------------------------------------------------------------

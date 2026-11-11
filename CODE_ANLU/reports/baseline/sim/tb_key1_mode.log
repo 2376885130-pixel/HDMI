@@ -1,0 +1,2 @@
+PASS KEY1 POR, debounce, 22 short presses without reset, held long reset, no release leakage
+D:\FPGA_DUAL_HDMI_UART_20261019\sim\compat_tb_key1_mode.v:24: $finish called at 13780000 (1ps)

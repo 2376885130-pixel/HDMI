@@ -1,0 +1,2 @@
+PASS PCM waveform full-raster visibility, saturating -32768, silence, stale timeout, bank stability and pixel confinement bars=5376
+D:\FPGA_DUAL_HDMI_UART_20261019\sim\compat_tb_wave_visible.v:30: $finish called at 3074920000 (1ps)

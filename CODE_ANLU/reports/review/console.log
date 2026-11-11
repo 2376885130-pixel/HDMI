@@ -1,0 +1,272 @@
+============================================================
+   Tang Dynasty, V6.2.168116
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = D:/Anlogic/TD_6.2.1_Engineer_6.2.168.116/bin/td_commands_prompt.exe
+   Built at =   16:32:07 Jun 12 2025
+   Run by =     kkran
+   Run Date =   Wed Oct 21 14:55:19 2026
+
+   Run on =     LAPTOP-81FRNUTD
+============================================================
+RUN-1002 : start command "import_device eagle_s20.db -package EG4S20BG256"
+RUN-1001 : Using default speed grade: NA
+ARC-1001 : Device Initialization.
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :            OPTION            |          IO          |   SETTING   
+ARC-1001 : ------------------------------------------------------------------
+ARC-1001 :   cso_b/cclk/mosi/miso/dout  |  T3/R11/T10/P10/S11  |    gpio    
+ARC-1001 :             done             |         P13          |    gpio    
+ARC-1001 :           program_b          |          T2          |  dedicate  
+ARC-1001 :        tdi/tms/tck/tdo       |   C12/A15/C14/E14    |  dedicate  
+ARC-1001 : ------------------------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "open_project TF_IMAGE.al"
+RUN-1002 : start command "commit_param -step design"
+RUN-1001 : Print Global Property
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   Parameters   |  Settings  |  Default Values  |  Note  
+RUN-1001 : --------------------------------------------------------
+RUN-1001 :   enable_seed  |    off     |       off        |        
+RUN-1001 :     message    |  standard  |     standard     |        
+RUN-1001 :   qor_monitor  |     on     |        on        |        
+RUN-1001 :   syn_ip_flow  |    off     |       off        |        
+RUN-1001 :     thread     |    auto    |       auto       |        
+RUN-1001 : --------------------------------------------------------
+RUN-1001 : Print Design Property
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :       Parameters       |  Settings  |  Default Values  |  Note  
+RUN-1001 : ----------------------------------------------------------------
+RUN-1001 :   default_reg_initial  |    auto    |       auto       |        
+RUN-1001 :    hdl_warning_level   |   normal   |      normal      |        
+RUN-1001 : ----------------------------------------------------------------
+HDL-1007 : analyze verilog file ../al_ip/video_pll/video_pll.v
+HDL-1007 : undeclared symbol 'video_pll_open0', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(78)
+HDL-1007 : undeclared symbol 'video_pll_open8', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(84)
+HDL-1007 : undeclared symbol 'video_pll_open7', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(84)
+HDL-1007 : undeclared symbol 'video_pll_open6', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(84)
+HDL-1007 : undeclared symbol 'video_pll_open5', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(84)
+HDL-1007 : undeclared symbol 'video_pll_open4', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(84)
+HDL-1007 : undeclared symbol 'video_pll_open3', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(84)
+HDL-1007 : undeclared symbol 'video_pll_open2', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(84)
+HDL-1007 : undeclared symbol 'video_pll_open1', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(84)
+HDL-1007 : undeclared symbol 'video_pll_open11', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(86)
+HDL-1007 : undeclared symbol 'video_pll_open10', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(86)
+HDL-1007 : undeclared symbol 'video_pll_open9', assumed default net type 'wire' in ../al_ip/video_pll/video_pll.v(86)
+HDL-1007 : analyze verilog file ../../rtl/tf_image_top.v
+HDL-1007 : analyze verilog file ../../rtl/fat32_bmp_loader.v
+HDL-1007 : analyze verilog file ../../rtl/video_timing_registered.v
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/SD/sd_card_top.v
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v
+HDL-5370 WARNING: parameter 'S_IDLE' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(27)
+HDL-5370 WARNING: parameter 'S_WAIT' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(28)
+HDL-5370 WARNING: parameter 'S_INIT' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(29)
+HDL-5370 WARNING: parameter 'S_CMD_PRE' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(30)
+HDL-5370 WARNING: parameter 'S_CMD' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(31)
+HDL-5370 WARNING: parameter 'S_CMD_DATA' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(32)
+HDL-5370 WARNING: parameter 'S_READ_WAIT' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(33)
+HDL-5370 WARNING: parameter 'S_READ' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(34)
+HDL-5370 WARNING: parameter 'S_READ_ACK' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(35)
+HDL-5370 WARNING: parameter 'S_WRITE_TOKEN' becomes localparam in 'sd_card_cmd' with formal parameter declaration list in ../../rtl/vendor/tf_reference/SD/sd_card_cmd.v(36)
+HDL-5370 Similar messages will be suppressed.
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/SD/sd_card_sec_read_write.v
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/SD/spi_master.v
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/SD/frame_read_write.v
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/SD/frame_fifo_write.v
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/SD/frame_fifo_read.v
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/SD/video_delay.v
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/SD/sdram.v
+HDL-1007 : analyze included file ../../rtl/vendor/tf_reference/SD/../include/global_def.v in ../../rtl/vendor/tf_reference/SD/sdram.v(10)
+HDL-1007 : back to file '../../rtl/vendor/tf_reference/SD/sdram.v' in ../../rtl/vendor/tf_reference/SD/sdram.v(10)
+HDL-1007 : undeclared symbol 'SDR_CKE', assumed default net type 'wire' in ../../rtl/vendor/tf_reference/SD/sdram.v(89)
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/IP/sys_pll.v
+HDL-1007 : undeclared symbol 'open', assumed default net type 'wire' in ../../rtl/vendor/tf_reference/IP/sys_pll.v(93)
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/IP/afifo_16_32_256.v
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/IP/afifo_32_16_256.v
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/include/sdr_as_ram.enc.v
+HDL-1007 : analyze included file ../../rtl/vendor/tf_reference/include/global_def.v in ../../rtl/vendor/tf_reference/include/sdr_as_ram.enc.v(10)
+HDL-1007 : back to file '../../rtl/vendor/tf_reference/include/sdr_as_ram.enc.v' in ../../rtl/vendor/tf_reference/include/sdr_as_ram.enc.v(10)
+Copyright (c) 1998-2019 The OpenSSL Project.  All rights reserved.
+This product includes software developed by the OpenSSL Project
+for use in the OpenSSL Toolkit (http://www.openssl.org/)
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)
+HDL-1007 : back to file '../../rtl/vendor/tf_reference/include/sdr_as_ram.enc.v' in ../../rtl/vendor/tf_reference/include/sdr_as_ram.enc.v(45)
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v
+HDL-1007 : analyze included file ../../rtl/vendor/tf_reference/include/global_def.v in ../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v(11)
+HDL-1007 : back to file '../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v' in ../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v(11)
+HDL-1007 : undeclared symbol '**', assumed default net type '**' in ../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v(57)
+HDL-1007 : back to file '../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v' in ../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v(149)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../rtl/vendor/tf_reference/include/sdr_init_ref.enc.v(47)
+HDL-1007 : analyze verilog file ../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in ../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(283)
+HDL-1007 : back to file '../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v' in ../../rtl/vendor/tf_reference/include/sdr_wrrd.enc.v(19)
+HDL-1007 : analyze verilog file ../../rtl/tf_startup_control.v
+HDL-1007 : analyze verilog file ../../rtl/key_debounce.v
+HDL-1007 : analyze verilog file ../../rtl/image_key_control.v
+HDL-1007 : analyze verilog file ../../rtl/loading_spinner_rgb.v
+HDL-1007 : analyze verilog file ../../rtl/image_number_display.v
+HDL-1007 : analyze verilog file ../../rtl/key_beeper.v
+HDL-1007 : analyze verilog file ../../rtl/image_status_osd.v
+HDL-1007 : analyze verilog file ../../rtl/osd_font16.v
+HDL-5007 WARNING: column 1026 exceeds maximum value 1023 in ../../rtl/osd_font16.v(9)
+HDL-1007 : analyze VHDL file ../../rtl/vendor/hdmi_tx.vhd
+HDL-1007 : analyze entity hdmi_tx in ../../rtl/vendor/hdmi_tx.vhd(11)
+HDL-1007 : analyze architecture behavioral in ../../rtl/vendor/hdmi_tx.vhd(33)
+HDL-1007 : analyze VHDL file ../../rtl/vendor/enc_file/SerializerN_1_lvds.enc.vhd
+HDL-1007 : analyze entity ** in ../../rtl/vendor/enc_file/SerializerN_1_lvds.enc.vhd(12)
+HDL-1007 : analyze architecture ** in ../../rtl/vendor/enc_file/SerializerN_1_lvds.enc.vhd(25)
+HDL-1007 : analyze VHDL file ../../rtl/vendor/enc_file/SerializerN_1_lvds_dat.enc.vhd
+HDL-1007 : analyze entity ** in ../../rtl/vendor/enc_file/SerializerN_1_lvds_dat.enc.vhd(14)
+HDL-1007 : analyze architecture ** in ../../rtl/vendor/enc_file/SerializerN_1_lvds_dat.enc.vhd(28)
+HDL-1007 : analyze VHDL file ../../rtl/vendor/enc_file/TMDSEncoder.enc.vhd
+HDL-1007 : analyze entity ** in ../../rtl/vendor/enc_file/TMDSEncoder.enc.vhd(13)
+HDL-1007 : analyze architecture ** in ../../rtl/vendor/enc_file/TMDSEncoder.enc.vhd(24)
+HDL-1007 : analyze VHDL file ../../rtl/vendor/enc_file/DVITransmitter.enc.vhd
+HDL-1007 : analyze entity dvitransmitter in ../../rtl/vendor/enc_file/DVITransmitter.enc.vhd(13)
+HDL-1007 : analyze architecture ** in ../../rtl/vendor/enc_file/DVITransmitter.enc.vhd(2)
+HDL-1007 : analyze verilog file ../../rtl/audio/m06_pcm_contract_adapter.v
+HDL-1007 : analyze verilog file ../../rtl/audio/pcm_test_tone.v
+HDL-1007 : analyze verilog file ../../rtl/board/hdmi_phy_warpper.v
+HDL-1007 : analyze verilog file ../../rtl/board/lane_lvds_10_1.v
+HDL-1007 : analyze verilog file ../../rtl/hdmi_audio/hdmi_audio_acr_packetizer.v
+HDL-1007 : analyze verilog file ../../rtl/hdmi_audio/hdmi_audio_infoframe_packetizer.v
+HDL-1007 : analyze verilog file ../../rtl/hdmi_audio/hdmi_audio_packet_scheduler.v
+HDL-1007 : analyze verilog file ../../rtl/hdmi_audio/hdmi_audio_sample_packetizer.v
+HDL-1007 : analyze verilog file ../../rtl/hdmi_audio/hdmi_audio_symbol_core.v
+HDL-1007 : analyze verilog file ../../rtl/hdmi_audio/hdmi_bch8.v
+HDL-1007 : analyze verilog file ../../rtl/hdmi_audio/hdmi_data_island_mapper.v
+HDL-1007 : analyze verilog file ../../rtl/hdmi_audio/hdmi_data_island_scheduler.v
+HDL-1007 : analyze verilog file ../../rtl/hdmi_audio/hdmi_terc4_encoder.v
+HDL-1007 : analyze verilog file ../../rtl/hdmi_audio/hdmi_tmds_channel_encoder.v
+HDL-1007 : analyze verilog file ../../rtl/integration/media_hdmi_audio_bridge.v
+HDL-1007 : analyze verilog file ../../rtl/integration/video_audio_coordinates.v
+HDL-1007 : analyze verilog file ../../rtl/osd_state_snapshot.v
+HDL-1007 : analyze verilog file ../../rtl/osd_timebase.v
+HDL-1007 : analyze verilog file ../../rtl/osd_compositor.v
+HDL-1007 : analyze verilog file ../../rtl/uart_rx_byte.v
+HDL-1007 : analyze verilog file ../../rtl/uart_tx_byte.v
+HDL-1007 : analyze verilog file ../../rtl/subtitle_uart_controller.v
+HDL-1007 : analyze verilog file ../../rtl/subtitle_uart_service.v
+HDL-1007 : analyze verilog file ../../rtl/subtitle_frame_commit.v
+HDL-1007 : analyze verilog file ../../rtl/subtitle_scroll.v
+HDL-1007 : analyze verilog file ../../rtl/video_fade_transition.v
+HDL-1007 : analyze verilog file ../../rtl/frame_cache_manager.v
+HDL-1007 : analyze verilog file ../../rtl/video_transition_rgb.v
+HDL-1007 : analyze verilog file ../../rtl/video_transition_coordinates.v
+HDL-1007 : analyze verilog file ../../rtl/frame_present_control.v
+HDL-1007 : analyze verilog file ../../rtl/player_front_panel.v
+HDL-1007 : analyze verilog file ../../rtl/fat32_volume_geometry.v
+HDL-1007 : analyze verilog file ../../rtl/quad_slot_allocator.v
+HDL-1007 : analyze verilog file ../../rtl/frame_buffer_pair.v
+HDL-1007 : analyze verilog file ../../rtl/memory_load_reset.v
+HDL-1007 : analyze verilog file ../../rtl/media_recovery_policy.v
+HDL-1007 : analyze verilog file ../../rtl/frame_commit_guard.v
+HDL-1007 : analyze verilog file ../../rtl/frame_write_reset_guard.v
+HDL-1007 : analyze verilog file ../../rtl/sd_sector_adapter.v
+HDL-1007 : analyze verilog file ../../rtl/quad_frame_present.v
+HDL-1007 : analyze verilog file ../../rtl/media_fault_monitor.v
+HDL-1007 : analyze verilog file ../../rtl/quad_frame_store.v
+HDL-1007 : analyze verilog file ../../rtl/bmp24_decoder.v
+HDL-1007 : analyze verilog file ../../rtl/catalog_snapshot_bridge.v
+HDL-1007 : analyze verilog file ../../rtl/fat32_stream_cursor.v
+HDL-1007 : analyze verilog file ../../rtl/audio/pcm_media_tone.v
+HDL-1007 : analyze verilog file ../../rtl/fat32_directory_catalog.v
+HDL-1007 : analyze verilog file ../../rtl/sd_transport_cdc.v
+HDL-1007 : analyze verilog file ../../rtl/audio/wav_riff_parser.v
+HDL-1007 : analyze verilog file ../../rtl/audio/pcm_async_fifo.v
+HDL-1007 : analyze verilog file ../../rtl/audio/wav_pcm_stream.v
+HDL-1007 : analyze verilog file ../../rtl/thumbnail_controller.v
+HDL-1007 : analyze verilog file ../../rtl/audio/pcm_tick_48k.v
+HDL-1007 : analyze verilog file ../../rtl/audio/pcm_source_select.v
+HDL-1007 : analyze verilog file ../../rtl/thumbnail_inputs.v
+HDL-1007 : analyze verilog file ../../rtl/audio/pcm_continuous_output.v
+HDL-1007 : analyze verilog file ../../rtl/sd_sector_arbiter.v
+HDL-1007 : analyze verilog file ../../rtl/thumbnail_page_builder.v
+HDL-1007 : analyze verilog file ../../rtl/fat32_bgm_stream.v
+HDL-1007 : analyze verilog file ../../rtl/thumbnail_subsystem.v
+HDL-1007 : analyze verilog file ../../rtl/bgm_audio_player.v
+HDL-1007 : analyze verilog file ../../rtl/audio_diagnostic_snapshot.v
+HDL-1007 : analyze verilog file ../../rtl/display/promax_audio_waveform.v
+HDL-1007 : analyze verilog file ../../rtl/bmp24_header.v
+HDL-1007 : analyze verilog file ../../rtl/scale_divider.v
+HDL-1007 : analyze verilog file ../../rtl/bilinear_rgb_serial.v
+HDL-1007 : analyze verilog file ../../rtl/adaptive_progress.v
+HDL-1007 : analyze verilog file ../../rtl/picture_param_control.v
+HDL-1007 : analyze verilog file ../../rtl/picture_adjust_rgb.v
+HDL-1007 : analyze verilog file ../../rtl/picture_param_commit.v
+HDL-1007 : analyze verilog file ../../rtl/picture_param_osd.v
+HDL-1007 : analyze verilog file ../../rtl/theme_control.v
+HDL-1007 : analyze verilog file ../../rtl/theme_audio_player.v
+HDL-1007 : analyze verilog file ../../rtl/theme_osd.v
+HDL-1007 : analyze verilog file ../../rtl/sw2_direction_filter.v
+HDL-1007 : analyze verilog file ../../rtl/osd_mode_policy.v
+HDL-1007 : analyze verilog file ../../rtl/osd_priority_layer.v
+HDL-1007 : analyze verilog file ../../rtl/key1_mode_control.v
+HDL-1007 : analyze verilog file ../../rtl/eval/p_rover_control.v
+HDL-1007 : analyze verilog file ../../rtl/eval/p_rover_overlay.v
+HDL-1007 : analyze verilog file ../../rtl/eval/p_rover_video.v
+HDL-1007 : analyze verilog file ../../rtl/eval/p_rover_scan.v
+HDL-1007 : analyze verilog file ../../rtl/eval/p_panel_span.v
+HDL-1007 : analyze verilog file ../../rtl/uart_system_events.v
+PRJ-1401 : Successfully analyzed 116 source files.
+RUN-1002 : start command "import_db ../../reports/route/final.db"
+RUN-1001 : Importing database generated by Tang Dynasty, V6.2.168116.
+RUN-1001 : Database version number 46207
+RUN-1002 : start command "set_param gate opt_area high"
+RUN-1001 : Import flow parameters
+RUN-1001 : Import netlist
+PHY-1001 : Generate detailed routing grids ...
+PHY-1001 : End build routing graph; 1.613848s wall, 1.609375s user + 0.000000s system = 1.609375s CPU (99.7%)
+
+PHY-1001 : Build lut bridge;  0.040851s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (114.7%)
+
+PHY-1001 : Generate nets ...
+PHY-1001 : net pixel_clk will be routed on clock mesh
+PHY-1001 : clock net sd_clk will be merged with clock u_memory_pll/clk0_buf
+PHY-1001 : net sys_clk_dup_1 will be routed on clock mesh
+PHY-1001 : clock net u_audio_phy_a/u0_lane_lvds_8_1/I_serial_clk will be merged with clock u_video_pll/clk0_buf
+PHY-1001 : net u_frame/mem_clk will be routed on clock mesh
+PHY-1001 : net u_sd_cdc/spi_clk will be routed on clock mesh
+PHY-1001 : net u_sdram/u2_ram/SDRAM_CLK will be routed on clock mesh
+PHY-1001 : eco open net = 0
+PHY-1001 : 88 feed throughs used by 82 nets
+RUN-1001 : Import phy database
+RUN-1001 : Import timing constraints
+RUN-1001 : Import IO constraints
+RUN-1001 : Import Inst constraints
+RUN-1001 : Import ChipWatcher
+RUN-1001 : Import design success TD_VERSION=6.2.168116 , DB_VERSION=46207
+RUN-1003 : finish command "import_db ../../reports/route/final.db" in  7.329137s wall, 6.218750s user + 0.125000s system = 6.343750s CPU (86.6%)
+
+RUN-1004 : used memory is 1093 MB, reserved memory is 1082 MB, peak memory is 1093 MB
+RUN-1002 : start command "update_timing -mode final"
+RUN-1002 : start command "start_timer"
+USR-1002 : Derived clock:  create_generated_clock -name {u_memory_pll/pll_inst.clkc[0]} -source [get_ports sys_clk] -master_clock {sys_clk} -multiply_by 1.0000 -duty_cycle 50.0000 [get_pins {u_memory_pll/pll_inst.clkc[0]}]
+USR-1002 : Derived clock:  create_generated_clock -name {u_memory_pll/pll_inst.clkc[1]} -source [get_ports sys_clk] -master_clock {sys_clk} -multiply_by 1.0000 -duty_cycle 50.0000 [get_pins {u_memory_pll/pll_inst.clkc[1]}]
+USR-1002 : Derived clock:  create_generated_clock -name {u_memory_pll/pll_inst.clkc[2]} -source [get_ports sys_clk] -master_clock {sys_clk} -multiply_by 1.0000 -phase 144 -duty_cycle 50.0000 [get_pins {u_memory_pll/pll_inst.clkc[2]}]
+USR-1002 : Derived clock:  create_generated_clock -name {u_memory_pll/pll_inst.clkc[3]} -source [get_ports sys_clk] -master_clock {sys_clk} -multiply_by 2.0000 -duty_cycle 50.0000 [get_pins {u_memory_pll/pll_inst.clkc[3]}]
+USR-1002 : Derived clock:  create_generated_clock -name {u_video_pll/pll_inst.clkc[0]} -source [get_ports sys_clk] -master_clock {sys_clk} -multiply_by 2.5000 -duty_cycle 50.0000 [get_pins {u_video_pll/pll_inst.clkc[0]}]
+USR-1002 : Derived clock:  create_generated_clock -name {u_video_pll/pll_inst.clkc[1]} -source [get_ports sys_clk] -master_clock {sys_clk} -divide_by 2.0000 -duty_cycle 50.0000 [get_pins {u_video_pll/pll_inst.clkc[1]}]
+RUN-1003 : finish command "start_timer" in  3.154455s wall, 3.140625s user + 0.015625s system = 3.156250s CPU (100.1%)
+
+RUN-1004 : used memory is 1111 MB, reserved memory is 1100 MB, peak memory is 1111 MB
+TMR-2502 : Net delay update with mode: Routed
+RUN-1003 : finish command "update_timing -mode final" in  4.433577s wall, 4.390625s user + 0.046875s system = 4.437500s CPU (100.1%)
+
+RUN-1004 : used memory is 1186 MB, reserved memory is 1181 MB, peak memory is 1186 MB
+RUN-1002 : start command "check_timing -verbose -file ../../reports/review/check_timing.rpt"
+USR-6135 CRITICAL-WARNING: The feedback path of PLL u_memory_pll/pll_inst is on local network, of which compensation delay is unpredictable.
+USR-6135 CRITICAL-WARNING: The feedback path of PLL u_video_pll/pll_inst is on local network, of which compensation delay is unpredictable.
+RUN-1002 : start command "report_clock_summary -file ../../reports/review/clocks.rpt"
+RUN-1002 : start command "report_timing_exception -file ../../reports/review/timing_exceptions.rpt"
+RUN-1002 : start command "report_timing_status -file ../../reports/review/final_timing.rpt"
+RUN-1002 : start command "get_nets u_subtitle_uart/theme_command"
+RUN-1002 : start command "get_nets u_subtitle_uart/demo_command"
+RUN-1002 : start command "get_nets u_subtitle_uart/events/transmitting"
+RUN-1002 : start command "get_nets u_rover_control/remote_demo"
+RUN-1002 : start command "get_nets u_rover_control/combo_inhibit"
+UART_REVIEW_NETS: u_theme/uart_theme_valid u_rover_control/uart_demo_valid u_subtitle_uart/events/valid u_rover_control/remote_demo u_rover_control/combo_inhibit
+RUN-1002 : start command "report_timing_path -report_type max -through u_theme/uart_theme_valid u_rover_control/uart_demo_valid u_subtitle_uart/events/valid u_rover_control/remote_demo u_rover_control/combo_inhibit -ep_num 16 -file ../../reports/review/uart_setup.rpt"
+RUN-1002 : start command "report_timing_path -report_type min -through u_theme/uart_theme_valid u_rover_control/uart_demo_valid u_subtitle_uart/events/valid u_rover_control/remote_demo u_rover_control/combo_inhibit -ep_num 16 -file ../../reports/review/uart_hold.rpt"
+UART_REVIEW_COMPLETE

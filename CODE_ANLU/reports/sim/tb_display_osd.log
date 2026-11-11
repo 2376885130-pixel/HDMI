@@ -1,0 +1,2 @@
+PASS display OSD: entry/image/mode events, timed hide, exact 50-percent blend, narration-only band, preview and reset
+D:\CODE_ANLU\sim\tb_display_osd.v:22: $finish called at 2170000 (1ps)

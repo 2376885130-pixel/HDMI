@@ -1,0 +1,527 @@
+Table of Contents
+-----------------
+1. checking no clock(0) (HIGH)
+2. checking clock definition(0) (HIGH)
+3. checking dummy node(4) (HIGH)
+4. checking invalid constraint(0) (HIGH)
+5. checking pll/clock buffer clock constraints(2) (HIGH)
+6. checking combinational loops(0) (HIGH)
+7. checking soft fifo timing exception constraints(0) (HIGH)
+8. checking no path constraints(0) (MEDIUM)
+9. checking shadowed/ignored timing exception constraints(0) (MEDIUM)
+10. checking no input delay(10) (MEDIUM)
+11. checking no output delay(29) (MEDIUM)
+12. checking partial input delay(0) (MEDIUM)
+13. checking partial output delay(0) (MEDIUM)
+14. checking abnormal input delay(0) (MEDIUM)
+
+
+1. checking nets with no clock driven. (HIGH)
+---------------------------------------------
+2. checking clock definition problems. (HIGH)
+---------------------------------------------
+2.1 There are 0 leaf clock pins driven by multiple clocks. (HIGH)
+
+
+2.2 There are 0 clocks created on internal clock network. (HIGH)
+
+
+2.3 There are 0 unexpandable clock sets. (HIGH)
+
+
+2.4 There are 0 local clocks. (HIGH)
+
+
+2.5 There are 0 generated clocks that are not connected to their master clocks. (HIGH)
+
+
+3. checking dummy nodes. (HIGH)
+---------------------------------------------
+There are 4 nodes are dangling. (HIGH)
+
+DummyNode in Model: EG_PHY_LSLICE
+	control_reset_pipe_reg[2]_syn_180.mi[0]
+	u_bgm/pcm/parser/state_reg[0]_syn_815.mi[0]
+	u_subtitle_uart/owner_b1[0]_syn_467.mi[0]
+	u_subtitle_uart/control/response_b[92]_syn_18.mi[0]
+	u_subtitle_uart/owner_b1[0]_syn_465.mi[0]
+	control_reset_pipe_reg[2]_syn_187.mi[0]
+	u_loader/status_reg[2]_syn_1258.mi[0]
+	control_reset_pipe_reg[2]_syn_152.mi[1]
+	u_subtitle_uart/control/response_b[86]_syn_16.mi[0]
+	control_reset_pipe_reg[2]_syn_119.mi[0]
+	u_theme/index_reg[2]_syn_138.mi[0]
+	u_loader/mux129_syn_107.d[0]
+	u_loader/u_bmp/u_bilinear/rgb_reg[19]_syn_4.d[0]
+	u_loader/u_bmp/u_bilinear/rgb_reg[19]_syn_4.d[1]
+	u_preview_fault_snapshot/dst_data_reg[30]_syn_4.d[0]
+	u_bgm/pcm/session_rst_n_syn_17.c[1]
+	u_bgm/pcm/session_rst_n_syn_13.c[1]
+	sd_reset_pipe_reg[2]_syn_82.mi[0]
+	u_loader/write_req_reg_syn_15.mi[0]
+	u_bgm/file_stream/kind_reg[0]_syn_273.mi[0]
+	sd_reset_pipe_reg[2]_syn_96.mi[0]
+	u_loader/u_catalog/found_file_reg_syn_216.mi[0]
+	u_loader/u_catalog/found_file_reg_syn_210.mi[0]
+	u_loader/status_reg[2]_syn_1189.mi[0]
+	u_bgm/file_stream/left_shift1_syn_503.mi[0]
+	priority_rgb[1]_syn_33.mi[0]
+	u_rover_video/scan/title_pixel_n_syn_28.mi[0]
+	u_rover_video/scan/geometry_q_reg[0]_syn_1281.mi[0]
+	u_audio_bridge/core/u_island_scheduler/active_body_ecc_b[5]_syn_21.mi[0]
+	u_audio_bridge/core/u_encoder2/sel0_syn_589.mi[0]
+	u_priority_osd/pixels_b2[0]_syn_124.mi[0]
+	u_transition_pixels/dy[6]_syn_4.mi[0]
+	u_audio_bridge/core/u_island_scheduler/active_body_ecc_b[1]_syn_63.c[1]
+	u_audio_bridge/core/u_island_scheduler/active_body_ecc_b[1]_syn_63.d[1]
+	u_audio_bridge/core/u_island_scheduler/active_body_ecc_b[1]_syn_63.a[1]
+	u_audio_bridge/core/u_island_scheduler/active_body_ecc_b[1]_syn_63.b[1]
+	u_audio_diagnostics/held_reg[61]_syn_4.c[1]
+	u_audio_diagnostics/held_reg[60]_syn_4.c[0]
+	u_audio_diagnostics/held_reg[60]_syn_4.d[0]
+	u_audio_diagnostics/held_reg[61]_syn_4.d[1]
+	u_audio_phy_a/u0_lane_lvds_8_1/S_load_en_2d_reg_syn_11.mi[1]
+	u_audio_phy_a/u0_lane_lvds_8_1/S_load_en_2d_reg_syn_11.mi[0]
+	u_bgm/file_stream/rst_syn_40.d[1]
+	u_bgm/file_stream/rst_syn_36.d[1]
+	u_bgm/file_stream/rst_syn_40.b[1]
+	u_bgm/file_stream/rst_syn_36.b[1]
+	u_bgm/file_stream/rst_syn_40.c[1]
+	u_bgm/file_stream/rst_syn_36.c[1]
+	u_frame/state_reg[3]_syn_92.mi[0]
+	u_bgm/file_stream/status_reg[1]_syn_29.d[1]
+	u_bgm/file_stream/status_reg[1]_syn_29.c[1]
+	u_bgm/pcm/rd_reset_reg[2]_syn_16.mi[1]
+	u_thumbnails/u_builder/ramread0_syn_163.mi[0]
+	u_subtitle_uart/owner_b1[0]_syn_427.mi[0]
+	u_bgm/pcm/wr_reset_reg[2]_syn_27.mi[0]
+	u_bgm/pcm/wr_reset_reg[2]_syn_27.mi[1]
+	u_bgm/pcm/wr_reset_reg[2]_syn_21.mi[1]
+	u_bgm/pcm/session_rst_n_syn_17.d[1]
+	u_bgm/pcm/session_rst_n_syn_13.d[1]
+	control_reset_pipe_reg[2]_syn_140.d[0]
+	control_reset_pipe_reg[2]_syn_140.c[0]
+	u_loader/u_catalog/entry_name_reg[0]_syn_4.c[0]
+	u_loader/u_volume/mux6_syn_26.c[0]
+	u_loader/u_volume/total_sectors16_reg[5]_syn_4.c[0]
+	u_loader/u_volume/prepare_syn_16.b[1]
+	u_loader/left_shift2_syn_506.b[0]
+	u_loader/mux129_syn_107.b[0]
+	u_loader/u_bmp/u_bilinear/rgb_reg[19]_syn_4.b[1]
+	u_loader/u_bmp/u_bilinear/rgb_reg[19]_syn_4.b[0]
+	u_preview_fault_snapshot/dst_data_reg[30]_syn_4.b[0]
+	u_loader/mux129_syn_107.c[0]
+	u_loader/u_bmp/u_bilinear/rgb_reg[19]_syn_4.c[1]
+	u_loader/u_bmp/u_bilinear/rgb_reg[19]_syn_4.c[0]
+	u_preview_fault_snapshot/dst_data_reg[30]_syn_4.c[0]
+	u_loader/u_bmp/source_x_b[0]_syn_13.d[1]
+	u_image_number/fault_code_meta_reg[13]_syn_4.d[1]
+	u_loader/u_bmp/source_x_b[0]_syn_13.c[1]
+	u_image_number/fault_code_meta_reg[13]_syn_4.a[1]
+	u_image_number/fault_code_meta_reg[13]_syn_4.b[1]
+	u_image_number/fault_code_meta_reg[13]_syn_4.c[1]
+	u_loader/left_shift2_syn_506.c[0]
+	u_loader/status_reg[3]_syn_198.mi[0]
+	u_loader/u_volume/cluster_shift_reg[1]_syn_11.mi[0]
+	u_loader/left_shift2_syn_506.d[0]
+	u_bgm/pcm/parser/state_reg[0]_syn_841.mi[0]
+	u_thumbnails/u_builder/dma_addr_b[18]_syn_13.mi[0]
+	priority_rgb[21]_syn_916.mi[0]
+	u_sd_cdc/spi_release_reg[2]_syn_39.mi[1]
+	u_sd_cdc/spi_release_reg[2]_syn_52.mi[0]
+	u_sd_cdc/spi_release_reg[2]_syn_39.mi[0]
+	u_sd_cdc/spi_release_reg[2]_syn_43.mi[0]
+	u_sd_cdc/spi_release_reg[2]_syn_49.mi[0]
+	u_sd_cdc/spi_release_reg[2]_syn_49.mi[1]
+	u_sd_cdc/spi_release_reg[2]_syn_46.mi[0]
+	u_sd_cdc/spi_release_reg[2]_syn_46.mi[1]
+	u_sector_service/rst_syn_26.c[1]
+	u_sector_service/rst_syn_20.c[0]
+	u_sector_service/rst_syn_20.c[1]
+	u_sector_service/rst_syn_20.d[1]
+	u_sector_service/rst_syn_20.d[0]
+	u_sector_service/rst_syn_26.d[1]
+	u_subtitle_commit/dst_text_reg[68]_syn_4.c[1]
+	u_subtitle_commit/dst_text_reg[60]_syn_4.c[1]
+	u_subtitle_commit/dst_text_reg[68]_syn_4.d[1]
+	u_subtitle_commit/dst_text_reg[60]_syn_4.d[1]
+	u_loader/left_shift2_syn_506.a[0]
+	u_loader/u_volume/prepare_syn_16.c[1]
+	u_loader/u_catalog/entry_name_reg[0]_syn_4.d[0]
+	u_loader/u_volume/prepare_syn_16.d[1]
+	u_loader/u_volume/mux6_syn_26.d[0]
+	u_loader/u_volume/total_sectors16_reg[5]_syn_4.d[0]
+
+DummyNode in Model: EG_PHY_MSLICE
+	control_reset_pipe_reg[2]_syn_184.mi[0]
+	control_reset_pipe_reg[2]_syn_159.mi[0]
+	u_subtitle_uart/control/response_b[128]_syn_10.mi[0]
+	u_theme/mux50_syn_162.mi[0]
+	u_theme/done_armed_reg_syn_44.mi[0]
+	u_subtitle_uart/control/response_b[91]_syn_21.mi[0]
+	u_frame/read_fifo/wr_to_rd_cross_inst/secondary_addr_o_reg[0]_syn_4.d[0]
+	u_sdram/u2_ram/u2_wrrd/app_wr_din_5d_reg[29]_syn_4.d[0]
+	u_loader/u_bmp/u_header/height_reg[5]_syn_4.d[0]
+	u_preview_fault_snapshot/dst_data_reg[12]_syn_4.d[0]
+	u_loader/u_bmp/rst_syn_50.d[0]
+	u_loader/u_bmp/rst_syn_50.d[1]
+	u_sdram/u2_ram/u2_wrrd/app_wr_din_6d_reg[29]_syn_4.d[0]
+	u_preview_fault_snapshot/dst_data_reg[29]_syn_4.d[0]
+	u_loader/u_bmp/u_bilinear/rgb_reg[17]_syn_4.d[1]
+	u_loader/u_bmp/u_bilinear/rgb_reg[17]_syn_4.d[0]
+	u_loader/u_bmp/rst_syn_56.d[1]
+	u_bgm/file_stream/next_cluster_reg[18]_syn_4.c[0]
+	sd_reset_pipe_reg[2]_syn_102.mi[1]
+	sd_reset_pipe_reg[2]_syn_105.mi[1]
+	u_bgm/pcm/parser/state_reg[0]_syn_772.mi[0]
+	u_rover_video/scan/geometry_q_reg[0]_syn_1293.mi[0]
+	u_loader/status_reg[2]_syn_1133.mi[0]
+	video_reset_pipe_reg[2]_syn_181.mi[1]
+	video_reset_pipe_reg[2]_syn_208.mi[0]
+	priority_rgb[21]_syn_838.mi[0]
+	video_reset_pipe_reg[2]_syn_213.mi[1]
+	u_audio_bridge/core/u_encoder2/sel0_syn_595.mi[0]
+	u_priority_osd/dim_b[0]_syn_15.mi[0]
+	u_loader/status_reg[2]_syn_1141.mi[0]
+	u_loader/status_reg[2]_syn_1139.mi[0]
+	u_timing/de_n_syn_23.mi[0]
+	u_loader/u_bmp/mux125_syn_466.mi[0]
+	video_reset_pipe_reg[2]_syn_201.mi[0]
+	video_reset_pipe_reg[2]_syn_253.mi[0]
+	u_rover_video/scan/geometry_q_reg[0]_syn_1295.mi[0]
+	u_rover_video/scan/geometry_q_reg[0]_syn_1289.mi[0]
+	priority_rgb[21]_syn_840.mi[0]
+	u_bgm/pcm/ramread0_syn_181.mi[0]
+	u_audio_bridge/continuous_media$output_pcm/next_left[13]_syn_28.mi[0]
+	al_4658.mi[0]
+	u_audio_bridge/core/u_island_scheduler/active_body_ecc_b[7]_syn_21.mi[0]
+	video_reset_pipe_reg[2]_syn_210.mi[0]
+	video_reset_pipe_reg[2]_syn_176.mi[0]
+	u_audio_bridge/core/u_audio_packetizer/right2_reg[2]_syn_4.d[0]
+	u_audio_bridge/core/u_audio_packetizer/packet_body_b2[111]_syn_25.a[1]
+	u_audio_bridge/core/u_audio_packetizer/collect_count_reg[0]_syn_4.a[1]
+	u_audio_bridge/core/u_audio_packetizer/right2_reg[2]_syn_4.c[0]
+	u_audio_bridge/core/u_audio_packetizer/packet_body_b2[111]_syn_25.d[1]
+	u_audio_bridge/core/u_audio_packetizer/collect_count_reg[0]_syn_4.d[1]
+	u_audio_bridge/core/u_audio_packetizer/packet_body_b2[111]_syn_25.c[1]
+	u_audio_bridge/core/u_audio_packetizer/collect_count_reg[0]_syn_4.c[1]
+	u_audio_bridge/core/u_audio_packetizer/collect_count_reg[0]_syn_4.b[1]
+	u_audio_bridge/core/u_audio_packetizer/packet_body_b2[111]_syn_25.b[1]
+	u_audio_bridge/core/u_island_scheduler/active_body_ecc_b[1]_syn_53.c[1]
+	u_audio_bridge/core/u_packet_scheduler/locked_reg_syn_26.d[1]
+	u_audio_bridge/core/u_packet_scheduler/locked_reg_syn_26.c[1]
+	u_audio_bridge/core/u_island_scheduler/active_body_ecc_b[1]_syn_53.d[1]
+	u_audio_bridge/core/u_island_scheduler/active_body_ecc_b[1]_syn_53.a[1]
+	u_audio_bridge/core/u_island_scheduler/active_body_ecc_b[1]_syn_53.b[1]
+	u_bgm/file_stream/rst_syn_38.d[1]
+	u_bgm/file_stream/rst_syn_42.d[1]
+	u_bgm/file_stream/rst_syn_32.d[1]
+	u_bgm/file_stream/rst_syn_38.b[1]
+	u_bgm/file_stream/rst_syn_42.b[1]
+	u_bgm/file_stream/rst_syn_32.b[1]
+	u_bgm/file_stream/rst_syn_38.c[1]
+	u_bgm/file_stream/rst_syn_42.c[1]
+	u_bgm/file_stream/rst_syn_32.c[1]
+	u_thumbnails/u_builder/page_base[15]_syn_4.mi[0]
+	u_thumbnails/u_builder/page_base[15]_syn_4.d[0]
+	u_thumbnails/u_builder/page_base[15]_syn_4.c[0]
+	u_subtitle_uart/owner_b1[0]_syn_431.mi[0]
+	u_bgm/pcm/wr_reset_reg[2]_syn_31.mi[0]
+	u_bgm/pcm/wr_reset_reg[2]_syn_24.mi[0]
+	u_bgm/pcm/parser/state_reg[0]_syn_796.mi[0]
+	u_bgm/pcm/wr_reset_reg[2]_syn_31.mi[1]
+	u_bgm/file_stream/next_cluster_reg[18]_syn_4.d[0]
+	u_osd_status_snapshot/request_reg_syn_5.d[0]
+	u_osd_status_snapshot/request_reg_syn_5.c[0]
+	u_loader/u_catalog/entry_name_reg[16]_syn_4.c[0]
+	u_loader/u_volume/cluster_shift_reg[0]_syn_12.c[1]
+	u_loader/u_stream/mux5_syn_91.b[0]
+	u_loader/u_volume/prepare_syn_14.b[1]
+	u_loader/u_volume/root_cluster_reg[9]_syn_4.b[0]
+	u_loader/status_reg[2]_syn_1195.b[0]
+	u_loader/u_bmp/u_bilinear/rgb_reg[17]_syn_4.b[0]
+	u_loader/u_bmp/u_bilinear/rgb_reg[17]_syn_4.b[1]
+	u_loader/u_bmp/u_header/height_reg[5]_syn_4.b[0]
+	u_preview_fault_snapshot/dst_data_reg[12]_syn_4.b[0]
+	u_preview_fault_snapshot/dst_data_reg[29]_syn_4.b[0]
+	u_loader/u_bmp/rst_syn_50.b[1]
+	u_sdram/u2_ram/u2_wrrd/app_wr_din_5d_reg[29]_syn_4.b[0]
+	u_sdram/u2_ram/u2_wrrd/app_wr_din_6d_reg[29]_syn_4.b[0]
+	u_frame/read_fifo/wr_to_rd_cross_inst/secondary_addr_o_reg[0]_syn_4.b[0]
+	u_loader/u_bmp/rst_syn_50.b[0]
+	u_loader/u_bmp/rst_syn_56.b[1]
+	u_loader/u_bmp/u_bilinear/rgb_reg[17]_syn_4.c[0]
+	u_loader/u_bmp/u_bilinear/rgb_reg[17]_syn_4.c[1]
+	u_loader/u_bmp/u_header/height_reg[5]_syn_4.c[0]
+	u_preview_fault_snapshot/dst_data_reg[12]_syn_4.c[0]
+	u_preview_fault_snapshot/dst_data_reg[29]_syn_4.c[0]
+	u_loader/u_bmp/rst_syn_50.c[1]
+	u_sdram/u2_ram/u2_wrrd/app_wr_din_5d_reg[29]_syn_4.c[0]
+	u_sdram/u2_ram/u2_wrrd/app_wr_din_6d_reg[29]_syn_4.c[0]
+	u_frame/read_fifo/wr_to_rd_cross_inst/secondary_addr_o_reg[0]_syn_4.c[0]
+	u_loader/u_bmp/rst_syn_50.c[0]
+	u_loader/u_bmp/rst_syn_56.c[1]
+	u_loader/u_bmp/u_header/fields_ok_reg[3]_syn_4.d[0]
+	u_loader/u_bmp/u_header/dib_size_reg[8]_syn_4.d[0]
+	u_image_number/fault_code_meta_reg[21]_syn_4.d[0]
+	u_loader/u_bmp/p10_reg[12]_syn_4.d[0]
+	u_loader/u_bmp/p10_reg[12]_syn_4.a[0]
+	u_image_number/fault_code_meta_reg[21]_syn_4.a[0]
+	u_loader/u_bmp/p10_reg[12]_syn_4.b[0]
+	u_image_number/fault_code_meta_reg[21]_syn_4.b[0]
+	u_loader/u_bmp/p10_reg[12]_syn_4.c[0]
+	u_image_number/fault_code_meta_reg[21]_syn_4.c[0]
+	u_loader/u_bmp/u_header/fields_ok_reg[3]_syn_4.c[0]
+	u_loader/u_bmp/u_header/dib_size_reg[8]_syn_4.c[0]
+	u_loader/u_volume/root_cluster_reg[9]_syn_4.c[0]
+	u_loader/status_reg[2]_syn_1195.c[0]
+	u_loader/u_volume/cluster_shift_reg[1]_syn_14.mi[0]
+	u_loader/u_volume/cluster_shift_reg[1]_syn_14.mi[1]
+	u_loader/u_volume/root_cluster_reg[9]_syn_4.d[0]
+	u_loader/status_reg[2]_syn_1195.d[0]
+	u_memory_reset/release_pipe_reg[2]_syn_41.mi[1]
+	u_bgm/file_stream/status_reg[1]_syn_33.mi[0]
+	u_bgm/file_stream/kind_reg[1]_syn_11.mi[0]
+	u_bgm/file_stream/next_cluster_reg[27]_syn_27.mi[0]
+	u_memory_reset/release_pipe_reg[2]_syn_44.mi[1]
+	u_memory_reset/release_pipe_reg[2]_syn_47.mi[0]
+	u_bgm/file_stream/status_reg[1]_syn_35.mi[0]
+	u_subtitle_commit/dst_text_reg[54]_syn_4.d[0]
+	u_subtitle_commit/dst_text_reg[61]_syn_4.d[0]
+	u_sd_cdc/spi_release_reg[2]_syn_56.mi[1]
+	u_loader/status_reg[2]_syn_1301.mi[0]
+	u_frame/state_reg[3]_syn_104.mi[0]
+	u_sector_service/rst_syn_22.c[1]
+	u_sector_service/rst_syn_22.d[1]
+	u_subtitle_commit/dst_text_reg[54]_syn_4.c[0]
+	u_subtitle_commit/dst_text_reg[61]_syn_4.c[0]
+	u_subtitle_commit/dst_text_reg[54]_syn_4.b[0]
+	u_subtitle_commit/dst_text_reg[61]_syn_4.b[0]
+	u_subtitle_uart/owner_b1[0]_syn_489.c[0]
+	u_subtitle_uart/control/reply_count_reg[3]_syn_23.c[0]
+	u_subtitle_uart/owner_b1[0]_syn_489.d[0]
+	u_subtitle_uart/control/reply_count_reg[3]_syn_23.d[0]
+	u_thumbnails/u_builder/ratio_b[11]_syn_7.mi[0]
+	u_waveform/ramread1_syn_92.d[1]
+	u_waveform/ramread1_syn_92.d[0]
+	u_waveform/ramread0_syn_64.d[0]
+	u_waveform/ramread0_syn_64.d[1]
+	u_waveform/ramread0_syn_92.d[0]
+	u_waveform/ramread0_syn_92.d[1]
+	u_waveform/ramread1_syn_64.d[0]
+	u_waveform/ramread1_syn_64.d[1]
+	u_waveform/ramread1_syn_92.c[1]
+	u_waveform/ramread1_syn_92.c[0]
+	u_waveform/ramread0_syn_64.c[0]
+	u_waveform/ramread0_syn_64.c[1]
+	u_waveform/ramread0_syn_92.c[0]
+	u_waveform/ramread0_syn_92.c[1]
+	u_waveform/ramread1_syn_64.c[0]
+	u_waveform/ramread1_syn_64.c[1]
+	u_waveform/ramread1_syn_92.b[0]
+	u_waveform/ramread1_syn_92.b[1]
+	u_waveform/ramread0_syn_64.b[0]
+	u_waveform/ramread0_syn_64.b[1]
+	u_waveform/ramread0_syn_92.b[0]
+	u_waveform/ramread0_syn_92.b[1]
+	u_waveform/ramread1_syn_64.b[0]
+	u_waveform/ramread1_syn_64.b[1]
+	u_waveform/ramread1_syn_92.a[0]
+	u_waveform/ramread1_syn_92.a[1]
+	u_waveform/ramread0_syn_64.a[0]
+	u_waveform/ramread0_syn_64.a[1]
+	u_waveform/ramread0_syn_92.a[0]
+	u_waveform/ramread0_syn_92.a[1]
+	u_waveform/ramread1_syn_64.a[0]
+	u_waveform/ramread1_syn_64.a[1]
+	u_loader/u_volume/root_cluster_reg[9]_syn_4.a[0]
+	u_loader/status_reg[2]_syn_1195.a[0]
+	u_loader/u_stream/mux5_syn_91.c[0]
+	u_loader/u_volume/prepare_syn_14.c[1]
+	u_loader/u_catalog/entry_name_reg[16]_syn_4.d[0]
+	u_loader/u_volume/cluster_shift_reg[0]_syn_12.d[1]
+	u_loader/u_stream/mux5_syn_91.d[0]
+	u_loader/u_volume/prepare_syn_14.d[1]
+	u_subtitle_uart/owner_b1[0]_syn_489.b[0]
+	u_subtitle_uart/control/reply_count_reg[3]_syn_23.b[0]
+	u_subtitle_uart/owner_b1[0]_syn_489.a[0]
+	u_subtitle_uart/control/reply_count_reg[3]_syn_23.a[0]
+
+DummyNode in Model: EG_PHY_MULT18
+	u_thumbnails/u_builder/mult2_syn_71.a[9]
+	u_thumbnails/u_builder/mult2_syn_71.a[8]
+
+DummyNode in Model: EG_PHY_PAD
+	buzzer_n_syn_5.opad
+	seg_n[7]_syn_1.opad
+	u_sdram/sdram_syn_5.opad
+	u_sdram/sdram_syn_10.opad
+
+4. checking invalid constraints. (HIGH)
+---------------------------------------------
+There are 0 invalid constraints. (HIGH)
+
+
+5. checking PLL/buffer clocks. (HIGH)
+---------------------------------------------
+PLL/buffer inst: u_memory_pll/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+PLL/buffer inst: u_video_pll/pll_inst
+{
+	There are 0 clock pins that have no clock constraints. (HIGH)
+
+
+	There are 0 clocks whose clock frequency do not match the PLL setting. (HIGH)
+
+
+}
+
+6. checking combinational loops. (HIGH)
+---------------------------------------------
+There are 0 combinational loops. (HIGH)
+
+
+7. checking soft fifo set_max_delay constraints. (HIGH)
+---------------------------------------------
+There are 0 max-delay datapath-only paths that are part of the provided async clock paths, whereas the timing between other registers is not relaxed or ignored. (HIGH)
+
+
+8. checking no path constraints. (MEDIUM)
+---------------------------------------------
+There are 0 constraints that have no timing paths. (MEDIUM)
+
+
+9. checking path exception constraints shadowed/ignored by other constraints. (MEDIUM)
+---------------------------------------------
+
+MCP/SMD Summary
+--------------------
+
+		Max Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+		        96           96            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_sd_cdc/response_held*}] -to [get_regs -hier {u_sd_cdc/data* u_sd_cdc/valid* u_sd_cdc/done*}]
+		        16           16            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_sd_cdc/published*}] -to [get_regs -hier {u_sd_cdc/publish_meta*}]
+		        16           16            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_sd_cdc/acknowledged*}] -to [get_regs -hier {u_sd_cdc/ack_meta*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_sd_cdc/overflow}] -to [get_regs -hier {u_sd_cdc/overflow_sync*}]
+		        38           38            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_picture_commit/u_snapshot/held*}] -to [get_regs -hier {u_picture_commit/u_snapshot/dst_data*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_picture_commit/u_snapshot/request}] -to [get_regs -hier {u_picture_commit/u_snapshot/request_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_picture_commit/u_snapshot/ack}] -to [get_regs -hier {u_picture_commit/u_snapshot/ack_sync*}]
+		        52           52            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_preview_fault_snapshot/held*}] -to [get_regs -hier {u_preview_fault_snapshot/dst_data*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_preview_fault_snapshot/request}] -to [get_regs -hier {u_preview_fault_snapshot/request_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_preview_fault_snapshot/ack}] -to [get_regs -hier {u_preview_fault_snapshot/ack_sync*}]
+		        20           20            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_thumbnails/u_visible/held*}] -to [get_regs -hier {u_thumbnails/u_visible/dst_data*}]
+		        20           20            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_thumbnails/u_pixel_control/held*}] -to [get_regs -hier {u_thumbnails/u_pixel_control/dst_data*}]
+		        32           32            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_thumbnails/u_memory_control/held*}] -to [get_regs -hier {u_thumbnails/u_memory_control/dst_data*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_thumbnails/u_visible/request}] -to [get_regs -hier {u_thumbnails/u_visible/request_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_thumbnails/u_visible/ack}] -to [get_regs -hier {u_thumbnails/u_visible/ack_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_thumbnails/u_pixel_control/request}] -to [get_regs -hier {u_thumbnails/u_pixel_control/request_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_thumbnails/u_pixel_control/ack}] -to [get_regs -hier {u_thumbnails/u_pixel_control/ack_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_thumbnails/u_memory_control/request}] -to [get_regs -hier {u_thumbnails/u_memory_control/request_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_thumbnails/u_memory_control/ack}] -to [get_regs -hier {u_thumbnails/u_memory_control/ack_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_thumbnails/u_builder/zoom_done}] -to [get_regs -hier {u_thumbnails/zoom_done_sync[0]}]
+		         3            3            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_bgm/selection/held*}] -to [get_regs -hier {u_bgm/selection/dst_data*}]
+		        65           65            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_bgm/audio_stats/held*}] -to [get_regs -hier {u_bgm/audio_stats/dst_data*}]
+		        11           11            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_bgm/pcm/fifo/wg*}] -to [get_regs -hier {u_bgm/pcm/fifo/ws1*}]
+		        11           11            0            0   set_max_delay -datapath_only 40 -from [get_regs -hier {u_bgm/pcm/fifo/rg*}] -to [get_regs -hier {u_bgm/pcm/fifo/rs1*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_osd_control_snapshot/ack}] -to [get_regs -hier {u_osd_control_snapshot/ack_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_volume_snapshot/ack}] -to [get_regs -hier {u_volume_snapshot/ack_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_subtitle_commit/ack}] -to [get_regs -hier {u_subtitle_commit/ack_sync*}]
+		         2            2            0            0   set_max_delay -datapath_only 20 -through [get_nets {present_toggle}] -to [get_regs -hier {present_sys_sync*}]
+		         3            3            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_present/u_transition/g_effect$state*}] -to [get_regs -hier {transition_busy_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 5 -to [get_ports sd_dclk]
+		         0            0            0            0   set_max_delay -datapath_only 8 -from [get_ports sd_miso] -to [get_regs -hier {u_sd_transport/spi_master_m0/MISO_shift*}]
+		         1            1            0            0   set_max_delay -datapath_only 8 -to [get_ports sd_mosi]
+		         1            1            0            0   set_max_delay -datapath_only 8 -to [get_ports sd_ncs]
+		        29           29            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_theme_audio_command/held*}] -to [get_regs -hier {u_theme_audio_command/dst_data*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_theme_audio_command/request}] -to [get_regs -hier {u_theme_audio_command/request_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_theme_audio_command/ack}] -to [get_regs -hier {u_theme_audio_command/ack_sync*}]
+		        27           27            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_theme_audio_result/held*}] -to [get_regs -hier {u_theme_audio_result/dst_data*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_theme_audio_result/request}] -to [get_regs -hier {u_theme_audio_result/request_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_theme_audio_result/ack}] -to [get_regs -hier {u_theme_audio_result/ack_sync*}]
+		        36           36            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_theme_video/held*}] -to [get_regs -hier {u_theme_video/dst_data*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_theme_video/request}] -to [get_regs -hier {u_theme_video/request_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_theme_video/ack}] -to [get_regs -hier {u_theme_video/ack_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_theme_audio_error/held*}] -to [get_regs -hier {u_theme_audio_error/dst_data*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_theme_audio_error/request}] -to [get_regs -hier {u_theme_audio_error/request_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_theme_audio_error/ack}] -to [get_regs -hier {u_theme_audio_error/ack_sync*}]
+		        74           74            0            0   set_max_delay -datapath_only 20 -from [get_regs -hier {u_rover_snapshot/held*}] -to [get_regs -hier {u_rover_snapshot/dst_data*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_rover_snapshot/request}] -to [get_regs -hier {u_rover_snapshot/request_sync*}]
+		         1            1            0            0   set_max_delay -datapath_only 20 -through [get_nets {u_rover_snapshot/ack}] -to [get_regs -hier {u_rover_snapshot/ack_sync*}]
+
+		Min Check
+		--------------------
+		     Total    Dominated     Shadowed      Ignored   Constraint
+
+10. checking no input delay (MEDIUM)
+--------------------------
+There are 10 input ports that with no input delay specified. (MEDIUM)
+
+	direction_switch
+	interval_switch[1]
+	interval_switch[0]
+	key_auto_n
+	key_next_n
+	key_prev_n
+	parameter_switch
+	sd_miso
+	sys_rst_n
+	uart_rx
+
+11. checking no output delay (MEDIUM)
+--------------------------
+There are 29 output ports that with no output delay specified. (MEDIUM)
+
+	HDMI_CLK_P
+	HDMI_CLK_P1
+	HDMI_D0_P
+	HDMI_D0_P1
+	HDMI_D1_P
+	HDMI_D1_P1
+	HDMI_D2_P
+	HDMI_D2_P1
+	buzzer_n
+	digit_en[7]
+	digit_en[6]
+	digit_en[5]
+	digit_en[4]
+	digit_en[3]
+	digit_en[2]
+	digit_en[1]
+	digit_en[0]
+	sd_dclk
+	sd_mosi
+	sd_ncs
+	seg_n[7]
+	seg_n[6]
+	seg_n[5]
+	seg_n[4]
+	seg_n[3]
+	seg_n[2]
+	seg_n[1]
+	seg_n[0]
+	uart_tx
+
+12. checking partial input delay (MEDIUM)
+--------------------------
+There are 0 input ports with partial input delay specified. (MEDIUM)
+
+
+13. checking partial output delay (MEDIUM)
+--------------------------
+There are 0 output ports with partial output delay specified. (MEDIUM)
+
+
+14. checking abnormal set_input_delay constraints. (MEDIUM)
+---------------------------------------------
+There are 0 abnormal set_input_delay constraints. (MEDIUM)
+
+

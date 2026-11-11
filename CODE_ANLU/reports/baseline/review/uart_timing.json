@@ -1,0 +1,10 @@
+{
+  "setup": {
+    "paths": 16,
+    "minimum_slack_ns": 9.032
+  },
+  "hold": {
+    "paths": 16,
+    "minimum_slack_ns": 0.559
+  }
+}

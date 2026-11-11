@@ -1,0 +1,802 @@
+[
+  {
+    "id": 0,
+    "theme": 1,
+    "index": 1,
+    "name": "T1P01",
+    "source": "D:\\figurefpga\\主题1\\01｜月面探索的先锋.png",
+    "source_sha256": "981c7f58d1803f96a39f56e9ad8d99a1af944d1452e91502efb855e382d92c64",
+    "width": 640,
+    "height": 480,
+    "label": "T1P01 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "3a5fb8d9733ab0d5839d7febe2bb4374c4590e91cc0a9c1e3d5a13335718d888",
+    "wav_sha256": "37c1f94f357f6b0658c331d936f2ec9598825997b849ca6f2da61c454df4c425",
+    "audio_frames": 625176,
+    "cue_text": [
+      "月球车是探索月面环境的移动平台。",
+      "它携带相机和科学仪器，观察周围地形。",
+      "车轮与悬架帮助它缓慢越过不平的月面。"
+    ],
+    "source_size": [
+      876,
+      506
+    ]
+  },
+  {
+    "id": 1,
+    "theme": 1,
+    "index": 2,
+    "name": "T1P02",
+    "source": "D:\\figurefpga\\主题1\\02｜月球探测器的核心结构.png",
+    "source_sha256": "77ce3944d8ad6977035f9085b51a2ed836cc6205f84e2eae15838b1ff0e4c749",
+    "width": 640,
+    "height": 480,
+    "label": "T1P02 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "1f8715407732052b3220160cbe85d4b48167978b648f9d3b3f36adca82b319c4",
+    "wav_sha256": "766503f254c6a4320d10da848838b0bdd027e0931c2e0cb185ce2bf3be481390",
+    "audio_frames": 693588,
+    "cue_text": [
+      "月球车由车体、车轮、相机和太阳能板组成。",
+      "车体保护电子设备，悬架连接车轮。",
+      "各个部分协同工作，完成移动与探测任务。"
+    ],
+    "source_size": [
+      659,
+      525
+    ]
+  },
+  {
+    "id": 2,
+    "theme": 1,
+    "index": 3,
+    "name": "T1P03",
+    "source": "D:\\figurefpga\\主题1\\03｜太阳能板如何提供能源.png",
+    "source_sha256": "9ed4fecbece7700ff6067fb114f5e45fa77ee8e819e5cf92b1780c17f6831038",
+    "width": 640,
+    "height": 480,
+    "label": "T1P03 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "8650cc26b4a2258beaa5413fca965dc3950ef477b532775ac631fd6ee1c3fb5c",
+    "wav_sha256": "5446d546d35e64a9b0062465823b5438dba19180c56bd00f50b150b37abe748b",
+    "audio_frames": 599052,
+    "cue_text": [
+      "太阳能板将阳光转化为电能。",
+      "受光方向会影响太阳能板获得的能量。",
+      "电池储存部分电能，为设备运行提供支持。"
+    ],
+    "source_size": [
+      869,
+      691
+    ]
+  },
+  {
+    "id": 3,
+    "theme": 1,
+    "index": 4,
+    "name": "T1P04",
+    "source": "D:\\figurefpga\\主题1\\04｜月地通信与天线指向.png",
+    "source_sha256": "03ea20f26e6c1adf91646255139a16614714e415db3ed452aab60cc8c0941458",
+    "width": 640,
+    "height": 480,
+    "label": "T1P04 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "6b57c1fb0e08acf97b231189c3311c2b2a85e14199f780fc8a23546936c42d01",
+    "wav_sha256": "9c78be077ed896b9e3fd157847ab7171f6c34d963576a422c45f9e34f537f7a7",
+    "audio_frames": 610530,
+    "cue_text": [
+      "月球车通过无线电传送探测信息。",
+      "天线指向和通信链路关系到数据传输。",
+      "不同任务可采用直接通信或中继通信。"
+    ],
+    "source_size": [
+      881,
+      584
+    ]
+  },
+  {
+    "id": 4,
+    "theme": 1,
+    "index": 5,
+    "name": "T1P05",
+    "source": "D:\\figurefpga\\主题1\\05｜月面行驶与科学探测.png",
+    "source_sha256": "aa51fe6d76a828e0df0548905762d2bfce162fd3cd48f2ea624cad3b01b95b05",
+    "width": 800,
+    "height": 600,
+    "label": "T1P05 | BMP 800 x 600 px",
+    "label_source_y": 90,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "2a43a71ae319f4fa86dd40c8c8d517fb3850422fa10355f3c8bbfafcc2a730d7",
+    "wav_sha256": "154d869a55f19e7c507d94a0a7f03ab5b5a918a2e0793fd7fe3748cb76899b0f",
+    "audio_frames": 656226,
+    "cue_text": [
+      "月球表面分布着岩石、坡地和松软月壤。",
+      "月球车利用相机观察路线，谨慎规划移动。",
+      "科学仪器在沿途获取地形和物质信息。"
+    ],
+    "source_size": [
+      862,
+      624
+    ]
+  },
+  {
+    "id": 5,
+    "theme": 1,
+    "index": 6,
+    "name": "T1P06",
+    "source": "D:\\figurefpga\\主题1\\06｜中国玉兔二号探月任务.png",
+    "source_sha256": "51941974ed5f4f5e6853ee0cff6aec57b3c938ada43615a3a00b27d9871d7837",
+    "width": 1024,
+    "height": 768,
+    "label": "T1P06 | BMP 1024 x 768 px",
+    "label_source_y": 115,
+    "label_screen_top": 71.875,
+    "bmp_sha256": "24e07737436d4146b5ee275351c257da2a397a7cb4f67baf0048bae8f0202e9d",
+    "wav_sha256": "2fd1837ef2d9b09ebe7d7ceb345f9cd48688d9d93da9ffba571eca41378a0b3a",
+    "audio_frames": 568242,
+    "cue_text": [
+      "玉兔二号是嫦娥四号任务的月球车。",
+      "它在月球背面开展巡视探测。",
+      "中继通信帮助它与地球交换指令和数据。"
+    ],
+    "source_size": [
+      869,
+      567
+    ]
+  },
+  {
+    "id": 6,
+    "theme": 1,
+    "index": 7,
+    "name": "T1P07",
+    "source": "D:\\figurefpga\\主题1\\07｜互动实验：姿态与能源.png",
+    "source_sha256": "9133cd9e5b8c9de40bc3ef9179067d396e02667973579ac7088c0c286c9ee643",
+    "width": 800,
+    "height": 480,
+    "label": "T1P07 | BMP 800 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 105.6,
+    "bmp_sha256": "02cc4807897f49e5ac315deb702c3fa030be117d1695ab488a2d4d1658d9798d",
+    "wav_sha256": "89d463572cb2630d7a5f8483bc118e3c91773c2f3baf813c9dadf378ad26270b",
+    "audio_frames": 619398,
+    "cue_text": [
+      "现在可以进入月球车交互实验。",
+      "调节太阳能板倾角，观察受光和功率示意。",
+      "这里的数值是教学模拟，并非真实遥测。"
+    ],
+    "source_size": [
+      881,
+      708
+    ]
+  },
+  {
+    "id": 7,
+    "theme": 1,
+    "index": 8,
+    "name": "T1P08",
+    "source": "D:\\figurefpga\\主题1\\08｜月球探测器——完整设备全景.png",
+    "source_sha256": "ca6002fe0a5122e5ff352af7f88768d3fbcc4181a82149076e4584ec56c07409",
+    "width": 480,
+    "height": 640,
+    "label": "T1P08 | BMP 480 x 640 px",
+    "label_source_y": 96,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "915f8a204c2543c4f8a4c3a34e7de17ef35c54dd50ccb9b54d16495ba28f3cd3",
+    "wav_sha256": "1de5e082591b0be530feb8c4499f6d7fbb6b3c6a78edec8b8ca2ec957f120529",
+    "audio_frames": 654948,
+    "cue_text": [
+      "回顾月球车的整体结构与各部分分工。",
+      "太阳能板供能，天线通信，相机观察环境。",
+      "车轮带着科学仪器，继续探索未知月面。"
+    ],
+    "source_size": [
+      856,
+      473
+    ]
+  },
+  {
+    "id": 8,
+    "theme": 2,
+    "index": 1,
+    "name": "T2P01",
+    "source": "D:\\figurefpga\\主题2\\01｜从太空观察地球.png",
+    "source_sha256": "2d19d91366b9f748a05eff91433c9317f21e1815c67feac24e9931f365ad27d1",
+    "width": 640,
+    "height": 480,
+    "label": "T2P01 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "8eed86b998cfc74afc5e1f15a0205f6499c230687d73a00f3286dc33183d4d46",
+    "wav_sha256": "b751a8c665399e9b8d6fd3a13e28ea0b71cae4fb72d362bee6ea82c0d49265b4",
+    "audio_frames": 629064,
+    "cue_text": [
+      "对地观测卫星从太空观察我们的家园。",
+      "它沿轨道运行，获取不同地区的观测信息。",
+      "这些信息帮助人们认识地球环境的变化。"
+    ],
+    "source_size": [
+      854,
+      556
+    ]
+  },
+  {
+    "id": 9,
+    "theme": 2,
+    "index": 2,
+    "name": "T2P02",
+    "source": "D:\\figurefpga\\主题2\\02｜卫星的结构组成.png",
+    "source_sha256": "a760867f2a3b282d5ba255db8250098594437036410574b04badb91941e9036a",
+    "width": 640,
+    "height": 480,
+    "label": "T2P02 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "9e96819450d115c52e4ecda718b5f28b69c8f789e3d860e7d659e82dc71848ac",
+    "wav_sha256": "c6864775510ed28b12944e79271b52caad4f2141170191ac1045f832b989b204",
+    "audio_frames": 660540,
+    "cue_text": [
+      "卫星平台为观测设备提供运行支持。",
+      "太阳翼供电，天线传输数据，相机获取影像。",
+      "姿态控制系统帮助设备保持需要的方向。"
+    ],
+    "source_size": [
+      859,
+      509
+    ]
+  },
+  {
+    "id": 10,
+    "theme": 2,
+    "index": 3,
+    "name": "T2P03",
+    "source": "D:\\figurefpga\\主题2\\03｜太阳翼的展开与转动.png",
+    "source_sha256": "1e94a85f3f5239ab26e51d09c48ec63941dce0815057ad2c4b1b690f44d8cc94",
+    "width": 640,
+    "height": 480,
+    "label": "T2P03 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "2824c45a11a9e2ed2e234a7828b15fc7e620cab96a1c0e99a865a6d05e9e6a82",
+    "wav_sha256": "8e13fe295116a2b9a6e33c65f760e6b66ae706f62b866e9f4f8a86b77b4b73fd",
+    "audio_frames": 597960,
+    "cue_text": [
+      "太阳翼展开后，可以获得更大的受光面积。",
+      "部分卫星能够调整太阳翼的指向。",
+      "这里用可转动的太阳翼演示受光变化。"
+    ],
+    "source_size": [
+      887,
+      667
+    ]
+  },
+  {
+    "id": 11,
+    "theme": 2,
+    "index": 4,
+    "name": "T2P04",
+    "source": "D:\\figurefpga\\主题2\\04｜对地相机的指向控制.png",
+    "source_sha256": "aa32fcb987d06dfb0c827b4ac1c7e1f3221f41862fef026fc8c11f8ba1c8e3c2",
+    "width": 640,
+    "height": 480,
+    "label": "T2P04 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "e3d5443a47567efbd4a36587442f77687adacfd514f11f80dff02184cf1c579e",
+    "wav_sha256": "54d50e0a49ce68984dbda01d2bc07c1ddeca12a0f0ec8aba9a222854944e2d37",
+    "audio_frames": 665094,
+    "cue_text": [
+      "对地相机可以正对下方，也可以侧向观测。",
+      "改变观测方向，地面的目标区域随之变化。",
+      "真实任务还需要考虑轨道和姿态等条件。"
+    ],
+    "source_size": [
+      875,
+      697
+    ]
+  },
+  {
+    "id": 12,
+    "theme": 2,
+    "index": 5,
+    "name": "T2P05",
+    "source": "D:\\figurefpga\\主题2\\05｜地面扫描范围与覆盖.png",
+    "source_sha256": "07f0c859f967cc885386314c96bf6b5d3c44bae7653c74fc401db9b44dc6b0a2",
+    "width": 800,
+    "height": 600,
+    "label": "T2P05 | BMP 800 x 600 px",
+    "label_source_y": 90,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "25e4c3bf5ae8269f9f60f72930eeadd4afa14955d5d3553693e045cbb153e049",
+    "wav_sha256": "d457584a31696d5b67d8289bd2f10a3910a1b4629584a80c72299f83be1a968b",
+    "audio_frames": 617160,
+    "cue_text": [
+      "相机的视场在地面形成一片观测区域。",
+      "卫星沿轨道运动时，可以连续覆盖地表。",
+      "指向和视场共同影响地面覆盖的位置。"
+    ],
+    "source_size": [
+      874,
+      726
+    ]
+  },
+  {
+    "id": 13,
+    "theme": 2,
+    "index": 6,
+    "name": "T2P06",
+    "source": "D:\\figurefpga\\主题2\\06｜遥感卫星的实际应用.png",
+    "source_sha256": "2240a33ce3d6cca6ab5c02435c93a21e0400f520d8e88296abb472d2ff3df825",
+    "width": 1024,
+    "height": 768,
+    "label": "T2P06 | BMP 1024 x 768 px",
+    "label_source_y": 115,
+    "label_screen_top": 71.875,
+    "bmp_sha256": "e4d08a3806eb225439b4b33c6a293b5695fde2153ca7522aa3a63be7b13e86cc",
+    "wav_sha256": "097c3b15baf9766a3f441d7abcd11868e881331bcee8b9509bc9eec8b131c204",
+    "audio_frames": 638544,
+    "cue_text": [
+      "遥感影像可以用于观察洪水和农田。",
+      "对比不同时刻的影像，有助于发现变化。",
+      "卫星观测为环境管理和灾害评估提供信息。"
+    ],
+    "source_size": [
+      873,
+      727
+    ]
+  },
+  {
+    "id": 14,
+    "theme": 2,
+    "index": 7,
+    "name": "T2P07",
+    "source": "D:\\figurefpga\\主题2\\07｜互动实验：相机指向与扫描.png",
+    "source_sha256": "feab8e4cf9a0d70dc7403bad94a62b70168453f8ba1152ab949e0471ec80763d",
+    "width": 800,
+    "height": 480,
+    "label": "T2P07 | BMP 800 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 105.6,
+    "bmp_sha256": "678c0b1263440a424dfc43b1cd50d1a9e2d527f2b386cb4530633ca3dbcb47be",
+    "wav_sha256": "b9117697f8ca66892d9a0be917e7e820976790c1dfed38b07c914cc2651af1d9",
+    "audio_frames": 623418,
+    "cue_text": [
+      "进入交互实验，可以分别调整两个参数。",
+      "转动太阳翼，再改变相机的对地方向。",
+      "观察副屏上的地面覆盖区域如何移动。"
+    ],
+    "source_size": [
+      884,
+      618
+    ]
+  },
+  {
+    "id": 15,
+    "theme": 2,
+    "index": 8,
+    "name": "T2P08",
+    "source": "D:\\figurefpga\\主题2\\Snipaste_2026-10-16_10-27-34.png",
+    "source_sha256": "771eedc2ffb958d910c17180702fa5cea1f9dd7eeb12551a6dddd831f49d3968",
+    "width": 480,
+    "height": 640,
+    "label": "T2P08 | BMP 480 x 640 px",
+    "label_source_y": 96,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "0277e256a40a7e94a90a0ef4358e7bad53d1c10b723ee7ac46743047f627dab3",
+    "wav_sha256": "286ec286dde9a308d36248feb450d01e38c28c7f149e8ba625fbed295d9388a0",
+    "audio_frames": 596736,
+    "cue_text": [
+      "这是对地观测卫星的整体示意。",
+      "太阳翼、平台和观测设备各有分工。",
+      "它们共同完成从获取影像到传回数据的过程。"
+    ],
+    "source_size": [
+      862,
+      555
+    ]
+  },
+  {
+    "id": 16,
+    "theme": 3,
+    "index": 1,
+    "name": "T3P01",
+    "source": "D:\\figurefpga\\主题3\\01｜从月球轨道降落月面.png",
+    "source_sha256": "a93b4696f567914fd85dbaf1c6eb97e28c6ae9fca83a782b9eb016f057002b89",
+    "width": 640,
+    "height": 480,
+    "label": "T3P01 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "76679e4822f4d8bb69abdfdb889416f88f8fd8531503b42193364ef0027d2d0f",
+    "wav_sha256": "4e68fe69b76b57d7bb8fc8cd376b2041596d54773f5659dc497c1ec543900b71",
+    "audio_frames": 639636,
+    "cue_text": [
+      "月球着陆器需要从轨道安全抵达月面。",
+      "下降过程要逐步减速，并控制自身姿态。",
+      "最终接触月面后，设备继续开展探测。"
+    ],
+    "source_size": [
+      865,
+      486
+    ]
+  },
+  {
+    "id": 17,
+    "theme": 3,
+    "index": 2,
+    "name": "T3P02",
+    "source": "D:\\figurefpga\\主题3\\02｜着陆器的主要结构.png",
+    "source_sha256": "b059b121fc41c6198bb95be9ae290e45a76f3f94b5968fdacdfda862c191c11e",
+    "width": 640,
+    "height": 480,
+    "label": "T3P02 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "7dbac3c54ee8aa173e2ddcccdbd732f49e46532253f2b37f56262aabf9c4f2c8",
+    "wav_sha256": "13200d3cce3deee2a3ae368610aa240e9930d789e0b2fbf7815d1b324ab9c211",
+    "audio_frames": 681498,
+    "cue_text": [
+      "着陆器包含结构平台、支腿和推进系统。",
+      "相机和其他传感器帮助它了解下降环境。",
+      "燃料、电源和通信设备为任务提供支持。"
+    ],
+    "source_size": [
+      871,
+      651
+    ]
+  },
+  {
+    "id": 18,
+    "theme": 3,
+    "index": 3,
+    "name": "T3P03",
+    "source": "D:\\figurefpga\\主题3\\03｜着陆支腿与缓冲结构.png",
+    "source_sha256": "e213ab8ad6c1acf23703d3a92f64d0c2df94cbd8de262f44cdf3cce3569be238",
+    "width": 640,
+    "height": 480,
+    "label": "T3P03 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "411d6f46872f80a47a0a88abd582c508f270cd71de01b8455fa8db2726c72298",
+    "wav_sha256": "85a4db386d5393b79ece1a63bc787c891277879d03ed34844fbc2c10c95f6eb5",
+    "audio_frames": 605310,
+    "cue_text": [
+      "着陆支腿为接触月面提供支撑。",
+      "展开机构将支腿从收拢位置转到工作位置。",
+      "缓冲结构帮助吸收着陆时的一部分冲击。"
+    ],
+    "source_size": [
+      832,
+      574
+    ]
+  },
+  {
+    "id": 19,
+    "theme": 3,
+    "index": 4,
+    "name": "T3P04",
+    "source": "D:\\figurefpga\\主题3\\04｜反推发动机与下降控制.png",
+    "source_sha256": "2c038d049ec061cff2844f8a4187bb60c6320b1ab55ce68b31681c365fc5d979",
+    "width": 640,
+    "height": 480,
+    "label": "T3P04 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "8f11c69977a6ea8413e1916744365df28fa58804a107af0d9c71d7bf2536cb31",
+    "wav_sha256": "8f650e53f65deb46b45779181ad1f80951557a77c7b4345d5f2beb869adc4508",
+    "audio_frames": 594552,
+    "cue_text": [
+      "反推发动机用于控制下降速度。",
+      "改变推力，会改变发动机提供的减速作用。",
+      "真实着陆还需要精确导航和闭环控制。"
+    ],
+    "source_size": [
+      752,
+      574
+    ]
+  },
+  {
+    "id": 20,
+    "theme": 3,
+    "index": 5,
+    "name": "T3P05",
+    "source": "D:\\figurefpga\\主题3\\05｜月球软着陆的关键阶段.png",
+    "source_sha256": "572df399dc053ea2bcbda379dce557fcb4b4ae918eb3a504cd88c2444b77ed93",
+    "width": 800,
+    "height": 600,
+    "label": "T3P05 | BMP 800 x 600 px",
+    "label_source_y": 90,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "6b1366dbed981e2d7b8b4318813fa9765e27ac4428cefbebc4902ef4e687b106",
+    "wav_sha256": "de2cd00cad2948e1b514777711554627a1196737a7557910a3b7ef29ffe44d5b",
+    "audio_frames": 627786,
+    "cue_text": [
+      "软着陆包含减速、接近月面和接触等阶段。",
+      "各阶段对速度、姿态和高度的要求不同。",
+      "稳定着陆需要多个系统配合完成。"
+    ],
+    "source_size": [
+      876,
+      521
+    ]
+  },
+  {
+    "id": 21,
+    "theme": 3,
+    "index": 6,
+    "name": "T3P06",
+    "source": "D:\\figurefpga\\主题3\\06｜中国嫦娥探月着陆任务.png",
+    "source_sha256": "1b8c6feafbdb6c05964700911facf27f2e03af72b1c7ab68c0176e29316638c6",
+    "width": 1024,
+    "height": 768,
+    "label": "T3P06 | BMP 1024 x 768 px",
+    "label_source_y": 115,
+    "label_screen_top": 71.875,
+    "bmp_sha256": "b5c3895cd15a9461b40f4ca4009b28cf0aff37e886e5823195224f1227414ce5",
+    "wav_sha256": "89a20a6a20cebf722c0b4c89397a11ecffb7d1009e8030beb7206ef82e4825ee",
+    "audio_frames": 578094,
+    "cue_text": [
+      "中国嫦娥任务持续开展月球探测。",
+      "着陆器为月面科学仪器提供工作平台。",
+      "不同任务的结构和科学目标并不相同。"
+    ],
+    "source_size": [
+      876,
+      469
+    ]
+  },
+  {
+    "id": 22,
+    "theme": 3,
+    "index": 7,
+    "name": "T3P07",
+    "source": "D:\\figurefpga\\主题3\\07｜互动实验：支腿与推力.png",
+    "source_sha256": "02ad0c5c1e60f9a4b3f03b12f820657a6957a558ca06b9cd258b099a9e4bdd6b",
+    "width": 800,
+    "height": 480,
+    "label": "T3P07 | BMP 800 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 105.6,
+    "bmp_sha256": "7589a1b095d25222edc450d6ae619273bd37f5b6f2ddc0924b17cb596a2c5101",
+    "wav_sha256": "4f44f9290e7b95e6b12f148ebc8acea734771a53225ec8abfa78bbd56c3bc024",
+    "audio_frames": 688182,
+    "cue_text": [
+      "在交互实验中，可以调整支腿展开角度。",
+      "选择推力参数，观察喷焰和推力条变化。",
+      "喷焰长度仅表示模拟推力，不代表实测结果。"
+    ],
+    "source_size": [
+      803,
+      476
+    ]
+  },
+  {
+    "id": 23,
+    "theme": 3,
+    "index": 8,
+    "name": "T3P08",
+    "source": "D:\\figurefpga\\主题3\\Snipaste_2026-10-16_10-28-27.png",
+    "source_sha256": "7e81194374c0147c3c3fb3282bddac95cdfeb84589b78f4a8f92aba97f2472cf",
+    "width": 480,
+    "height": 640,
+    "label": "T3P08 | BMP 480 x 640 px",
+    "label_source_y": 96,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "a939fc5853a7dbd35bdf7e1d43b71054797d167aed68fd25e0b9b43869ba73af",
+    "wav_sha256": "e8883fa92027c6449fb9f6ecb24e271c6bec2bcbc371dcc6189fa8a590842140",
+    "audio_frames": 619770,
+    "cue_text": [
+      "从整体观察着陆器的结构安排。",
+      "支腿稳定支撑，发动机用于下降控制。",
+      "电源、通信和科学载荷共同服务探测任务。"
+    ],
+    "source_size": [
+      728,
+      649
+    ]
+  },
+  {
+    "id": 24,
+    "theme": 4,
+    "index": 1,
+    "name": "T4P01",
+    "source": "D:\\figurefpga\\主题4\\01｜把望远镜送入太空.png",
+    "source_sha256": "3dc34f2c3ea459c73ac22674a8f9ca23ea6d7aae23509bd3842f2ae444f51f6c",
+    "width": 640,
+    "height": 480,
+    "label": "T4P01 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "4b09b2b48802d375aa75c5169cd2f36760460b90ab4d909ff32eef4b069e0a1d",
+    "wav_sha256": "602ef85029dfc20eb9636ee9496446dc6cfc1465f181aaad09bde32ef9f57de3",
+    "audio_frames": 622566,
+    "cue_text": [
+      "空间望远镜在地球大气层之外开展观测。",
+      "它能避开部分大气扰动和吸收的影响。",
+      "不同望远镜会选择不同波段和科学目标。"
+    ],
+    "source_size": [
+      760,
+      586
+    ]
+  },
+  {
+    "id": 25,
+    "theme": 4,
+    "index": 2,
+    "name": "T4P02",
+    "source": "D:\\figurefpga\\主题4\\02｜空间望远镜的光学结构.png",
+    "source_sha256": "4d18e0e0a28750ceecb2ecf545e41e1b70b203f357d322ab2619fecdfc2c8e1d",
+    "width": 640,
+    "height": 480,
+    "label": "T4P02 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "cf4200fa1065f6d6227b712f056ab3fd9b0a37dd202d43db0fb92d01cf829d05",
+    "wav_sha256": "3bf95a4c5b82799cbd010cb1a835771e742bb0fea71d104bdd337023ab58ea2a",
+    "audio_frames": 626214,
+    "cue_text": [
+      "光学望远镜利用镜面收集和引导光线。",
+      "光到达探测器后，被转化为观测数据。",
+      "结构与温度控制帮助维持光学系统稳定。"
+    ],
+    "source_size": [
+      880,
+      642
+    ]
+  },
+  {
+    "id": 26,
+    "theme": 4,
+    "index": 3,
+    "name": "T4P03",
+    "source": "D:\\figurefpga\\主题4\\03｜镜筒指向与目标跟踪.png",
+    "source_sha256": "4dde1001722e5826afae805b140716401924529311f767065abdef1fde5bca85",
+    "width": 640,
+    "height": 480,
+    "label": "T4P03 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "a56826a1e05b045a2f25f00d171fecfd4951c2f274b4a2e48cc882205f10a4bc",
+    "wav_sha256": "e24427ef2b8ede31040443e2074dd56c9f8c32d3887fa3b86f6a6add0b6f9ff7",
+    "audio_frames": 629916,
+    "cue_text": [
+      "望远镜需要把视线指向选定的目标。",
+      "指向改变时，能够观察的天空区域也改变。",
+      "实际观测还要求稳定跟踪和精确控制。"
+    ],
+    "source_size": [
+      832,
+      511
+    ]
+  },
+  {
+    "id": 27,
+    "theme": 4,
+    "index": 4,
+    "name": "T4P04",
+    "source": "D:\\figurefpga\\主题4\\04｜光学保护盖与开口机构.png",
+    "source_sha256": "074b9fe3784949e08535d269a60a254dd46cce498409ebdf19aef11dd989b72e",
+    "width": 640,
+    "height": 480,
+    "label": "T4P04 | BMP 640 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "d61000b97b439083da5903b020baf3943ec9001159aeb7c8d490f6c17e522826",
+    "wav_sha256": "d9d29b8b20511232f78dba3386bdd053cf92308adc44c8eca05af3bf3ee1d3a7",
+    "audio_frames": 595404,
+    "cue_text": [
+      "部分空间望远镜带有可开启的保护盖。",
+      "盖板与遮光结构的具体作用取决于设计。",
+      "这里演示绕铰链转动的简化开盖过程。"
+    ],
+    "source_size": [
+      787,
+      512
+    ]
+  },
+  {
+    "id": 28,
+    "theme": 4,
+    "index": 5,
+    "name": "T4P05",
+    "source": "D:\\figurefpga\\主题4\\05｜精密反射镜与空间观测.png",
+    "source_sha256": "2cfd59dc54c8d75d835c1848a67c3c2f665fa3eeda9b1f238d1b440e685f09c8",
+    "width": 800,
+    "height": 600,
+    "label": "T4P05 | BMP 800 x 600 px",
+    "label_source_y": 90,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "fcac37a335086f3999b5bbf952d9ce9d94bdcbf1f735d8c461c1301084b5c78a",
+    "wav_sha256": "e646fc7df7dd1abd8c86e1c00f877d2e28808d87b35897b12c6ec6b616d86416",
+    "audio_frames": 611808,
+    "cue_text": [
+      "大口径反射镜能够收集更多微弱的光。",
+      "一些望远镜采用多块镜面拼接的结构。",
+      "精密制造与调整帮助镜面共同完成成像。"
+    ],
+    "source_size": [
+      888,
+      659
+    ]
+  },
+  {
+    "id": 29,
+    "theme": 4,
+    "index": 6,
+    "name": "T4P06",
+    "source": "D:\\figurefpga\\主题4\\06｜空间望远镜看见的宇宙.png",
+    "source_sha256": "830d5f201daca55b4e480f49e78133a25b7e61904a7642ec7ec63df35c58cbf3",
+    "width": 1024,
+    "height": 768,
+    "label": "T4P06 | BMP 1024 x 768 px",
+    "label_source_y": 115,
+    "label_screen_top": 71.875,
+    "bmp_sha256": "e9ad281b2ef7b808627b46dc7491d417cb1e439e4a2da2dc5f58da88d6f4d341",
+    "wav_sha256": "3997025db329c225754ca703d4d05ad1009a6a4bedbe690496c2e6f459b13150",
+    "audio_frames": 606162,
+    "cue_text": [
+      "空间望远镜让人们观察遥远的星云和恒星。",
+      "不同波段可以揭示不同的物理信息。",
+      "科普图像有时采用合成或映射颜色。"
+    ],
+    "source_size": [
+      571,
+      461
+    ]
+  },
+  {
+    "id": 30,
+    "theme": 4,
+    "index": 7,
+    "name": "T4P07",
+    "source": "D:\\figurefpga\\主题4\\07｜互动实验：观测方向与开口.png",
+    "source_sha256": "2487386d61e1a5f15e5763a01f3264b2ade10daaf95214eca004e535818f8bf3",
+    "width": 800,
+    "height": 480,
+    "label": "T4P07 | BMP 800 x 480 px",
+    "label_source_y": 72,
+    "label_screen_top": 105.6,
+    "bmp_sha256": "19be030464c5e0b95d92ce74a8aa0e31ecb621d8162f5d3a056d5292d61fbf4c",
+    "wav_sha256": "7c5c013f2146cf0d12322030bf3772d217f0cbbd2b9dd1e239644509dbc194d2",
+    "audio_frames": 668982,
+    "cue_text": [
+      "进入实验后，先调节镜筒的观察方向。",
+      "再选择保护盖角度，观察盖板绕铰链开启。",
+      "这是结构教学示意，并非完整光学仿真。"
+    ],
+    "source_size": [
+      665,
+      538
+    ]
+  },
+  {
+    "id": 31,
+    "theme": 4,
+    "index": 8,
+    "name": "T4P08",
+    "source": "D:\\figurefpga\\主题4\\Snipaste_2026-10-16_10-29-42.png",
+    "source_sha256": "fe1ec466a84f520fcf9af9db7ce344a821b3bfcfb278be791576aae87b2b939d",
+    "width": 480,
+    "height": 640,
+    "label": "T4P08 | BMP 480 x 640 px",
+    "label_source_y": 96,
+    "label_screen_top": 72.0,
+    "bmp_sha256": "7e6c49941196f64ca34070609cb22990e2bbce026d94da2d7c07ba208429a46f",
+    "wav_sha256": "c91deb58db16913414755a9c0d408a8af09faa9c683f53fdc16e539853efcb32",
+    "audio_frames": 642060,
+    "cue_text": [
+      "回顾空间望远镜的整体组成。",
+      "镜筒收集光线，太阳翼供电，天线传输数据。",
+      "各系统协同，让人类看见更遥远的宇宙。"
+    ],
+    "source_size": [
+      839,
+      684
+    ]
+  }
+]

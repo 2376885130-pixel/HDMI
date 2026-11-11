@@ -1,0 +1,2 @@
+PASS command/KEY3 terminal-count collision, no spurious media request, context protection and reset precedence
+D:\CODE_ANLU\sim\tb_uart_priority.v:21: $finish called at 9880000 (1ps)

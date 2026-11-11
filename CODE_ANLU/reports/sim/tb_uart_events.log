@@ -1,0 +1,2 @@
+PASS bounded event queue: stable stalled byte, multi-source burst, explicit overflow, drain/recovery/reset
+D:\CODE_ANLU\sim\tb_uart_events.v:22: $finish called at 21560000 (1ps)

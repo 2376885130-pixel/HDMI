@@ -1,0 +1,23 @@
+{
+  "original_bytes": 704129,
+  "rebuilt_bytes": 704129,
+  "differing_bytes_in_common_extent": 5,
+  "differing_ranges": [
+    [
+      141,
+      142
+    ],
+    [
+      145,
+      145
+    ],
+    [
+      147,
+      148
+    ]
+  ],
+  "first_original_ascii": "b'# Anlogic ASCII Bitstream\\n# Version: 6.2.168116\\n# Design name: tf_image_top\\n# Architecture: eagle_s20\\n# Package: EG4S20BG256\\n# Date: 2026/10/19 17: 0\\n# Bitstream CRC: 11101101110111000000111001000010\\n# USER CODE: 00000000011100000000000000000000\\n# Transfer'",
+  "first_rebuilt_ascii": "b'# Anlogic ASCII Bitstream\\n# Version: 6.2.168116\\n# Design name: tf_image_top\\n# Architecture: eagle_s20\\n# Package: EG4S20BG256\\n# Date: 2026/10/21 14:55\\n# Bitstream CRC: 11101101110111000000111001000010\\n# USER CODE: 00000000011100000000000000000000\\n# Transfer'",
+  "identical_except_date_comment": true,
+  "interpretation": "All five differing bytes are within the ASCII # Date comment. Removing only that complete comment line makes the entire files byte-identical, including configuration and CRC."
+}

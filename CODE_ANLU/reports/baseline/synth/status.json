@@ -1,0 +1,14 @@
+{
+  "root": "D:\\FPGA_DUAL_HDMI_UART_20261019",
+  "stage": "synth",
+  "completed": true,
+  "seconds": 254.00231671333313,
+  "resources": {
+    "lut": 17513,
+    "reg": 11453,
+    "bram9k": 64,
+    "bram32k": 0,
+    "dsp": 27
+  },
+  "returncode": 0
+}

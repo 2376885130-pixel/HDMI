@@ -1,0 +1,2 @@
+PASS audio modes: missing narration->base recovery, base loop/no next event, mode change during accepted sector, rapid reversal, SW1 stop/restart and reset; PCM=        201
+D:\FPGA_DUAL_HDMI_UART_20261019\sim\compat_tb_audio_modes.v:74: $finish called at 64316740000 (1ps)

@@ -1,0 +1,2 @@
+PASS command/KEY3 terminal-count collision, no spurious media request, context protection and reset precedence
+D:\FPGA_DUAL_HDMI_UART_20261019\sim\compat_tb_uart_priority.v:21: $finish called at 9880000 (1ps)
